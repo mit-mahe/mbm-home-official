@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Official website of MBM Manipal, Student Team at Manipal Institute of Technology" />
+		<meta
+			name="keywords"
+			content="MBM, Manipal, Biomachines Club,Biomachines team" />
+		<link rel="icon" href="IMAGES dump/ICON.png" />
+		<title>Manipal BioMachines</title>
+		<link rel="stylesheet" href="styling.css" />
+		<script>
+			function generatePreloadLinks() {
+				const basePath = "ampifin_anim/png_";
+				const numberOfImages = 43;
+				let preloadLinks = "";
+
+				for (let i = 1; i <= numberOfImages; i++) {
+					const formattedNumber = i.toString().padStart(4, "0");
+					const imagePath = `${basePath}${formattedNumber}.png`;
+					preloadLinks += `<link rel="preload" as="image" href="${imagePath}">\n`;
+				}
+
+				document.write(preloadLinks);
+			}
+
+			generatePreloadLinks();
+		</script>
+	</head>
+
+	<body style="background-color: #f8f5ee; overflow-x: hidden !important">
+		<div id="loader-container"></div>
+		<section class="header" style="position: fixed">
+			<nav>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul style="padding-top: 1%">
+						<li>
+							<a
+								class="darkNavElements"
+								style="text-decoration: none"
+								href="index.html"
+								>About us</a
+							>
+						</li>
+						<li>
+							<a class="darkNavElements" style="text-decoration: none" href=""
+								>Team&#x25BE;</a
+							>
+							<ul class="ddown">
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="teamCurrent.html"
+										>2024</a
+									>
+								</li>
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="teamAlumni.html"
+										>Alumni</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="darkNavElements" style="text-decoration: none" href=""
+								>Projects&#x25BE;</a
+							>
+							<ul class="ddown">
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="carbanel_2023.html"
+										>2023</a
+									>
+								</li>
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="ampifin_2022.html"
+										>2022</a
+									>
+								</li>
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="celltinel_2021.html"
+										>2021</a
+									>
+								</li>
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="breakingBond_2020.html"
+										>2020</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a
+								class="darkNavElements"
+								style="text-decoration: none"
+								href="research.html"
+								>Research</a
+							>
+						</li>
+						<li>
+							<a
+								class="darkNavElements"
+								style="text-decoration: none"
+								href="achievements.html"
+								>Achievements</a
+							>
+						</li>
+						<li>
+							<a
+								class="darkNavElements"
+								style="text-decoration: none"
+								href="index.html"
+								>Contact us</a
+							>
+						</li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+		</section>
+		<a href="index.html"
+			><img
+				src="IMAGES dump/LOGO.png"
+				style="
+					width: auto;
+					max-height: 4vw;
+					position: fixed;
+					z-index: 999;
+					padding-top: 0.675vw;
+					padding-left: 1.041vw;
+				"
+		/></a>
+
+		<div class="theCanvas">
+			<canvas class="anim" style="height: 80vh; max-width: 80vw"></canvas>
+
+			<pre
+				class="content projectPageDarkBG"
+				style="
+					text-align: left;
+					padding-bottom: 0;
+					padding-top: 30vh;
+					padding-left: 0;
+					line-height: 3vw;
+				">
+            
+India is the 3rd LARGEST                   <img src="IMAGES dump\ampifin_emj1.png" alt="wheat" style="float: right;height: 14vh;width: auto;">
+fish producer in the world
+
+<img src="IMAGES dump\ampifin_emj2.png" alt="wheat" style="float: left;height: 14vh;width: auto;">                2nd LARGEST 
+                aquaculture nation     <br>
+                                                        
+
+This triggered the increase  
+of bacterial and viral <img src="IMAGES dump\ampifin_emj3.png" alt="wheat" style="float: right;height: 14vh;width: auto;">
+infections like Vibriosis 
+
+
+
+        </pre>
+		</div>
+
+		<div
+			class="whiteBackGround"
+			style="background-color: #f8f5ee; height: 100vh; position: relative">
+			<pre
+				class="content projectPageWhiteBG"
+				style="
+					text-align: left;
+					top: 30vh;
+					left: 80vw;
+					float: left;
+					width: 70vw;
+					line-height: 3vw;
+				">
+        <img src="IMAGES dump\ampifin_img1.png" alt="wheat" style="float: left;height: 19vh;width: auto;">
+        The consumption of fish affected
+        with vibriosis causes various of
+        diseases in human as well
+        
+        
+Ampifin proposed a solution using an
+antimicrobial peptide encapsulated in
+Chitosan Nanoparticles preventing vibriosis
+adhesion to fish
+<a class="learnMoreButton" style="text-decoration: none;text-decoration-color: #344546;" href="https://2022.igem.wiki/mit-mahe/index.html" target="_blank"><div class="borderLine Titles whiteTitlesBG" style="font-size: 1.558vw; font-family: Bemirs;font-weight: 580;position: relative; margin-top: 2.9vw;align-content: center;overflow: hidden;">&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;</div></a>
+        </pre>
+
+			<img
+				src="IMAGES dump\ampifin_img2.png"
+				alt="wheat"
+				style="float: right; padding-top: 25vh; height: 65vh; width: auto" />
+
+			<div
+				class="aSwitch"
+				style="
+					height: 10px;
+					width: 10px;
+					position: absolute;
+					bottom: 50px;
+				"></div>
+		</div>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+			integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+			integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script defer src="ampifin.js"></script>
+	</body>
+	<script defer src="loadingScreen.js"></script>
+</html>

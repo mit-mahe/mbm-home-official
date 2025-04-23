@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Official website of MBM Manipal, Student Team at Manipal Institute of Technology" />
+		<meta
+			name="keywords"
+			content="MBM, Manipal, Biomachines Club,Biomachines team" />
+		<title>Manipal Biomachines</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bemirs&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="styling.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="IMAGES dump/ICON.png" />
+		<!-- <link rel="stylesheet" href="jquery.flipster.min.css"> -->
+		<script defer src="intersectionObserverStuff.js"></script>
+	</head>
+	<body style="background-color: #f8f5ee; overflow-x: hidden">
+		<div id="loader-container"></div>
+		<section class="header" style="position: fixed">
+			<nav>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul style="padding-top: 24px">
+						<li>
+							<a
+								class="darkNavElements"
+								style="text-decoration: none"
+								href="index.html"
+								>About us</a
+							>
+						</li>
+						<li>
+							<a class="darkNavElements" style="text-decoration: none" href=""
+								>Team&#x25BE;</a
+							>
+							<ul class="ddown">
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="teamCurrent.html"
+										>2024</a
+									>
+								</li>
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="teamAlumni.html"
+										>Alumni</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="darkNavElements" style="text-decoration: none" href=""
+								>Projects&#x25BE;</a
+							>
+							<ul class="ddown">
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="carbanel_2023.html"
+										>2023</a
+									>
+								</li>
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="ampifin_2022.html"
+										>2022</a
+									>
+								</li>
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="celltinel_2021.html"
+										>2021</a
+									>
+								</li>
+								<li>
+									<a
+										class="darkNavElements"
+										style="text-decoration: none"
+										href="breakingBond_2020.html"
+										>2020</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a
+								class="darkNavElements"
+								style="text-decoration: none"
+								href="research.html"
+								>Research</a
+							>
+						</li>
+						<li>
+							<a
+								class="darkNavElements"
+								style="text-decoration: none"
+								href="achievements.html"
+								>Achievements</a
+							>
+						</li>
+						<li>
+							<a
+								class="darkNavElements"
+								style="text-decoration: none"
+								href="index.html"
+								>Contact us</a
+							>
+						</li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+		</section>
+		<a href="index.html"
+			><img
+				src="IMAGES dump/LOGO.png"
+				style="
+					width: 9%;
+					min-height: 9%;
+					position: fixed;
+					z-index: 999;
+					padding-top: 13px;
+					padding-left: 20px;
+				"
+		/></a>
+
+		<script>
+			var navLinks = document.getElementById("navLinks");
+
+			function showMenu() {
+				navLinks.style.right = "0";
+			}
+			function hideMenu() {
+				navLinks.style.right = "-200px";
+			}
+		</script>
+
+		<section>
+			<p class="mainTitle">Meet the Team</p>
+		</section>
+
+		<!--!Faculty Advisor start-->
+		<div>
+			<p class="heading">FACULTY ADVISORS</p>
+			<div class="greenUnderlineSmall"></div>
+		</div>
+
+		<section class="board-row">
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/dr-ritu-raval.png" />
+				</div>
+				<h3>DR.RITU RAVAL</h3>
+				<h5>Associate Professor, Department of Biotechnology, MIT Manipal</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/dr-fayaz-sm.png" />
+				</div>
+				<h3>DR.FAYAZ SM</h3>
+				<h5>
+					Assistant Professor—Selection Grade, Department of Biotechnology, MIT
+					Manipal
+				</h5>
+			</div>
+		</section>
+
+		<!--!Faculty Advisor end-->
+
+		<!--! 2024 board start-->
+		<div>
+			<p class="heading">BOARD 2024</p>
+			<div class="greenUnderlineSmall"></div>
+		</div>
+
+		<section class="board-row">
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/akshay.jpg" />
+				</div>
+				<h3>AKSHAY PARMAR</h3>
+				<!-- style="font-family: Adoha; font-size: 2.75vh;font-weight: 550;" -->
+				<h5 style="font-size: 1.3vw">Co-Team Lead</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/rhea.jpeg" />
+				</div>
+				<h3>RHEA NADIG</h3>
+				<h5 style="font-size: 1.3vw">Co-Team Lead</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/ganit.jpeg" />
+				</div>
+				<h3>I A GANIT CARIAPPA</h3>
+				<h5 style="font-size: 1.3vw">Team Manager</h5>
+			</div>
+		</section>
+
+		<div style="height: 50px"></div>
+
+		<section class="board-row">
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/hita.jpeg" />
+				</div>
+				<h3>HITA POONACHA</h3>
+				<h5>Wet Lab Head</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/shyaam haridas_.jpg" />
+				</div>
+				<h3>SHYAAM S HARIDAS</h3>
+				<h5>Dry Lab Head</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/angela _anna_jossy.jpg" />
+				</div>
+				<h3>ANGELA ANNA JOSSY</h3>
+				<h5>Research Head</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/vignesh.png" />
+				</div>
+				<h3>VIGNESH VIJAYSEKHAR</h3>
+				<h5>Hardware and Software Head</h5>
+			</div>
+		</section>
+
+		<section class="board-row">
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/anirudh_saravanan.jpg" />
+				</div>
+				<h3>ANIRUDH SARAVANAN</h3>
+				<h5>Human Practices Head</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/nithya_swarandika_sappani.jpg" />
+				</div>
+				<h3>NITHYA SWARANDIKA SAPPANI</h3>
+				<h5>Social Media and Graphics Head</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/varshith_jalla.jpg" />
+				</div>
+				<h3>VARSHITH JALLA</h3>
+				<h5>Wiki and Web Dev Head</h5>
+			</div>
+		</section>
+		<!--! 2024 board end-->
+		<br />
+		<!--! 2024 team start-->
+		<div>
+			<p class="heading">TEAM</p>
+			<div class="greenUnderlineSmall"></div>
+		</div>
+
+		<section class="board-row">
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/harini karthik.jpg" />
+				</div>
+				<h3>HARINI KARTHIK</h3>
+				<h5>Wet Lab Member</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/navya_anantharaman.jpg" />
+				</div>
+				<h3>NAVYA S ANANTHARAMAN</h3>
+				<h5>Wet Lab Member</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/deepali_vengala_3.jpeg" />
+				</div>
+				<h3>DEEPALI VENGALA</h3>
+				<h5>Dry Lab Member</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/tanaya.jpg" />
+				</div>
+				<h3>TANAYA SENGUPTA</h3>
+				<h5>Dry Lab Member</h5>
+			</div>
+		</section>
+
+		<section class="board-row">
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/zaid.jpeg" />
+				</div>
+				<h3>MUHAMMAD ZAID HASSAN</h3>
+				<h5>H&S Member</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/lavanya.jpeg" />
+				</div>
+				<h3>LAVANYA DALMIA</h3>
+				<h5>H&S Member</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/karan_sanjay.jpeg" />
+				</div>
+				<h3>KARAN SANJAY</h3>
+				<h5>H&S Member</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/sahasra.jpg" />
+				</div>
+				<h3>SAHASRA BALAJI</h3>
+				<h5>H&S Member</h5>
+			</div>
+		</section>
+
+		<section class="board-row">
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/mihika_chitre.jpg" />
+				</div>
+				<h3>MIHIKA CHITRE</h3>
+				<h5>Research Member</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/ram_shetty.jpg" />
+				</div>
+				<h3>RAM P SHETTY</h3>
+				<h5>Research Member</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/kaushika_venkatraman .jpg" />
+				</div>
+				<h3>KAUSHIKA G VENKATRAMAN</h3>
+				<h5>Human Practices Member</h5>
+			</div>
+
+			<div class="member">
+				<div class="member-img">
+					<img src="IMAGES dump/cTeam/sania_serrao.jpg" />
+				</div>
+				<h3>SANIA VERONA SERRAO</h3>
+				<h5>WWD Member</h5>
+			</div>
+		</section>
+		<!--! 2024  team end-->
+		<br /><br /><br />
+		<script defer src="loadingScreen.js"></script>
+	</body>
+</html>
