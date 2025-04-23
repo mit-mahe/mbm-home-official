@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					const progress = self.progress; // returns a value between 0 & 1 that shows how much scrolling is done so far
 					const frameIndex = Math.round(progress * (numberOfImages - 1)); // select the frame based on that
 					renderFrame(frameIndex);
-					if (frameIndex === 42) {
+					if (frameIndex === numberOfImages - 1) {
 						canvas.classList.remove("anim");
 						canvas.classList.add("resized");
 
