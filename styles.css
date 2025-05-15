@@ -217,6 +217,10 @@
 	backface-visibility: hidden;
 	color: black;
 	border-radius: 20px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
 }
 
 .back {
@@ -259,36 +263,4 @@
 .achieve-container:hover .achieve-card {
 	cursor: pointer;
 	transform: rotateY(180deg);
-}
-
-#card1 {
-	background-image: url("IMAGES dump/2023.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	color: white;
-}
-
-#card2 {
-	background-image: url("IMAGES dump/2022.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	color: white;
-}
-
-#card3 {
-	background-image: url("IMAGES dump/2021.jpeg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	color: white;
-}
-
-#card4 {
-	background-image: url("IMAGES dump/2020.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	color: white;
 }
