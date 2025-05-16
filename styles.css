@@ -34,24 +34,39 @@
 	overflow-x: hidden;
 }
 
+.grp_picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40vw;
+	height: auto; 
+	margin: 5vh auto; 
+	border-radius: 20px;
+}
+  
+  .grp_picture img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+
 .member {
 	width: 250px;
 	max-height: auto;
 	aspect-ratio: 1 / 1;
 	margin: 5px;
 	text-align: center;
-	overflow: hidden;
 	color: #344546;
 }
 
 .member h3 {
-	font-size: 1.3vw;
+	font-size: 1rem;
 	font-family: Alata;
 	font-weight: 600;
 }
 
 .member h5 {
-	font-size: 0.892vw;
+	font-size: 0.8rem;
 	font-family: Alata;
 	font-weight: 200;
 }
@@ -81,7 +96,51 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 20px 30px 10px;
+}  
+
+@media (max-width: 600px) {
+	.mainTitle{
+	  font-size: 2rem;
+	  padding-top: 80px;
+	}
+  
+	.heading{
+	  font-size: 22px;
+	  padding-top: 20px;
+	}
+  
+	.greenUnderlineSmall{
+	  width: 60px;
+	  height: 4px;
+	}
+  
+	.grp_picture{
+	  width: 90vw;
+	  margin: 3vh auto;
+	}
+  
+	.member{
+	  width: 45vw;
+	  margin: 8px;
+	}
+  
+	.member h3 {
+	  font-size: 4vw;
+	}
+  
+	.member h5{
+	  font-size: 3vw;
+	}
+  
+	.member-img{
+	  max-width: 100px;
+	}
+  
+	.board-row{
+	  padding: 10px 10px 0;
+	}
 }
+  
 
 /*!research page styling*/
 
@@ -175,6 +234,55 @@
 	font-size: 19px;
 }
 
+@media (max-width: 600px) {
+	.mainTitle{
+		font-size: 1.5rem;
+		padding-top: 80px;
+	}
+	
+	.RGreenUnderline{
+	  width: 100px;
+	  height: 5px;
+	}
+  
+	.card-container{
+	  flex-direction: column;
+	  align-items: center;
+	  margin-top: 30px;
+	}
+  
+	.card{
+	  width: 90vw;
+	  margin: 20px 0;
+	}
+  
+	.card-img{
+	  height: auto;
+	  padding: 10px;
+	}
+  
+	.card-content{
+	  padding: 15px;
+	}
+  
+	.card-content h3{
+	  font-size: 0.8rem;
+	}
+  
+	.card-content h5{
+	  font-size: 0.6rem;
+	}
+  
+	.card-content p{
+	  font-size: 0.6rem;
+	}
+  
+	.card-content a{
+	  font-size: 0.8rem;
+	}
+}
+  
+
 /*!achievements page styling*/
 
 .aGreenUnderline {
@@ -264,3 +372,39 @@
 	cursor: pointer;
 	transform: rotateY(180deg);
 }
+
+@media (max-width: 600px){
+	.aGreenUnderline{
+	  width: 100px;
+	  height: 5px;
+	  margin-bottom: 20px;
+	}
+  
+	.frame{
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.achieve-container{
+	  width: 90vw;
+	  height: 240px;
+	  margin: 20px 0;
+	}
+  
+	.front h5{
+	  font-size: 0.8rem;
+	  padding-top: 190px;
+	  letter-spacing: 2px;
+	}
+  
+	.back h2{
+	  font-size: 1rem;
+	  padding-top: 20px;
+	}
+  
+	.back p{
+	  font-size: 0.8rem;
+	  padding: 15px;
+	}
+}
+  
