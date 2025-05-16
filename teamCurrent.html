@@ -25,10 +25,13 @@
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="icon" href="IMAGES dump/ICON.png" />
 		<!-- <link rel="stylesheet" href="jquery.flipster.min.css"> -->
+		<script src="loadingScreen.js"></script>
 		<script defer src="intersectionObserverStuff.js"></script>
 	</head>
 	<body style="background-color: #f8f5ee; overflow-x: hidden">
-		<div id="loader-container"></div>
+		<div id="loading-screen">
+			<div id="loader"></div>
+		</div>
 		<section class="header" style="position: fixed">
 			<nav>
 				<div class="nav-links" id="navLinks">
@@ -67,7 +70,7 @@
 						</li>
 
 						<li>
-							<a class="darkNavElements" style="text-decoration: none" 
+							<a class="darkNavElements" style="text-decoration: none"
 								>Projects&#x25BE;</a
 							>
 							<ul class="ddown">
@@ -172,7 +175,7 @@
 		</section>
 
 		<div class="grp_picture">
-			<img src="IMAGES dump/cTeam/team_2025.jpg" alt="Team 2025">
+			<img src="IMAGES dump/cTeam/team_2025.jpg" alt="Team 2025" />
 		</div>
 
 		<!--!Faculty Advisor start-->
@@ -377,6 +380,5 @@
 		</section>
 		<!--! 2024  team end-->
 		<br /><br /><br />
-		<script defer src="loadingScreen.js"></script>
 	</body>
 </html>

@@ -31,10 +31,13 @@
 
 			generatePreloadLinks();
 		</script>
+		<script src="loadingScreen.js"></script>
 	</head>
 
 	<body style="background-color: #f8f5ee; overflow-x: hidden !important">
-		<div id="loader-container"></div>
+		<div id="loading-screen">
+			<div id="loader"></div>
+		</div>
 		<section class="header" style="position: fixed">
 			<nav>
 				<div class="nav-links" id="navLinks">
@@ -46,7 +49,7 @@
 							>
 						</li>
 						<li>
-							<a class="darkNavElements" style="text-decoration: none" 
+							<a class="darkNavElements" style="text-decoration: none"
 								>Team&#x25BE;</a
 							>
 							<ul class="ddown">
@@ -70,7 +73,7 @@
 						</li>
 
 						<li>
-							<a class="darkNavElements" style="text-decoration: none" 
+							<a class="darkNavElements" style="text-decoration: none"
 								>Projects&#x25BE;</a
 							>
 							<ul class="ddown">
@@ -455,7 +458,5 @@
 		</script>
 
 		<script defer src="strand&beaker.js"></script>
-
-		<script defer src="loadingScreen.js"></script>
 	</body>
 </html>
