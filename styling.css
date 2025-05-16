@@ -203,9 +203,28 @@ nav {
 	background-color: #344546;
 	overflow-x: hidden;
 }
-.whiteTitlesBG {
+
+.whiteTitlesBG1 {
 	overflow-x: hidden;
 	color: #344546;
+	font-size: 1.558vw;
+	font-family: Bemirs;
+	font-weight: 600;
+	position: relative;
+	padding-top: 8.854vw;
+	z-index: 2;
+	background-color: #f8f5ee;
+}
+
+.whiteTitlesBG2 {
+	overflow-x: hidden;
+	color: #344546;
+	font-size: 3.5vw;
+	padding: 1vw;
+	padding-top: 1.558vw;
+	position: relative;
+	z-index: 2;
+	background-color: #f8f5ee;
 }
 
 .content {
@@ -308,12 +327,12 @@ nav .fa {
 /*   carousel stuff   */
 
 .carousel {
-	padding-top: 5%;
+	padding-top: 12vh;
 	width: 100vw;
 	height: fit-content;
 	margin: auto;
 	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
 	padding-bottom: 20vw;
 }
 
