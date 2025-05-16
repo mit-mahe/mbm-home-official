@@ -38,10 +38,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: min(90vw, 900px);
+	width: min(90vw, 750px);
 	height: auto;
 	margin: 5vh auto;
 	border-radius: 20px;
+	padding: 4vh 0;
 }
 
 .grp_picture img {
