@@ -38,7 +38,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 40vw;
+	width: min(90vw, 900px);
 	height: auto;
 	margin: 5vh auto;
 	border-radius: 20px;
@@ -115,7 +115,7 @@
 	}
 
 	.grp_picture {
-		width: 90vw;
+		/* width: 90vw; */
 		margin: 3vh auto;
 	}
 
