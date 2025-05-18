@@ -1,17 +1,31 @@
 // Navbar Toggle
-const navbarToggle = document.querySelector(".menu-toggle");
-const navbarMenu = document.querySelector(".nav_links");
-const navbarIcon = navbarToggle.querySelector("i");
 
-navbarToggle.addEventListener("click", () => {
-    navbarMenu.classList.toggle("active");
+function toggleMenu() {
+    const navOverlay = document.getElementById('navOverlay');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+    const closeIcon = document.getElementById('menuCloseIcon');
 
-    // Toggle icon
-    if (navbarMenu.classList.contains("active")) {
-        navbarIcon.classList.remove("fa-bars");
-        navbarIcon.classList.add("fa-times");
+    // Toggle the menu
+    navOverlay.classList.toggle('show');
+    
+    // Toggle icons
+    if (navOverlay.classList.contains('show')) {
+        hamburgerIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
     } else {
-        navbarIcon.classList.remove("fa-times");
-        navbarIcon.classList.add("fa-bars");
+        hamburgerIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+        document.body.style.overflow = ''; // can scroll
     }
+}
+
+    // Back to hamburger icon
+document.querySelectorAll('#navOverlay a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('navOverlay').classList.remove('show');
+        document.getElementById('hamburgerIcon').style.display = 'block';
+        document.getElementById('menuCloseIcon').style.display = 'none';
+        document.body.style.overflow = '';
+    });
 });

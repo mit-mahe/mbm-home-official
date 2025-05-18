@@ -25,151 +25,57 @@
 		<link rel="stylesheet" href="styling.css" />
 		<link rel="stylesheet" href="styles.css" />
 		<!-- <link rel="stylesheet" href="jquery.flipster.min.css"> -->
-		<script defer src="intersectionObserverStuff.js"></script>
 		<script src="loadingScreen.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 	</head>
 
 	<body style="background-color: #f8f5ee; overflow-x: hidden">
 		<div id="loading-screen">
 			<div id="loader"></div>
 		</div>
-		<section class="header" style="position: fixed">
-			<nav>
-				<div class="nav-links" id="navLinks">
-					<i class="fa fa-times" onclick="hideMenu()"></i>
-					<ul style="padding-top: 24px">
-						<li>
-							<a
-								class="darkNavElements"
-								style="text-decoration: none"
-								href="index.html#aboutUs"
-								>About us</a
-							>
-						</li>
-						<li>
-							<a class="darkNavElements" style="text-decoration: none"
-								>Team&#x25BE;</a
-							>
-							<ul class="ddown">
-								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="teamCurrent.html"
-										>2025</a
-									>
-								</li>
-								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="teamAlumni.html"
-										>Alumni</a
-									>
-								</li>
-							</ul>
-						</li>
-
-						<li>
-							<a class="darkNavElements" style="text-decoration: none"
-								>Projects&#x25BE;</a
-							>
-							<ul class="ddown">
-								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="caapi_2024.html"
-										>2024</a
-									>
-								</li>
-								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="carbanel_2023.html"
-										>2023</a
-									>
-								</li>
-								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="ampifin_2022.html"
-										>2022</a
-									>
-								</li>
-								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="celltinel_2021.html"
-										>2021</a
-									>
-								</li>
-								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="breakingBond_2020.html"
-										>2020</a
-									>
-								</li>
-							</ul>
-						</li>
-
-						<li>
-							<a
-								class="darkNavElements"
-								style="text-decoration: none"
-								href="research.html"
-								>Research</a
-							>
-						</li>
-						<li>
-							<a
-								class="darkNavElements"
-								style="text-decoration: none"
-								href="achievements.html"
-								>Achievements</a
-							>
-						</li>
-						<li>
-							<a
-								class="darkNavElements"
-								style="text-decoration: none"
-								href="index.html#contactUs"
-								>Contact us</a
-							>
-						</li>
+		<!-- Navbar Section -->
+		 
+		<button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+			<i class="fas fa-bars" id="hamburgerIcon"></i>
+			<i class="fas fa-times" id="menuCloseIcon" style="display: none; font-size: 2rem;"></i>
+		  </button>		  
+		  
+		  <section class="header" style="position: fixed">
+			<nav id="navOverlay">
+			  <div class="nav-links" id="navLinks">
+				<ul style="padding-top: 24px">
+				  <li><a class="darkNavElements" href="index.html#aboutUs">About us</a></li>
+				  <li>
+					<a class="darkNavElements">Team &#x25BE;</a>
+					<ul class="ddown">
+					  <li><a class="darkNavElements" href="teamCurrent.html">2025</a></li>
+					  <li><a class="darkNavElements" href="teamAlumni.html">Alumni</a></li>
 					</ul>
-				</div>
-				<i class="fa fa-bars" onclick="showMenu()"></i>
+				  </li>
+				  <li>
+					<a class="darkNavElements">Projects &#x25BE;</a>
+					<ul class="ddown">
+					  <li><a class="darkNavElements" href="caapi_2024.html">2024</a></li>
+					  <li><a class="darkNavElements" href="carbanel_2023.html">2023</a></li>
+					  <li><a class="darkNavElements" href="ampifin_2022.html">2022</a></li>
+					  <li><a class="darkNavElements" href="celltinel_2021.html">2021</a></li>
+					  <li><a class="darkNavElements" href="breakingBond_2020.html">2020</a></li>
+					</ul>
+				  </li>
+				  <li><a class="darkNavElements" href="research.html">Research</a></li>
+				  <li><a class="darkNavElements" href="achievements.html">Achievements</a></li>
+				  <li><a class="darkNavElements" href="index.html#contactUs">Contact us</a></li>
+				</ul>
+			  </div>
 			</nav>
-		</section>
-		<a href="index.html"
-			><img
-				src="IMAGES dump/LOGO.png"
-				style="
-					width: 9%;
-					min-height: 9%;
-					position: fixed;
-					z-index: 999;
-					padding-top: 13px;
-					padding-left: 20px;
-				"
-		/></a>
-
-		<script>
-			var navLinks = document.getElementById("navLinks");
-
-			function showMenu() {
-				navLinks.style.right = "0";
-			}
-			function hideMenu() {
-				navLinks.style.right = "-200px";
-			}
-		</script>
+		  </section>
+		  
+		  
+		  <a href="index.html"
+				><img
+					src="IMAGES dump/LOGO.png"
+					class="logo"
+			/></a>
 
 		<section>
 			<p class="mainTitle">Our Publications</p>
@@ -295,5 +201,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="navbarToggle.js"></script>
 	</body>
 </html>
