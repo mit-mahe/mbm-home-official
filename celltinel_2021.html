@@ -12,24 +12,9 @@
 		<link rel="icon" href="IMAGES dump/ICON.png" />
 		<title>Manipal BioMachines</title>
 		<link rel="stylesheet" href="styling.css" />
-		<script>
-			function generatePreloadLinks() {
-				const basePath = "celltinel_anim/png_";
-				const numberOfImages = 22;
-				let preloadLinks = "";
-
-				for (let i = 1; i <= numberOfImages; i++) {
-					const formattedNumber = i.toString().padStart(4, "0");
-					const imagePath = `${basePath}${formattedNumber}.png`;
-					preloadLinks += `<link rel="preload" as="image" href="${imagePath}">\n`;
-				}
-
-				document.write(preloadLinks);
-			}
-
-			generatePreloadLinks();
-		</script>
 		<script src="loadingScreen.js"></script>
+		<script src="animation.js"></script>
+		<script src="navbarThemeSwitcher.js"></script>
 	</head>
 
 	<body style="background-color: #f8f5ee; overflow-x: hidden !important">
@@ -162,88 +147,59 @@
 					padding-left: 1.041vw;
 				"
 		/></a>
-
-		<div class="theCanvas">
-			<canvas class="anim"></canvas>
-
-			<pre
-				class="content projectPageDarkBG"
-				style="
-					text-align: left;
-					padding-bottom: 0;
-					padding-top: 30vh;
-					padding-left: 0;
-					line-height: 3vw;
-				">
-            
-India produces 120 million                   <img src="IMAGES dump\celltinel_emj1.png" alt="wheat" style="float: right;height: 14vh;width: auto;">
-tones of rice every year
-
-<img src="IMAGES dump\celltinel_emj2.png" alt="wheat" style="float: left;height: 14vh;width: auto;">                Rice cultivation contributes 
-             to 10% of the agricultural GDP<br>
-
-Pests in crop greatly reduce 
-their yield. Stem borers are <img src="IMAGES dump\celltinel_emj3.png" alt="wheat" style="float: right;height: 14vh;width: auto;">
-the most troublesome when 
-it comes to rice.
-
-
-        </pre>
-		</div>
-
-		<div
-			class="whiteBackGround"
-			style="background-color: #f8f5ee; height: 100vh; position: relative">
-			<pre
-				class="content projectPageWhiteBG"
-				style="
-					text-align: left;
-					top: 30vh;
-					left: 75vw;
-					float: left;
-					width: 70vw;
-					line-height: 2.4vw;
-				">
-        <img src="IMAGES dump\celltinel_img1.png" alt="wheat" style="float: left;height: 25vh;width: auto;">
-        Cell-Tinel proposes a solution– A
-        genetically modified Bacillus
-        subtilis that produces “Cry toxins”
-        that efficiently binds to and kills
-        the Stem Borer.
-
-
-
-This Biopesticide is chemical free and environment friendly 
-thus preventing our everyday rice from being overloaded 
-with chemical pesticides.
-<a class="learnMoreButton" style="text-decoration: none;text-decoration-color: #344546;" href="https://2021.igem.org/Team:MIT_MAHE" target="_blank"><div class="borderLine Titles whiteTitlesBG" style="font-size: 1.558vw; font-family: Bemirs;font-weight: 580;position: relative; margin-top: 2.9vw;align-content: center;overflow: hidden;">&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;</div></a>
-        </pre>
-
-			<img
-				src="IMAGES dump\celltinel_img2.png"
-				alt="wheat"
-				style="float: right; padding-top: 10vh; height: 100vh; width: auto" />
-
-			<div
-				class="aSwitch"
-				style="
-					height: 10px;
-					width: 10px;
-					position: absolute;
-					bottom: 50px;
-				"></div>
-		</div>
-
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-			integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-			integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
-		<script defer src="celltinel.js"></script>
+		<main>
+			<div id="animationContainer">
+				<video id="animation" autoplay muted>
+					<source
+						src="celltinel_anim/celltinel_animation.webm"
+						type="video/webm" />
+					Your browser does not support the video tag
+				</video>
+				<div id="animationContent">
+					<div class="animationContentRow">
+						<p>India produces 120 million tonnes of rice every year.</p>
+						<img src="IMAGES dump/celltinel_emj1.png" alt="Wheat" />
+					</div>
+					<div class="animationContentRow">
+						<p>Rice cultivation contributes to 10% of the agricultural GDP.</p>
+						<img src="IMAGES dump/celltinel_emj2.png" alt="Farmer" />
+					</div>
+					<div class="animationContentRow">
+						<p>
+							Pests in crop greatly reduce their yield. Stem borers are the most
+							troublesome when it comes to rice.
+						</p>
+						<img src="IMAGES dump/celltinel_emj3.png" alt="Egg??" />
+					</div>
+				</div>
+			</div>
+			<div class="whiteSwitch">
+				<div id="whiteBGContent">
+					<div id="whiteBGContentPara1">
+						<img src="IMAGES dump/celltinel_img1.png" alt="Celltinel logo" />
+						<p>
+							Cell-Tinel proposes a solution– A genetically modified Bacillus
+							subtilis that produces “Cry toxins” that efficiently binds to and
+							kills the Stem Borer.
+						</p>
+					</div>
+					<p>
+						This Biopesticide is chemical free and environment friendly thus
+						preventing our everyday rice from being overloaded with chemical
+						pesticides.
+					</p>
+				</div>
+				<img src="IMAGES dump/celltinel_img2.png" alt="Killing Bacteria" />
+			</div>
+			<a
+				class="learnMoreButton"
+				style="text-decoration: none; text-decoration-color: #344546"
+				href="https://2021.igem.org/Team:MIT_MAHE"
+				target="_blank"
+				><div class="borderLine">
+					&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
+				</div></a
+			>
+		</main>
 	</body>
 </html>

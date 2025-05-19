@@ -591,16 +591,25 @@ nav .fa {
 
 #animationContainer video {
 	max-height: 99vh;
-	transform: translateX(50%);
-	animation: slideIn 0.5s ease-in-out 2.2s 1 forwards normal;
+	/* transform: translateX(10vw);
+	animation: slideIn 0.5s ease-in-out 2.2s 1 forwards normal; */
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateX(10vw);
+	}
+	100% {
+		transform: translateX(0%);
+	}
 }
 
 #animationContent {
 	width: 45vw;
-	font-size: min(5vw, 2rem);
+	font-size: min(5vw, 2.2rem);
 	font-weight: 400;
 	color: #f8f5ee;
-	padding-bottom: 5vh;
+	padding-bottom: 12vh;
 }
 
 .whiteSwitch {
@@ -618,7 +627,7 @@ nav .fa {
 	padding: 8vh 4vw 0;
 	font-family: Adoha;
 	color: #344546;
-	font-size: min(5vw, 2rem);
+	font-size: min(5vw, 2.2rem);
 }
 
 .whiteSwitch #whiteBGContent #whiteBGContentPara1 {
@@ -629,15 +638,6 @@ nav .fa {
 
 #whiteBGContentPara1 img {
 	max-width: 20vw;
-}
-
-@keyframes slideIn {
-	0% {
-		transform: translateX(50%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
 }
 
 #animationContent .animationContentRow {
@@ -669,7 +669,7 @@ nav .fa {
 	font-size: max(1.558vw, 1rem);
 	font-family: Bemirs;
 	font-weight: 580;
-	margin: 0 auto 3.9vh;
+	margin: 3vh auto 10vh;
 	align-content: center;
 	padding: 0.2rem;
 	border-radius: 20rem; /* always circular */

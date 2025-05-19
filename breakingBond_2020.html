@@ -12,24 +12,9 @@
 		<link rel="icon" href="IMAGES dump/ICON.png" />
 		<title>Manipal BioMachines</title>
 		<link rel="stylesheet" href="styling.css" />
-		<script>
-			function generatePreloadLinks() {
-				const basePath = "breakingbond_anim/0";
-				const numberOfImages = 28;
-				let preloadLinks = "";
-
-				for (let i = 1; i <= numberOfImages; i++) {
-					const formattedNumber = i.toString().padStart(4, "0");
-					const imagePath = `${basePath}${formattedNumber}.png`;
-					preloadLinks += `<link rel="preload" as="image" href="${imagePath}">\n`;
-				}
-
-				document.write(preloadLinks);
-			}
-
-			generatePreloadLinks();
-		</script>
 		<script src="loadingScreen.js"></script>
+		<script src="animation.js"></script>
+		<script src="navbarThemeSwitcher.js"></script>
 	</head>
 
 	<body style="background-color: #f8f5ee; overflow-x: hidden !important">
@@ -162,95 +147,61 @@
 					padding-left: 1.041vw;
 				"
 		/></a>
-
-		<div class="theCanvas" style="background-color: #608488">
-			<canvas
-				class="anim"
-				style="
-					max-width: 100vw;
-					max-height: 100vh;
-					padding-left: 0vw;
-					padding-top: 0vh;
-				"></canvas>
-
-			<pre
-				class="content projectPageDarkBG"
-				style="
-					text-align: left;
-					padding-bottom: 0;
-					padding-top: 25vh;
-					padding-left: 0;
-					line-height: 3vw;
-				">
-            
-Mercury transforms into                                 <img src="IMAGES dump\bbond_emj1.png" alt="wheat" style="float: right;height: 14vh;width: auto;">
-methylmercury, through the action
-of marine anaerobic microbes.
-
-<img src="IMAGES dump\bbond_emj2.png" alt="wheat" style="float: left;height: 14vh;width: auto;">                Its toxicity magnifies as it 
-                ascends the food chain<br>
-
-This project aims to combat 
-methylmercury poisoning, by <img src="IMAGES dump\bbond_emj3.png" alt="wheat" style="float: right;height: 14vh;width: auto;">
-targeting both waterborne  
-mercury and methylmercury 
-accumulated in fish.
-
-        </pre>
-		</div>
-
-		<div
-			class="whiteBackGround"
-			style="background-color: #f8f5ee; height: 100vh; position: relative">
-			<pre
-				class="content projectPageWhiteBG"
-				style="
-					text-align: left;
-					top: 30vh;
-					left: 75vw;
-					float: left;
-					width: 70vw;
-					line-height: 3vw;
-				">
-        <img src="IMAGES dump\bbond_img1.png" alt="wheat" style="float: left;height: 25vh;width: auto;">
-        Breaking bond proposes a SynBio 
-        solution - a genetically engineered 
-        probiotic bacteriums        
-
-
-
-It converts methylmercury to less toxic elemental 
-mercury in fish gut, preventing consumption of 
-contaminated fish and mitigating gut inflammation 
-caused by ionic mercury.
-<a class="learnMoreButton" style="text-decoration: none;text-decoration-color: #344546;" href="https://2020.igem.org/Team:MIT_MAHE" target="_blank"><div class="borderLine Titles whiteTitlesBG" style="font-size: 1.558vw; font-family: Bemirs;font-weight: 580;position: relative; margin-top: 2.9vw;align-content: center;overflow: hidden;">&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;</div></a>
-        </pre>
-
-			<img
-				src="IMAGES dump\bbond_img2.png"
-				alt="wheat"
-				style="float: right; padding-top: 26vh; height: 70vh; width: auto" />
-
-			<div
-				class="aSwitch"
-				style="
-					height: 10px;
-					width: 10px;
-					position: absolute;
-					bottom: 50px;
-				"></div>
-		</div>
-
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-			integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-			integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
-		<script defer src="breakingBond.js"></script>
+		<main>
+			<div id="animationContainer">
+				<video id="animation" autoplay muted>
+					<source
+						src="breakingbond_anim/breakingbond_animation.webm"
+						type="video/webm" />
+					Your browser does not support the video tag
+				</video>
+				<div id="animationContent">
+					<div class="animationContentRow">
+						<p>
+							Mercury transforms into methylmercury, through the action of
+							marine anaerobic microbes.
+						</p>
+						<img src="IMAGES dump/bbond_emj1.png" alt="Bacterium" />
+					</div>
+					<div class="animationContentRow">
+						<p>Its toxicity magnifies as it ascends the food chain.</p>
+						<img src="IMAGES dump/bbond_emj2.png" alt="Food" />
+					</div>
+					<div class="animationContentRow">
+						<p>
+							This project aims to combat methylmercury poisoning, by targeting
+							both waterborne mercury and methylmercury accumulated in fish.
+						</p>
+						<img src="IMAGES dump/bbond_emj3.png" alt="Fish" />
+					</div>
+				</div>
+			</div>
+			<div class="whiteSwitch">
+				<div id="whiteBGContent">
+					<div id="whiteBGContentPara1">
+						<img src="IMAGES dump/bbond_img1.png" alt="Breaking Bond logo" />
+						<p>
+							Breaking bond proposes a SynBio solution - a genetically
+							engineered probiotic bacteria.
+						</p>
+					</div>
+					<p>
+						It converts methylmercury to less toxic elemental mercury in fish
+						gut, preventing consumption of contaminated fish and mitigating gut
+						inflammation caused by ionic mercury.
+					</p>
+				</div>
+				<img src="IMAGES dump/bbond_img2.png" alt="Breaking Bond" />
+			</div>
+			<a
+				class="learnMoreButton"
+				style="text-decoration: none; text-decoration-color: #344546"
+				href="https://2020.igem.org/Team:MIT_MAHE"
+				target="_blank"
+				><div class="borderLine">
+					&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
+				</div></a
+			>
+		</main>
 	</body>
 </html>
