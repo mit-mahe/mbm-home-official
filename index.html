@@ -10,10 +10,12 @@
 			name="keywords"
 			content="MBM, Manipal, Biomachines Club,Biomachines team" />
 		<title>Manipal BioMachines</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="styling.css" />
 		<link rel="icon" href="IMAGES dump/ICON.png" />
 		<script defer src="intersectionObserverStuff.js"></script>
 		<script defer src="carouselStuff.js"></script>
+		<script defer scr="navbarToggle.js"></script>
 		<script>
 			function generatePreloadLinks() {
 				const basePath = "homepage_anims/dna_strand/png_";
@@ -40,8 +42,10 @@
 		</div>
 		<section class="header" style="position: fixed">
 			<nav>
+
 				<div class="nav-links" id="navLinks">
-					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+					
 					<ul style="padding-top: 1%">
 						<li>
 							<a class="darkNavElements aboutUs" style="text-decoration: none"
@@ -168,33 +172,13 @@
 				padding-top: 20vh;
 			"></canvas>
 		<!--Main title-->
-		<h1
-			class="Titles whiteTitlesBG"
-			style="
-				font-size: 1.558vw;
-				font-family: Bemirs;
-				font-weight: 600;
-				position: relative;
-				padding-top: 8.854vw;
-				z-index: 2;
-				background-color: #f8f5ee;
-			">
+		<h1 class="Titles whiteTitlesBG1">
 			We are
 		</h1>
-		<h1
-			class="Titles whiteTitlesBG"
-			style="
-				padding-top: 1.558vw;
-				position: relative;
-				z-index: 2;
-				background-color: #f8f5ee;
-			">
-			Manipal<br />
-			<pre
-				class="Titles whiteTitlesBG"
-				style="font-size: 100%; position: relative; z-index: 2">
-   BioMachines   </pre
-			>
+		<h1 class="Titles whiteTitlesBG2">
+			Manipal
+			<br />
+			BioMachines   
 		</h1>
 
 		<!--Carousel space-->
@@ -203,38 +187,39 @@
 			<!--  normal carousel onli  -->
 			<ul class="image">
 				<li><img src="carousel images/1.jpg" alt="Image 1" /></li>
-				<li><img src="carousel images/2.jpg" alt="Image 1" /></li>
-				<li><img src="carousel images/3.jpg" alt="Image 1" /></li>
-				<li><img src="carousel images/4.jpg" alt="Image 1" /></li>
-				<li><img src="carousel images/5.png" alt="Image 1" /></li>
-				<li><img src="carousel images/6.jpeg" alt="Image 1" /></li>
-				<li><img src="carousel images/7.png" alt="Image 1" /></li>
+				<li><img src="carousel images/2.jpg" alt="Image 2" /></li>
+				<li><img src="carousel images/3.jpg" alt="Image 3" /></li>
+				<li><img src="carousel images/4.jpg" alt="Image 4" /></li>
+				<!-- <li><img src="carousel images/5.png" alt="Image 1" /></li> -->
+				<li><img src="carousel images/6.jpeg" alt="Image 5" /></li>
+				<li><img src="carousel images/7.png" alt="Image 6" /></li>
 			</ul>
 		</div>
 
 		<h1 id="aboutUs" class="Titles whiteTitlesBG aboutUs">About us</h1>
 		<div class="greenUnderline"></div>
-
-		<canvas
+		<div>
+			<canvas
 			class="beakerAnim"
 			style="position: absolute; z-index: 1; padding-left: 10vw"></canvas>
-		<pre
-			class="content whiteBG"
-			style="text-align: left; padding-left: 50%; padding-bottom: 15.581vw">
-            
+			<pre
+				class="content whiteBG"
+				style="text-align: left; padding-left: 50%; padding-bottom: 15.581vw">
+				
 
 
-            We are Manipal BioMachines the only Synthetic 
-            Biology student project brewed out of MIT 
-            Manipal that is dedicated to addressing local 
-            challenges by means of synthetic biology. With a 
-            vigor for sustainability and research, our team 
-            strives to provide solutions that make a positive 
-            impact on our community and the planet. Here's a 
-            peek into what we do and what we've achieved 
-            throughout this exhilarating journey.
-        </pre
-		>
+				We are Manipal BioMachines the only Synthetic 
+				Biology student project brewed out of MIT 
+				Manipal that is dedicated to addressing local 
+				challenges by means of synthetic biology. With a 
+				vigor for sustainability and research, our team 
+				strives to provide solutions that make a positive 
+				impact on our community and the planet. Here's a 
+				peek into what we do and what we've achieved 
+				throughout this exhilarating journey.
+			</pre
+			>
+		</div>
 
 		<!--"What we do" stuff-->
 		<div style="padding-bottom: 13vh; background-color: #344546; height: 100vh">

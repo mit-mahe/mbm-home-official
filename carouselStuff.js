@@ -1,7 +1,7 @@
 
 
 var currentIndex = 1; //start place
-var imageCount = 7; //hard coded cause i dont want extra code (im lazy)
+var imageCount = 6; //hard coded cause i dont want extra code (im lazy)
 var imageContainer = document.querySelector('.image');
 var image = document.querySelectorAll('.image li');   //if you dont know this kys
 var images = document.querySelectorAll('.image li img');  //getting all images so they can be used to check for any click on them
