@@ -12,24 +12,9 @@
 		<link rel="icon" href="IMAGES dump/ICON.png" />
 		<title>Manipal BioMachines</title>
 		<link rel="stylesheet" href="styling.css" />
-		<script>
-			function generatePreloadLinks() {
-				const basePath = "caapi_anim/PNG_";
-				const numberOfImages = 35;
-				let preloadLinks = "";
-
-				for (let i = 1; i <= numberOfImages; i++) {
-					const formattedNumber = i.toString().padStart(4, "0");
-					const imagePath = `${basePath}${formattedNumber}.png`;
-					preloadLinks += `<link rel="preload" as="image" href="${imagePath}">\n`;
-				}
-
-				document.write(preloadLinks);
-			}
-
-			generatePreloadLinks();
-		</script>
 		<script src="loadingScreen.js"></script>
+		<script src="animation.js"></script>
+		<script src="navbarThemeSwitcher.js"></script>
 	</head>
 
 	<body style="background-color: #f8f5ee; overflow-x: hidden !important">
@@ -162,107 +147,65 @@
 					padding-left: 1.041vw;
 				"
 		/></a>
-
-		<div class="theCanvas">
-			<canvas
-				class="anim"
-				style="
-					height: 120vh;
-					max-width: 120vw;
-					padding-top: 10vh;
-					padding-left: 20vw;
-				"></canvas>
-			<style>
-				.resized {
-					max-width: 60vw;
-					max-height: 100vh;
-					padding-left: 20vw;
-					padding-top: 20vh;
-					transform: translate(-26vw, 0);
-					display: block;
-					transition: all 1s;
-					position: absolute;
-				}
-			</style>
-			<pre
-				class="content projectPageDarkBG"
-				style="
-					text-align: left;
-					padding-bottom: 0;
-					padding-top: 30vh;
-					padding-left: 0;
-					line-height: 2.5vw;
-					font-size: 1.5vw;
-				">
-			
-The world produces roughly 11 million tons                   <img src="IMAGES dump\caapi_emj1.png" alt="coffee" style="float: right;height: 14vh;width: auto;">
-of green coffee beans every year.
-
-<img src="IMAGES dump\caapi_emj2.png" alt="coffee" style="float: left;height: 14vh;width: auto;">                Over 1 billion people worldwide 
-		drink coffee every day.
-		That’s about 12.6% of the world’s population.
-	<br>
-Coffee leaf rust is a devastating disease that severely   
-affects coffee plants, causing an estimated $1 billion <img src="IMAGES dump\caapi_emj3.png" alt="coffee" style="float: right;height: 14vh;width: auto;">
-in annual losses globally. 
-
-
-
-						</pre>
-		</div>
-
-		<div
-			class="whiteBackGround"
-			style="background-color: #f8f5ee; height: 100vh; position: relative">
-			<pre
-				class="content projectPageWhiteBG"
-				style="
-					text-align: left;
-					top: 30vh;
-					left: 80vw;
-					float: left;
-					width: 70vw;
-					line-height: 2.5vw;
-					font-size: 1.5vw;
-				">
-        <img src="IMAGES dump/caapi_img1.png" alt="Caapi logo" style="float: left;height: 29vh;width: auto;">
-        A genetically modified Bacillus subtilis with enhanced
-        production of Iturin A, a potent antifungal lipopeptide
-        with proven efficacy against Hemileia vastatrix, 
-	the fungus responsible for CLR.
-        
-        
-Bacillus subtilis is a natural inhabitant of the coffee plant microbiota.
-This makes it an ideal candidate for sustainable,
-microbiome-friendly interventions in coffee cultivation.
-<a class="learnMoreButton" style="text-decoration: none;text-decoration-color: #344546;" href="https://2024.igem.wiki/mit-mahe/index.html" target="_blank"><div class="borderLine Titles whiteTitlesBG" style="font-size: 1.558vw; font-family: Bemirs;font-weight: 580;position: relative; margin-top: 2.9vw;align-content: center;overflow: hidden;">&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;</div></a>
-        </pre>
-
-			<img
-				src="IMAGES dump\caapi_img2.png"
-				alt="wheat"
-				style="float: right; padding-top: 25vh; height: 65vh; width: auto" />
-
-			<div
-				class="aSwitch"
-				style="
-					height: 10px;
-					width: 10px;
-					position: absolute;
-					bottom: 50px;
-				"></div>
-		</div>
-
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-			integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-			integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
-		<script defer src="caapi.js"></script>
+		<main>
+			<div id="animationContainer">
+				<video id="animation" autoplay muted>
+					<source src="caapi_anim/output.webm" type="video/webm" />
+					Your browser does not support the video tag
+				</video>
+				<div id="animationContent">
+					<div class="animationContentRow">
+						<p>
+							The world produces roughly 11 million tons of green coffee beans
+							every year.
+						</p>
+						<img src="IMAGES dump/caapi_emj1.png" alt="Coffee Beans" />
+					</div>
+					<div class="animationContentRow">
+						<p>
+							Over 1 billion people worldwide drink coffee every day. That's
+							about 12.6% of the world's population.
+						</p>
+						<img src="IMAGES dump/caapi_emj2.png" alt="Coffee Cup" />
+					</div>
+					<div class="animationContentRow">
+						<p>
+							Coffee leaf rust is a devastating disease that severely affects
+							coffee plants, causing an estimated $1 billion in annual losses
+							globally.
+						</p>
+						<img src="IMAGES dump/caapi_emj3.png" alt="Coffee Cup" />
+					</div>
+				</div>
+			</div>
+			<div class="whiteSwitch">
+				<div id="whiteBGContent">
+					<div id="whiteBGContentPara1">
+						<img src="IMAGES dump/caapi_img1.png" alt="Caapi logo" />
+						<p>
+							Caapi's proposed solution is a genetically modified Bacillus
+							subtilis with enhanced production of Iturin A, a potent antifungal
+							lipopeptide with proven efficacy against Hemileia vastatrix, the
+							fungus responsible for CLR.
+						</p>
+					</div>
+					<p>
+						Bacillus subtilis is a natural inhabitant of the coffee plant
+						microbiota. This makes it an ideal candidate for sustainable,
+						microbiome-friendly interventions in coffee cultivation.
+					</p>
+				</div>
+				<img src="IMAGES dump\caapi_img2.png" alt="wheat" />
+			</div>
+			<a
+				class="learnMoreButton"
+				style="text-decoration: none; text-decoration-color: #344546"
+				href="https://2024.igem.wiki/mit-mahe/index.html"
+				target="_blank"
+				><div class="borderLine">
+					&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
+				</div></a
+			>
+		</main>
 	</body>
 </html>

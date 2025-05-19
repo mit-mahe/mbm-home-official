@@ -135,16 +135,6 @@ nav {
 	color: #f8f5ee;
 }
 
-.learnMoreButton {
-	text-decoration: none;
-	color: #344546;
-}
-
-.learnMoreButton:hover {
-	text-decoration: none;
-	color: #344546;
-}
-
 .darkNavElements {
 	width: 100%;
 	height: 100%;
@@ -184,7 +174,7 @@ nav {
 	width: 100%;
 }
 
-.menu-toggle{
+.menu-toggle {
 	display: none;
 	width: 9%;
 	min-height: 9%;
@@ -195,7 +185,7 @@ nav {
 	right: 0;
 }
 
-.menu-toggle i{
+.menu-toggle i {
 	color: #84a98c;
 }
 
@@ -204,7 +194,7 @@ button:focus {
 	box-shadow: none;
 }
 
-.logo{
+.logo {
 	width: 120px;
 	position: fixed;
 	z-index: 999;
@@ -214,86 +204,85 @@ button:focus {
 
 @media (max-width: 700px) {
 	.menu-toggle {
-        display: block;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        padding-right: 7.5vw;
-        padding-top: 0;
-        font-size: 1.5rem;
-        z-index: 1002;
+		display: block;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		padding-right: 7.5vw;
+		padding-top: 0;
+		font-size: 1.5rem;
+		z-index: 1002;
 		outline: none;
 		border: none;
 		background: transparent;
-    }
+	}
 
-    #navOverlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(248, 245, 238, 0.95);
-        z-index: 1000;
-        display: none;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #navOverlay.show {
-		display: flex;
-    }
-
-    .nav-links {
-		display: block; 
-		opacity: 1;
-    	visibility: visible;
-        text-align: center;
+	#navOverlay {
 		position: fixed;
-    }
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(248, 245, 238, 0.95);
+		z-index: 1000;
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
 
-    #navOverlay .nav-links ul {
-        flex-direction: column;
-        display: flex;
-        padding: 0;
-    }
+	#navOverlay.show {
+		display: flex;
+	}
 
-    .nav-links ul li {
+	.nav-links {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+		text-align: center;
+		position: fixed;
+	}
+
+	#navOverlay .nav-links ul {
+		flex-direction: column;
+		display: flex;
+		padding: 0;
+	}
+
+	.nav-links ul li {
 		padding: 5px 0;
-        display: block;
+		display: block;
 		transition: transform 0.3s ease;
-    }
+	}
 
 	.nav-links ul li:active {
 		transform: translateY(-2px);
 	}
 
 	.nav-links ul li a {
-        font-size: 1rem; 
-    }
+		font-size: 1rem;
+	}
 
 	#navOverlay.show .ddown {
-        display: none;
-        position: static;
-        background: transparent;
+		display: none;
+		position: static;
+		background: transparent;
 		overflow: hidden;
 		opacity: 0;
-    }
+	}
 
-    #navOverlay .nav-links ul li:hover .ddown {
-        display: block;
+	#navOverlay .nav-links ul li:hover .ddown {
+		display: block;
 		opacity: 1;
-    }
+	}
 
-    .ddown li a {
-        color: #344546;
-    }
-  
-  .logo{
-	width: 90px;
-  }
+	.ddown li a {
+		color: #344546;
+	}
+
+	.logo {
+		width: 90px;
+	}
 }
-
 
 /* end of nav bar classes */
 
@@ -406,17 +395,6 @@ nav .fa {
 	position: absolute;
 	z-index: 0;
 	overflow-x: hidden;
-}
-
-.borderLine {
-	height: 2.5vw;
-	border-radius: 2.081vw;
-	border: 0.37vh #344546 solid;
-	overflow-x: hidden;
-	transition: all 0.3s;
-}
-.borderLine:hover {
-	scale: 1.1;
 }
 
 .gridForSponsors {
@@ -613,20 +591,49 @@ nav .fa {
 
 #animationContainer video {
 	max-height: 99vh;
+	transform: translateX(50%);
+	animation: slideIn 0.5s ease-in-out 2.2s 1 forwards normal;
 }
 
 #animationContent {
 	width: 45vw;
-	font-size: 2rem;
+	font-size: min(5vw, 2rem);
 	font-weight: 400;
 	color: #f8f5ee;
-	animation: slideIn 5s ease-in-out 0 1 forwards normal;
-	display: none;
+	padding-bottom: 5vh;
+}
+
+.whiteSwitch {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10vh 2vw;
+}
+
+.whiteSwitch > img {
+	width: 30vw;
+}
+
+.whiteSwitch #whiteBGContent p {
+	padding: 8vh 4vw 0;
+	font-family: Adoha;
+	color: #344546;
+	font-size: min(5vw, 2rem);
+}
+
+.whiteSwitch #whiteBGContent #whiteBGContentPara1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#whiteBGContentPara1 img {
+	max-width: 20vw;
 }
 
 @keyframes slideIn {
 	0% {
-		transform: translateX(100%);
+		transform: translateX(50%);
 	}
 	100% {
 		transform: translateX(0%);
@@ -640,6 +647,10 @@ nav .fa {
 	align-items: center;
 }
 
+#animationContent .animationContentRow:nth-child(2n + 1) {
+	flex-direction: row-reverse;
+}
+
 #animationContent .animationContentRow p {
 	font-family: Adoha;
 }
@@ -649,8 +660,66 @@ nav .fa {
 	max-height: 100px;
 }
 
+.learnMoreButton {
+	text-decoration: none;
+	color: #344546;
+}
+
+.learnMoreButton > div {
+	font-size: max(1.558vw, 1rem);
+	font-family: Bemirs;
+	font-weight: 580;
+	margin: 0 auto 3.9vh;
+	align-content: center;
+	padding: 0.2rem;
+	border-radius: 20rem; /* always circular */
+	border: 0.37vh #344546 solid;
+	max-width: fit-content;
+}
+
 @media (max-width: 1024px) {
 	#animationContent {
 		width: 90vw;
+	}
+
+	#animationContainer video {
+		max-width: 100vw;
+		transform: none;
+		animation: none;
+	}
+
+	.whiteSwitch {
+		flex-direction: column;
+		padding: 2vh 2vw;
+	}
+
+	#whiteBGContentPara1 img {
+		max-width: 25vw;
+	}
+}
+
+@media (max-width: 640px) {
+	#animationContent .animationContentRow:nth-child(n) {
+		flex-direction: column;
+	}
+
+	#whiteBGContentPara1 {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#whiteBGContentPara1 img {
+		max-width: 45vw;
+	}
+
+	.whiteSwitch {
+		flex-direction: column;
+		padding: 2vh 2vw;
+	}
+
+	.whiteSwitch > img {
+		padding-top: 5vh;
+		width: 60vw;
 	}
 }
