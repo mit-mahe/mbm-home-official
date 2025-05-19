@@ -470,3 +470,57 @@ nav .fa {
 	overflow-x: hidden;
 	position: absolute;
 }
+
+#animationContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.translateDown {
+	padding-top: 15vh;
+}
+
+#animationContainer video {
+	max-height: 99vh;
+}
+
+#animationContent {
+	width: 45vw;
+	font-size: 2rem;
+	font-weight: 400;
+	color: #f8f5ee;
+	animation: slideIn 5s ease-in-out 0 1 forwards normal;
+	display: none;
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+#animationContent .animationContentRow {
+	padding: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#animationContent .animationContentRow p {
+	font-family: Adoha;
+}
+
+.animationContentRow img {
+	padding: 1rem 2rem;
+	max-height: 100px;
+}
+
+@media (max-width: 1024px) {
+	#animationContent {
+		width: 90vw;
+	}
+}
