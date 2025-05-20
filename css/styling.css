@@ -641,14 +641,9 @@ button:focus {
 	justify-content: center;
 }
 
-.translateDown {
-	padding-top: 15vh;
-}
-
 #animationContainer video {
-	max-height: 99vh;
-	/* transform: translateX(10vw);
-	animation: slideIn 0.5s ease-in-out 2.2s 1 forwards normal; */
+	padding-top: 5vh;
+	max-width: 45vw;
 }
 
 @keyframes slideIn {
@@ -665,7 +660,7 @@ button:focus {
 	font-size: min(5vw, 2.2rem);
 	font-weight: 400;
 	color: #f8f5ee;
-	padding-bottom: 12vh;
+	padding: 12vh 0;
 }
 
 .whiteSwitch {
@@ -736,12 +731,11 @@ button:focus {
 @media (max-width: 1024px) {
 	#animationContent {
 		width: 90vw;
+		padding: 0;
 	}
 
 	#animationContainer video {
 		max-width: 100vw;
-		transform: none;
-		animation: none;
 	}
 
 	.whiteSwitch {
