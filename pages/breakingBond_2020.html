@@ -12,6 +12,7 @@
 		<link rel="icon" href="../IMAGES dump/ICON.png" />
 		<title>Manipal BioMachines</title>
 		<link rel="stylesheet" href="../css/styling.css" />
+		<link rel="stylesheet" href="../css/navbar.css" />
 		<script src="../javascript/loadingScreen.js"></script>
 		<script src="../javascript/animation.js"></script>
 		<script src="../javascript/navbarThemeSwitcher.js"></script>
@@ -21,79 +22,61 @@
 		<div id="loading-screen">
 			<div id="loader"></div>
 		</div>
-		<section class="header" style="position: fixed">
-			<nav>
-				<div class="nav-links" id="navLinks">
-					<i class="fa fa-times" onclick="hideMenu()"></i>
-					<ul style="padding-top: 1%">
-						<li>
-							<a class="darkNavElements" href="/index.html#aboutUs">About us</a>
-						</li>
-						<li>
-							<a class="darkNavElements">Team&#x25BE;</a>
-							<ul class="ddown">
-								<li>
-									<a class="darkNavElements" href="teamCurrent.html">2025</a>
-								</li>
-								<li>
-									<a class="darkNavElements" href="teamAlumni.html">Alumni</a>
-								</li>
-							</ul>
-						</li>
-
-						<li>
-							<a class="darkNavElements">Projects&#x25BE;</a>
-							<ul class="ddown">
-								<li>
-									<a class="darkNavElements" href="caapi_2024.html">2024</a>
-								</li>
-								<li>
-									<a class="darkNavElements" href="carbanel_2023.html">2023</a>
-								</li>
-								<li>
-									<a class="darkNavElements" href="ampifin_2022.html">2022</a>
-								</li>
-								<li>
-									<a class="darkNavElements" href="celltinel_2021.html">2021</a>
-								</li>
-								<li>
-									<a class="darkNavElements" href="breakingBond_2020.html"
-										>2020</a
-									>
-								</li>
-							</ul>
-						</li>
-
-						<li>
-							<a class="darkNavElements" href="research.html">Research</a>
-						</li>
-						<li>
-							<a class="darkNavElements" href="achievements.html"
-								>Achievements</a
-							>
-						</li>
-						<li>
-							<a class="darkNavElements" href="/index.html#contactUs"
-								>Contact us</a
-							>
-						</li>
-					</ul>
-				</div>
-				<i class="fa fa-bars" onclick="showMenu()"></i>
+		<header>
+			<nav aria-label="primary-nav">
+				<ul>
+					<li>
+						<a href="#">Navigate</a>
+						<ul class="big-ddown">
+							<li>
+								<a href="/index.html#aboutUs">About us</a>
+							</li>
+							<li>
+								<a>Team &#x25BE;</a>
+								<ul class="ddown">
+									<li>
+										<a href="teamCurrent.html">2025</a>
+									</li>
+									<li>
+										<a href="teamAlumni.html">Alumni</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a>Projects &#x25BE;</a>
+								<ul class="ddown">
+									<li>
+										<a href="caapi_2024.html">2024</a>
+									</li>
+									<li>
+										<a href="carbanel_2023.html">2023</a>
+									</li>
+									<li>
+										<a href="ampifin_2022.html">2022</a>
+									</li>
+									<li>
+										<a href="celltinel_2021.html">2021</a>
+									</li>
+									<li>
+										<a href="breakingBond_2020.html">2020</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="research.html">Research</a>
+							</li>
+							<li>
+								<a href="achievements.html">Achievements</a>
+							</li>
+							<li>
+								<a href="/index.html#contactUs">Contact us</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</nav>
-		</section>
-		<a href="/"
-			><img
-				src="../IMAGES dump/LOGO.png"
-				style="
-					width: auto;
-					max-height: 4vw;
-					position: fixed;
-					z-index: 999;
-					padding-top: 0.675vw;
-					padding-left: 1.041vw;
-				"
-		/></a>
+		</header>
+		<a href="/"><img src="../IMAGES dump/LOGO.png" class="logo" /></a>
 		<main>
 			<div id="animationContainer">
 				<video id="animation" autoplay muted>
@@ -142,13 +125,12 @@
 			</div>
 			<a
 				class="learnMoreButton"
-				style="text-decoration: none; text-decoration-color: #344546"
 				href="https://2020.igem.org/Team:MIT_MAHE"
 				target="_blank"
 				><div class="borderLine">
 					&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
-				</div></a
-			>
+				</div>
+			</a>
 		</main>
 	</body>
 </html>

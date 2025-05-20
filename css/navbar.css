@@ -1,0 +1,110 @@
+:root {
+	--HEADER-BGCOLOR: #f8f5ee;
+	--HEADER-COLOR: #344546;
+}
+
+.logo {
+	width: 120px;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	padding: 0.4rem;
+	padding-left: 1rem;
+}
+
+nav {
+	font-size: 1.2rem;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--HEADER-BGCOLOR);
+	z-index: 998;
+	padding-right: 2rem;
+}
+
+nav ul {
+	display: flex;
+	justify-content: right;
+	margin: 0;
+	padding: 0.2rem;
+}
+
+nav li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: relative;
+}
+
+nav li a {
+	display: block;
+	text-decoration: none;
+	padding: 0.6rem;
+	font-family: Alata;
+	color: var(--HEADER-COLOR);
+}
+
+nav li a:hover {
+	text-decoration: none;
+	color: var(--HEADER-COLOR);
+}
+
+nav ul li a::after {
+	content: "";
+	width: 0%;
+	height: 1.5px;
+	background: #377c56;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.ddown {
+	position: absolute;
+	display: none;
+	padding: 0;
+	z-index: 998;
+	text-align: center;
+	background-color: var(--HEADER-BGCOLOR);
+	padding: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 100%;
+}
+
+nav li:hover > .ddown,
+nav li:focus-within > .ddown {
+	display: block;
+}
+
+@media screen and (max-width: 820px) {
+	.big-ddown {
+		position: relative;
+		top: 0;
+		left: 0;
+		display: none;
+		padding: 0;
+		z-index: 998;
+		text-align: center;
+		background-color: var(--HEADER-BGCOLOR);
+		padding: 0.5rem;
+	}
+
+	.big-ddown > li {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+	}
+
+	nav li:focus-within .big-ddown {
+		display: block;
+	}
+}

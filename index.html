@@ -14,6 +14,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
 			rel="stylesheet" />
 		<link rel="stylesheet" href="css/styling.css" />
+		<link rel="stylesheet" href="css/navbar.css" />
 		<link rel="icon" href="IMAGES dump/ICON.png" />
 		<script defer src="javascript/intersectionObserverStuff.js"></script>
 		<script defer src="javascript/carouselStuff.js"></script>
@@ -42,92 +43,60 @@
 		<div id="loading-screen">
 			<div id="loader"></div>
 		</div>
-		<section class="header" style="position: fixed">
-			<nav>
-				<div class="nav-links" id="navLinks">
-					<!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
-
-					<ul style="padding-top: 1%">
+		<header>
+			<nav aria-label="primary-nav">
+				<ul class="big-ddown">
+					<li></li>
+					<li></li>
+					<ul>
 						<li>
-							<a class="darkNavElements aboutUs" href="#aboutUs">About us</a>
+							<a href="/index.html#aboutUs">About us</a>
 						</li>
 						<li>
-							<a class="darkNavElements">Team&#x25BE;</a>
+							<a>Team &#x25BE;</a>
 							<ul class="ddown">
 								<li>
-									<a class="darkNavElements" href="pages/teamCurrent.html"
-										>2025</a
-									>
+									<a href="pages/teamCurrent.html">2025</a>
 								</li>
 								<li>
-									<a class="darkNavElements" href="pages/teamAlumni.html"
-										>Alumni</a
-									>
+									<a href="pages/teamAlumni.html">Alumni</a>
 								</li>
 							</ul>
 						</li>
-
 						<li>
-							<a class="darkNavElements">Projects&#x25BE;</a>
+							<a>Projects &#x25BE;</a>
 							<ul class="ddown">
 								<li>
-									<a class="darkNavElements" href="pages/caapi_2024.html"
-										>2024</a
-									>
+									<a href="pages/caapi_2024.html">2024</a>
 								</li>
 								<li>
-									<a class="darkNavElements" href="pages/carbanel_2023.html"
-										>2023</a
-									>
+									<a href="pages/carbanel_2023.html">2023</a>
 								</li>
 								<li>
-									<a class="darkNavElements" href="pages/ampifin_2022.html"
-										>2022</a
-									>
+									<a href="pages/ampifin_2022.html">2022</a>
 								</li>
 								<li>
-									<a class="darkNavElements" href="pages/celltinel_2021.html"
-										>2021</a
-									>
+									<a href="pages/celltinel_2021.html">2021</a>
 								</li>
 								<li>
-									<a class="darkNavElements" href="pages/breakingBond_2020.html"
-										>2020</a
-									>
+									<a href="pages/breakingBond_2020.html">2020</a>
 								</li>
 							</ul>
 						</li>
-
 						<li>
-							<a class="darkNavElements" href="pages/research.html">Research</a>
+							<a href="pages/research.html">Research</a>
 						</li>
 						<li>
-							<a class="darkNavElements" href="pages/achievements.html"
-								>Achievements</a
-							>
+							<a href="pages/achievements.html">Achievements</a>
 						</li>
 						<li>
-							<a class="darkNavElements contactUs" href="#contactUs"
-								>Contact us</a
-							>
+							<a href="/index.html#contactUs">Contact us</a>
 						</li>
 					</ul>
-				</div>
-				<i class="fa fa-bars" onclick="showMenu()"></i>
+				</ul>
 			</nav>
-		</section>
-		<a href="/"
-			><img
-				src="IMAGES dump/LOGO.png"
-				style="
-					width: auto;
-					max-height: 4vw;
-					position: fixed;
-					z-index: 999;
-					padding-top: 0.675vw;
-					padding-left: 1.041vw;
-				"
-		/></a>
+		</header>
+		<a href="/"><img src="IMAGES dump/LOGO.png" class="logo" /></a>
 
 		<canvas class="dna"></canvas>
 		<!--Main title-->
@@ -156,19 +125,18 @@
 		<h1 id="aboutUs" class="Titles whiteTitlesBG aboutUs">About us</h1>
 		<div class="greenUnderline"></div>
 		<section class="home_section">
-			<div style="background-color: aqua; width: 80vw">
-                replace with beaker anim
-            </div>
-			<p class="content whiteBG">				
-				We are Manipal BioMachines, the only Synthetic 
-				Biology student project brewed out of MIT 
-				Manipal that is dedicated to addressing local 
-				challenges by means of synthetic biology. With a 
-				vigor for sustainability and research, our team 
-				strives to provide solutions that make a positive 
-				impact on our community and the planet. Here's a 
-				peek into what we do and what we've achieved 
-				throughout this exhilarating journey.
+			<video autoplay muted loop class="homepage-animation">
+				<source src="animations/beaker_animation.webm" type="video/webm" />
+				Your browser does not support the video tag
+			</video>
+			<p class="content whiteBG">
+				We are Manipal BioMachines, the only Synthetic Biology student project
+				brewed out of MIT Manipal that is dedicated to addressing local
+				challenges by means of synthetic biology. With a vigor for
+				sustainability and research, our team strives to provide solutions that
+				make a positive impact on our community and the planet. Here's a peek
+				into what we do and what we've achieved throughout this exhilarating
+				journey.
 			</p>
 		</section>
 
@@ -176,53 +144,44 @@
 		<div class="whatWeDo">
 			<h1 class="Titles darkTitlesBG" style="padding-top: 10%">What we Do</h1>
 			<div class="greenUnderline"></div>
-            <section class="home_section">
-                <p class="content darkBG" style="padding-top: 15vh;">
-                We tackle global challenges head-on, harnessing 
-                the power of bioengineering to craft innovative 
-                solutions through rigorous research, scientific 
-                principles, and experimentation. Our mission? To 
-                engineer eco-friendly breakthroughs using 
-                synthetic biology, shaping a brighter future for our 
-                planet.
-                </p>
-                <img
-                    src="IMAGES dump/SDGs.png"
-                    alt="SDGs"
-                    class="sdg_img"/>
-                </section>
-			<div
-				class="darkSwitch"></div>
+			<section class="home_section">
+				<p class="content darkBG" style="padding-top: 15vh">
+					We tackle global challenges head-on, harnessing the power of
+					bioengineering to craft innovative solutions through rigorous
+					research, scientific principles, and experimentation. Our mission? To
+					engineer eco-friendly breakthroughs using synthetic biology, shaping a
+					brighter future for our planet.
+				</p>
+				<img src="IMAGES dump/SDGs.png" alt="SDGs" class="sdg_img" />
+			</section>
+			<div class="darkSwitch"></div>
 			<!--THE SWITCH FOR HEADER-->
 		</div>
 
 		<!--"What is iGEM" stuff-->
 
 		<div style="display: flex; padding-top: 10vw">
-            <section class="home_section">
-                <div style="margin-left: 10%; flex: 1;">
-                    <h1 class="Titles" style="font-size: 3vw; min-width: 25vw;">
-                        What is iGEM?
-                    </h1>
-                    <!--IGNORE THIS AND PLEASE DONT BEAT ME UP-->
-                    <a
-                        class="learnMoreButton"
-                        href="https://igem.org"
-                        target="_blank">
-                        <div class="borderLine Titles whiteTitlesBG">
-                            &nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
-                        </div>
-                    </a>
-                </div>
-                <p class="content whiteBG" style="padding: 0; padding-left: 5vw">				
-                    iGEM (International Genetically Engineered Machine) is a global
+			<section class="home_section">
+				<div style="margin-left: 10%; flex: 1">
+					<h1 class="Titles" style="font-size: 3vw; min-width: 25vw">
+						What is iGEM?
+					</h1>
+					<!--IGNORE THIS AND PLEASE DONT BEAT ME UP-->
+					<a class="learnMoreButton" href="https://igem.org" target="_blank">
+						<div class="borderLine Titles whiteTitlesBG">
+							&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</a>
+				</div>
+				<p class="content whiteBG" style="padding: 0; padding-left: 5vw">
+					iGEM (International Genetically Engineered Machine) is a global
 					synthetic biology competition where student teams design and build
 					biological systems using standardized parts. Teams work on innovative
 					projects, aiming to address real-world challenges through synthetic
 					biology. Their work includes research, experimentation, and
 					documentation on their project wiki.
-                </p>
-            </section>
+				</p>
+			</section>
 		</div>
 
 		<!--Contact us-->
@@ -231,55 +190,35 @@
 			<!--Green Background-->
 		</div>
 
-		<h1	class="Titles darkTitlesBG contact">
-			Contact us
-		</h1>
+		<h1 class="Titles darkTitlesBG contact">Contact us</h1>
 		<p
 			class="content darkBG"
 			style="text-align: left; padding-top: 7.807vw; margin-left: 7%">
-
-            Email:       manipalbiomachines.igem@gmail.com
-            <br><br>
-            Address:  Manipal Institute of Technology, Udupi - Karkala Rd, Eshwar Nagar, Manipal, Karnataka 
-            <br><br>
-            PIN:           576104
-        </p>
+			Email: manipalbiomachines.igem@gmail.com
+			<br /><br />
+			Address: Manipal Institute of Technology, Udupi - Karkala Rd, Eshwar
+			Nagar, Manipal, Karnataka
+			<br /><br />
+			PIN: 576104
+		</p>
 
 		<!--Sponsors-->
 
-		<h1 class="Titles whiteTitlesBG sponsors">
-			Sponsors
-		</h1>
+		<h1 class="Titles whiteTitlesBG sponsors">Sponsors</h1>
 		<div class="greenUnderline"></div>
 
 		<div class="gridForSponsors">
-			<img
-				src="Sponsor Logos/Benchling.png"
-				alt="Benchling"/>
-			<img
-				src="Sponsor Logos/New England.png"
-				alt="New England BioLabs"/>
-			<img
-				src="Sponsor Logos/IDT.png"
-				alt="IDT"/>
-			<img
-				src="Sponsor Logos/MathWorks.png"
-				alt="MathWorks"/>
-			<img
-				src="Sponsor Logos/Somani.png"
-				alt="Somani"/>
-			<img
-				src="Sponsor Logos/Beckman Coulter.png"
-				alt="Beckman Coulter"/>
-			<img
-				src="Sponsor Logos/TWIST.png"
-				alt="TWIST"/>
-			<img
-				src="Sponsor Logos/SnapGene.png"
-				alt="SnapGene"/>
+			<img src="Sponsor Logos/Benchling.png" alt="Benchling" />
+			<img src="Sponsor Logos/New England.png" alt="New England BioLabs" />
+			<img src="Sponsor Logos/IDT.png" alt="IDT" />
+			<img src="Sponsor Logos/MathWorks.png" alt="MathWorks" />
+			<img src="Sponsor Logos/Somani.png" alt="Somani" />
+			<img src="Sponsor Logos/Beckman Coulter.png" alt="Beckman Coulter" />
+			<img src="Sponsor Logos/TWIST.png" alt="TWIST" />
+			<img src="Sponsor Logos/SnapGene.png" alt="SnapGene" />
 			<img
 				src="Sponsor Logos/ManipalLOGO.png"
-				alt="Manipal Academy of Higher Education"/>
+				alt="Manipal Academy of Higher Education" />
 		</div>
 
 		<script>

@@ -57,7 +57,7 @@
 	}
 }
 
-.header {
+/* .header {
 	width: 100vw;
 	background-position: center;
 	background-size: cover;
@@ -282,7 +282,7 @@ button:focus {
 	.logo {
 		width: 90px;
 	}
-}
+} */
 
 /* end of nav bar classes */
 
@@ -327,7 +327,7 @@ button:focus {
 	background-color: #f8f5ee;
 }
 
-.dna{
+.dna {
 	position: absolute;
 	z-index: 1;
 	margin: 0;
@@ -356,12 +356,11 @@ button:focus {
 	padding-left: 10%;
 }
 
-.home_section{
+.home_section {
 	padding: 5vw;
 	display: flex;
-	text-align: left; 
-	padding-bottom: 15.581vw;
-	
+	text-align: left;
+	padding-bottom: 10vh;
 }
 
 .darkBG {
@@ -387,22 +386,23 @@ button:focus {
 	overflow-x: hidden;
 }
 
-.whatWeDo{
-	padding-bottom: 13vh; 
-	background-color: #344546; 
-	height: 100vh
+.whatWeDo {
+	padding-bottom: 13vh;
+	background-color: #344546;
+	height: 100vh;
 }
 
-.sdg_img{
+.sdg_img {
 	float: right;
 	position: relative;
 	padding-right: 5vh;
 	height: 50vh;
 	width: auto;
+	z-index: 0;
 	padding-top: 0vh;
 }
 
-.darkSwitch{
+.darkSwitch {
 	min-height: 10px;
 	width: 10px;
 	float: right;
@@ -410,10 +410,10 @@ button:focus {
 	margin-top: 65vh;
 }
 
-nav .fa {
+/* nav .fa {
 	display: none;
 	overflow-x: hidden;
-}
+} */
 
 .mainBack {
 	background: #f8f5ee;
@@ -439,15 +439,15 @@ nav .fa {
 	overflow-x: hidden;
 }
 
-.contact{
+.contact {
 	float: right;
 	padding-right: 15%;
 	padding-top: 10.412vw;
 	font-size: 4.686vw;
 }
 
-.sponsors{
-	padding-top: 15.5817vw
+.sponsors {
+	padding-top: 15.5817vw;
 }
 
 .gridForSponsors {
@@ -465,9 +465,8 @@ nav .fa {
 	overflow-x: hidden;
 }
 
-
-.gridForSponsors img{
-	max-height: 5.175vw; 
+.gridForSponsors img {
+	max-height: 5.175vw;
 	width: auto;
 }
 /*   carousel stuff   */
@@ -760,33 +759,29 @@ nav .fa {
 		flex-direction: column;
 	}
 
-	.whiteBG{
-
-	}
-
-	.dna{
+	.dna {
 		display: none;
 	}
 
-	.beakerAnim{
+	.beakerAnim {
 		display: none;
 	}
 
-	.whiteTitlesBG1{
+	.whiteTitlesBG1 {
 		top: 30px;
 		font-size: 12px;
 	}
 
-	.whiteTitlesBG2{
+	.whiteTitlesBG2 {
 		top: 30px;
 		font-size: 22px;
 	}
 
-	#aboutUs{
+	#aboutUs {
 		font-size: 22px;
 	}
 
-	.content{
+	.content {
 		font-size: 14px;
 	}
 
@@ -809,4 +804,9 @@ nav .fa {
 		padding-top: 5vh;
 		width: 60vw;
 	}
+}
+
+.homepage-animation {
+	width: 20vw;
+	padding: 2.5vw;
 }
