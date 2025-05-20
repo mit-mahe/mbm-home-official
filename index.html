@@ -129,14 +129,7 @@
 				"
 		/></a>
 
-		<canvas
-			class="dna"
-			style="
-				position: absolute;
-				z-index: 1;
-				margin: 0;
-				padding-top: 20vh;
-			"></canvas>
+		<canvas class="dna"></canvas>
 		<!--Main title-->
 		<h1 class="Titles whiteTitlesBG1">We are</h1>
 		<h1 class="Titles whiteTitlesBG2">
@@ -162,16 +155,11 @@
 
 		<h1 id="aboutUs" class="Titles whiteTitlesBG aboutUs">About us</h1>
 		<div class="greenUnderline"></div>
-		<div>
-			<canvas
-				class="beakerAnim"
-				style="position: absolute; z-index: 1; padding-left: 10vw"></canvas>
-			<pre
-				class="content whiteBG"
-				style="text-align: left; padding-left: 50%; padding-bottom: 15.581vw">
-				
-
-
+		<section class="home_section">
+			<div style="background-color: aqua; width: 80vw">
+                replace with beaker anim
+            </div>
+			<p class="content whiteBG">				
 				We are Manipal BioMachines, the only Synthetic 
 				Biology student project brewed out of MIT 
 				Manipal that is dedicated to addressing local 
@@ -181,97 +169,60 @@
 				impact on our community and the planet. Here's a 
 				peek into what we do and what we've achieved 
 				throughout this exhilarating journey.
-			</pre
-			>
-		</div>
+			</p>
+		</section>
 
 		<!--"What we do" stuff-->
-		<div style="padding-bottom: 13vh; background-color: #344546; height: 100vh">
+		<div class="whatWeDo">
 			<h1 class="Titles darkTitlesBG" style="padding-top: 10%">What we Do</h1>
 			<div class="greenUnderline"></div>
-			<pre
-				class="content darkBG"
-				style="
-					text-align: left;
-					padding-bottom: 0;
-					padding-top: 3%;
-					padding-left: 12%;
-					position: absolute;
-				">
-           
-           
-           
-
-            We tackle global challenges head-on, harnessing 
-            the power of bioengineering to craft innovative 
-            solutions through rigorous research, scientific 
-            principles, and experimentation. Our mission? To 
-            engineer eco-friendly breakthroughs using 
-            synthetic biology, shaping a brighter future for our 
-            planet.
-        </pre
-			>
-			<img
-				src="IMAGES dump/SDGs.png"
-				alt="SDGs"
-				style="
-					float: right;
-					position: relative;
-					padding-right: 5vh;
-					height: 50vh;
-					width: auto;
-					padding-top: 7vh;
-				" />
+            <section class="home_section">
+                <p class="content darkBG" style="padding-top: 15vh;">
+                We tackle global challenges head-on, harnessing 
+                the power of bioengineering to craft innovative 
+                solutions through rigorous research, scientific 
+                principles, and experimentation. Our mission? To 
+                engineer eco-friendly breakthroughs using 
+                synthetic biology, shaping a brighter future for our 
+                planet.
+                </p>
+                <img
+                    src="IMAGES dump/SDGs.png"
+                    alt="SDGs"
+                    class="sdg_img"/>
+                </section>
 			<div
-				class="darkSwitch"
-				style="
-					min-height: 10px;
-					width: 10px;
-					float: right;
-					position: absolute;
-					margin-top: 65vh;
-				"></div>
+				class="darkSwitch"></div>
 			<!--THE SWITCH FOR HEADER-->
 		</div>
 
 		<!--"What is iGEM" stuff-->
 
-		<div id="contactUs" style="display: flex; padding-top: 7vw">
-			<div style="margin-left: 10%; flex: 1">
-				<h1 class="Titles whiteTitlesBG" style="font-size: 3.122vw">
-					What is iGEM?
-				</h1>
-				<!--IGNORE THIS AND PLEASE DONT BEAT ME UP-->
-				<a
-					class="learnMoreButton"
-					style="text-decoration: none; text-decoration-color: #344546"
-					href="https://igem.org"
-					target="_blank"
-					><div
-						class="borderLine Titles whiteTitlesBG"
-						style="
-							font-size: 1.558vw;
-							font-family: Bemirs;
-							font-weight: 580;
-							position: relative;
-							margin-top: 2.599vw;
-							align-content: center;
-							text-decoration: none !important;
-						">
-						&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
-					</div></a
-				>
-			</div>
-			<div style="margin-bottom: 5.175vw; flex: 2; padding-left: 15%">
-				<p class="content whiteBG" style="text-align: left">
-					iGEM (International Genetically Engineered Machine) is a global
+		<div style="display: flex; padding-top: 10vw">
+            <section class="home_section">
+                <div style="margin-left: 10%; flex: 1;">
+                    <h1 class="Titles" style="font-size: 3vw; min-width: 25vw;">
+                        What is iGEM?
+                    </h1>
+                    <!--IGNORE THIS AND PLEASE DONT BEAT ME UP-->
+                    <a
+                        class="learnMoreButton"
+                        href="https://igem.org"
+                        target="_blank">
+                        <div class="borderLine Titles whiteTitlesBG">
+                            &nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </a>
+                </div>
+                <p class="content whiteBG" style="padding: 0; padding-left: 5vw">				
+                    iGEM (International Genetically Engineered Machine) is a global
 					synthetic biology competition where student teams design and build
 					biological systems using standardized parts. Teams work on innovative
 					projects, aiming to address real-world challenges through synthetic
 					biology. Their work includes research, experimentation, and
 					documentation on their project wiki.
-				</p>
-			</div>
+                </p>
+            </section>
 		</div>
 
 		<!--Contact us-->
@@ -280,73 +231,55 @@
 			<!--Green Background-->
 		</div>
 
-		<h1
-			class="Titles darkTitlesBG"
-			style="
-				float: right;
-				padding-right: 15%;
-				padding-top: 10.412vw;
-				font-size: 4.686vw;
-			">
+		<h1	class="Titles darkTitlesBG contact">
 			Contact us
 		</h1>
-		<pre
+		<p
 			class="content darkBG"
 			style="text-align: left; padding-top: 7.807vw; margin-left: 7%">
 
             Email:       manipalbiomachines.igem@gmail.com
-            Address:  Manipal Institute of Technology, Udupi - Karkala Rd, 
-                               Eshwar Nagar, Manipal, Karnataka 
+            <br><br>
+            Address:  Manipal Institute of Technology, Udupi - Karkala Rd, Eshwar Nagar, Manipal, Karnataka 
+            <br><br>
             PIN:           576104
-        </pre
-		>
+        </p>
 
 		<!--Sponsors-->
 
-		<h1 class="Titles whiteTitlesBG" style="padding-top: 15.5817vw">
+		<h1 class="Titles whiteTitlesBG sponsors">
 			Sponsors
 		</h1>
 		<div class="greenUnderline"></div>
 
-		<div class="gridForSponsors" style="padding-bottom: 5vw">
+		<div class="gridForSponsors">
 			<img
 				src="Sponsor Logos/Benchling.png"
-				alt="Benchling"
-				style="max-height: 5.175vw; width: auto" />
+				alt="Benchling"/>
 			<img
 				src="Sponsor Logos/New England.png"
-				alt="New England BioLabs"
-				style="max-height: 5.175vw; width: auto" />
+				alt="New England BioLabs"/>
 			<img
 				src="Sponsor Logos/IDT.png"
-				alt="IDT"
-				style="max-height: 5.175vw; width: auto" />
-
+				alt="IDT"/>
 			<img
 				src="Sponsor Logos/MathWorks.png"
-				alt="MathWorks"
-				style="max-height: 5.175vw; width: auto" />
+				alt="MathWorks"/>
 			<img
 				src="Sponsor Logos/Somani.png"
-				alt="Somani"
-				style="max-height: 5.175vw; width: auto" />
+				alt="Somani"/>
 			<img
 				src="Sponsor Logos/Beckman Coulter.png"
-				alt="Beckman Coulter"
-				style="max-height: 5.175vw; width: auto" />
-
+				alt="Beckman Coulter"/>
 			<img
 				src="Sponsor Logos/TWIST.png"
-				alt="TWIST"
-				style="max-height: 5.175vw; width: auto" />
+				alt="TWIST"/>
 			<img
 				src="Sponsor Logos/SnapGene.png"
-				alt="SnapGene"
-				style="max-height: 5.175vw; width: auto" />
+				alt="SnapGene"/>
 			<img
 				src="Sponsor Logos/ManipalLOGO.png"
-				alt="Manipal Academy of Higher Education"
-				style="max-height: 5.175vw; width: auto" />
+				alt="Manipal Academy of Higher Education"/>
 		</div>
 
 		<script>

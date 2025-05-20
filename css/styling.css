@@ -327,6 +327,13 @@ button:focus {
 	background-color: #f8f5ee;
 }
 
+.dna{
+	position: absolute;
+	z-index: 1;
+	margin: 0;
+	padding-top: 20vh;
+}
+
 .content {
 	font-size: 1.35vw;
 	font-family: Alata;
@@ -337,12 +344,24 @@ button:focus {
 	filter: blur(5px);
 	transition: all 1.5s;
 	overflow-x: hidden;
+	padding: 5vw;
 }
 .whiteBG {
+	right: 0;
 	color: #344546;
 	max-width: 100%;
 	transform: translateX(100%);
 	overflow-x: hidden;
+	width: 50%;
+	padding-left: 10%;
+}
+
+.home_section{
+	padding: 5vw;
+	display: flex;
+	text-align: left; 
+	padding-bottom: 15.581vw;
+	
 }
 
 .darkBG {
@@ -366,6 +385,29 @@ button:focus {
 
 	word-wrap: break-word;
 	overflow-x: hidden;
+}
+
+.whatWeDo{
+	padding-bottom: 13vh; 
+	background-color: #344546; 
+	height: 100vh
+}
+
+.sdg_img{
+	float: right;
+	position: relative;
+	padding-right: 5vh;
+	height: 50vh;
+	width: auto;
+	padding-top: 0vh;
+}
+
+.darkSwitch{
+	min-height: 10px;
+	width: 10px;
+	float: right;
+	position: absolute;
+	margin-top: 65vh;
 }
 
 nav .fa {
@@ -397,14 +439,24 @@ nav .fa {
 	overflow-x: hidden;
 }
 
+.contact{
+	float: right;
+	padding-right: 15%;
+	padding-top: 10.412vw;
+	font-size: 4.686vw;
+}
+
+.sponsors{
+	padding-top: 15.5817vw
+}
+
 .gridForSponsors {
 	display: grid;
 	grid-template-rows: auto auto auto;
 	grid-template-columns: auto auto auto;
-
+	padding-bottom: 5vw;
 	grid-row-gap: 2.599vw;
 	grid-column-gap: 2.599vw;
-
 	margin: 5.209vw auto 5.209vw;
 	margin-left: 12.5%;
 	margin-right: 12.5%;
@@ -413,6 +465,11 @@ nav .fa {
 	overflow-x: hidden;
 }
 
+
+.gridForSponsors img{
+	max-height: 5.175vw; 
+	width: auto;
+}
 /*   carousel stuff   */
 
 .carousel {
@@ -701,6 +758,36 @@ nav .fa {
 @media (max-width: 640px) {
 	#animationContent .animationContentRow:nth-child(n) {
 		flex-direction: column;
+	}
+
+	.whiteBG{
+
+	}
+
+	.dna{
+		display: none;
+	}
+
+	.beakerAnim{
+		display: none;
+	}
+
+	.whiteTitlesBG1{
+		top: 30px;
+		font-size: 12px;
+	}
+
+	.whiteTitlesBG2{
+		top: 30px;
+		font-size: 22px;
+	}
+
+	#aboutUs{
+		font-size: 22px;
+	}
+
+	.content{
+		font-size: 14px;
 	}
 
 	#whiteBGContentPara1 {
