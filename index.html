@@ -8,14 +8,16 @@
 			content="Official website of MBM Manipal, Student Team at Manipal Institute of Technology" />
 		<meta
 			name="keywords"
-			content="MBM, Manipal, Biomachines Club,Biomachines team" />
+			content="MBM, Manipal, Biomachines Club, Biomachines team" />
 		<title>Manipal BioMachines</title>
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="styling.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/styling.css" />
 		<link rel="icon" href="IMAGES dump/ICON.png" />
-		<script defer src="intersectionObserverStuff.js"></script>
-		<script defer src="carouselStuff.js"></script>
-		<script defer scr="navbarToggle.js"></script>
+		<script defer src="javascript/intersectionObserverStuff.js"></script>
+		<script defer src="javascript/carouselStuff.js"></script>
+		<script defer src="javascript/navbarToggle.js"></script>
 		<script>
 			function generatePreloadLinks() {
 				const basePath = "homepage_anims/dna_strand/png_";
@@ -33,7 +35,7 @@
 
 			generatePreloadLinks();
 		</script>
-		<script src="loadingScreen.js"></script>
+		<script src="javascript/loadingScreen.js"></script>
 	</head>
 
 	<body style="background-color: #f8f5ee; overflow-x: hidden !important">
@@ -42,34 +44,23 @@
 		</div>
 		<section class="header" style="position: fixed">
 			<nav>
-
 				<div class="nav-links" id="navLinks">
 					<!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
-					
+
 					<ul style="padding-top: 1%">
 						<li>
-							<a class="darkNavElements aboutUs" style="text-decoration: none"
-								>About us</a
-							>
+							<a class="darkNavElements aboutUs" href="#aboutUs">About us</a>
 						</li>
 						<li>
-							<a class="darkNavElements" style="text-decoration: none"
-								>Team&#x25BE;</a
-							>
+							<a class="darkNavElements">Team&#x25BE;</a>
 							<ul class="ddown">
 								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="teamCurrent.html"
+									<a class="darkNavElements" href="pages/teamCurrent.html"
 										>2025</a
 									>
 								</li>
 								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="teamAlumni.html"
+									<a class="darkNavElements" href="pages/teamAlumni.html"
 										>Alumni</a
 									>
 								</li>
@@ -77,47 +68,30 @@
 						</li>
 
 						<li>
-							<a class="darkNavElements" style="text-decoration: none"
-								>Projects&#x25BE;</a
-							>
+							<a class="darkNavElements">Projects&#x25BE;</a>
 							<ul class="ddown">
 								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="caapi_2024.html"
+									<a class="darkNavElements" href="pages/caapi_2024.html"
 										>2024</a
 									>
 								</li>
 								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="carbanel_2023.html"
+									<a class="darkNavElements" href="pages/carbanel_2023.html"
 										>2023</a
 									>
 								</li>
 								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="ampifin_2022.html"
+									<a class="darkNavElements" href="pages/ampifin_2022.html"
 										>2022</a
 									>
 								</li>
 								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="celltinel_2021.html"
+									<a class="darkNavElements" href="pages/celltinel_2021.html"
 										>2021</a
 									>
 								</li>
 								<li>
-									<a
-										class="darkNavElements"
-										style="text-decoration: none"
-										href="breakingBond_2020.html"
+									<a class="darkNavElements" href="pages/breakingBond_2020.html"
 										>2020</a
 									>
 								</li>
@@ -125,23 +99,15 @@
 						</li>
 
 						<li>
-							<a
-								class="darkNavElements"
-								style="text-decoration: none"
-								href="research.html"
-								>Research</a
-							>
+							<a class="darkNavElements" href="pages/research.html">Research</a>
 						</li>
 						<li>
-							<a
-								class="darkNavElements"
-								style="text-decoration: none"
-								href="achievements.html"
+							<a class="darkNavElements" href="pages/achievements.html"
 								>Achievements</a
 							>
 						</li>
 						<li>
-							<a class="darkNavElements contactUs" style="text-decoration: none"
+							<a class="darkNavElements contactUs" href="#contactUs"
 								>Contact us</a
 							>
 						</li>
@@ -150,7 +116,7 @@
 				<i class="fa fa-bars" onclick="showMenu()"></i>
 			</nav>
 		</section>
-		<a href="index.html"
+		<a href="/"
 			><img
 				src="IMAGES dump/LOGO.png"
 				style="
@@ -172,13 +138,11 @@
 				padding-top: 20vh;
 			"></canvas>
 		<!--Main title-->
-		<h1 class="Titles whiteTitlesBG1">
-			We are
-		</h1>
+		<h1 class="Titles whiteTitlesBG1">We are</h1>
 		<h1 class="Titles whiteTitlesBG2">
 			Manipal
 			<br />
-			BioMachines   
+			BioMachines
 		</h1>
 
 		<!--Carousel space-->
@@ -200,15 +164,15 @@
 		<div class="greenUnderline"></div>
 		<div>
 			<canvas
-			class="beakerAnim"
-			style="position: absolute; z-index: 1; padding-left: 10vw"></canvas>
+				class="beakerAnim"
+				style="position: absolute; z-index: 1; padding-left: 10vw"></canvas>
 			<pre
 				class="content whiteBG"
 				style="text-align: left; padding-left: 50%; padding-bottom: 15.581vw">
 				
 
 
-				We are Manipal BioMachines the only Synthetic 
+				We are Manipal BioMachines, the only Synthetic 
 				Biology student project brewed out of MIT 
 				Manipal that is dedicated to addressing local 
 				challenges by means of synthetic biology. With a 
@@ -248,7 +212,7 @@
         </pre
 			>
 			<img
-				src="IMAGES dump\SDGs.png"
+				src="IMAGES dump/SDGs.png"
 				alt="SDGs"
 				style="
 					float: right;
@@ -305,7 +269,7 @@
 					biological systems using standardized parts. Teams work on innovative
 					projects, aiming to address real-world challenges through synthetic
 					biology. Their work includes research, experimentation, and
-					documentation on their project wiki
+					documentation on their project wiki.
 				</p>
 			</div>
 		</div>
@@ -442,6 +406,6 @@
 				});
 		</script>
 
-		<script defer src="strand&beaker.js"></script>
+		<script defer src="javascript/strand&beaker.js"></script>
 	</body>
 </html>

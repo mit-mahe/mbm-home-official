@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Official website of MBM Manipal, Student Team at Manipal Institute of Technology" />
+		<meta
+			name="keywords"
+			content="MBM, Manipal, Biomachines Club,Biomachines team" />
+		<link rel="icon" href="../IMAGES dump/ICON.png" />
+		<title>Manipal BioMachines</title>
+		<link rel="stylesheet" href="../css/styling.css" />
+		<script src="../javascript/loadingScreen.js"></script>
+		<script src="../javascript/animation.js"></script>
+		<script src="../javascript/navbarThemeSwitcher.js"></script>
+	</head>
+
+	<body style="background-color: #f8f5ee; overflow-x: hidden !important">
+		<div id="loading-screen">
+			<div id="loader"></div>
+		</div>
+		<section class="header" style="position: fixed">
+			<nav>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul style="padding-top: 1%">
+						<li>
+							<a class="darkNavElements" href="/index.html#aboutUs">About us</a>
+						</li>
+						<li>
+							<a class="darkNavElements">Team&#x25BE;</a>
+							<ul class="ddown">
+								<li>
+									<a class="darkNavElements" href="teamCurrent.html">2025</a>
+								</li>
+								<li>
+									<a class="darkNavElements" href="teamAlumni.html">Alumni</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="darkNavElements">Projects&#x25BE;</a>
+							<ul class="ddown">
+								<li>
+									<a class="darkNavElements" href="caapi_2024.html">2024</a>
+								</li>
+								<li>
+									<a class="darkNavElements" href="carbanel_2023.html">2023</a>
+								</li>
+								<li>
+									<a class="darkNavElements" href="ampifin_2022.html">2022</a>
+								</li>
+								<li>
+									<a class="darkNavElements" href="celltinel_2021.html">2021</a>
+								</li>
+								<li>
+									<a class="darkNavElements" href="breakingBond_2020.html"
+										>2020</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="darkNavElements" href="research.html">Research</a>
+						</li>
+						<li>
+							<a class="darkNavElements" href="achievements.html"
+								>Achievements</a
+							>
+						</li>
+						<li>
+							<a class="darkNavElements" href="/index.html#contactUs"
+								>Contact us</a
+							>
+						</li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+		</section>
+		<a href="/"
+			><img
+				src="../IMAGES dump/LOGO.png"
+				style="
+					width: auto;
+					max-height: 4vw;
+					position: fixed;
+					z-index: 999;
+					padding-top: 0.675vw;
+					padding-left: 1.041vw;
+				"
+		/></a>
+		<main>
+			<div id="animationContainer">
+				<video id="animation" autoplay muted>
+					<source
+						src="../animations/breakingbond_animation.webm"
+						type="video/webm" />
+					Your browser does not support the video tag
+				</video>
+				<div id="animationContent">
+					<div class="animationContentRow">
+						<p>
+							Mercury transforms into methylmercury, through the action of
+							marine anaerobic microbes.
+						</p>
+						<img src="../IMAGES dump/bbond_emj1.png" alt="Bacterium" />
+					</div>
+					<div class="animationContentRow">
+						<p>Its toxicity magnifies as it ascends the food chain.</p>
+						<img src="../IMAGES dump/bbond_emj2.png" alt="Food" />
+					</div>
+					<div class="animationContentRow">
+						<p>
+							This project aims to combat methylmercury poisoning, by targeting
+							both waterborne mercury and methylmercury accumulated in fish.
+						</p>
+						<img src="../IMAGES dump/bbond_emj3.png" alt="Fish" />
+					</div>
+				</div>
+			</div>
+			<div class="whiteSwitch">
+				<div id="whiteBGContent">
+					<div id="whiteBGContentPara1">
+						<img src="../IMAGES dump/bbond_img1.png" alt="Breaking Bond logo" />
+						<p>
+							Breaking bond proposes a SynBio solution - genetically engineered
+							probiotic bacteria.
+						</p>
+					</div>
+					<p>
+						It converts methylmercury to less toxic elemental mercury in fish
+						gut, preventing consumption of contaminated fish and mitigating gut
+						inflammation caused by ionic mercury.
+					</p>
+				</div>
+				<img src="../IMAGES dump/bbond_img2.png" alt="Breaking Bond" />
+			</div>
+			<a
+				class="learnMoreButton"
+				style="text-decoration: none; text-decoration-color: #344546"
+				href="https://2020.igem.org/Team:MIT_MAHE"
+				target="_blank"
+				><div class="borderLine">
+					&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
+				</div></a
+			>
+		</main>
+	</body>
+</html>
