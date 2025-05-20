@@ -192,15 +192,18 @@ li.has-ddown:focus-within .ddown {
 		margin: auto;
 	}
 
-	nav:focus-within .menu-icon {
+	.menu-button:focus-within .menu-icon,
+	nav:has(.big-ddown:focus-within) .menu-icon {
 		background-color: transparent;
 	}
 
-	nav:focus-within .menu-icon::before {
+	.menu-button:focus-within .menu-icon::before,
+	nav:has(.big-ddown:focus-within) .menu-icon::before {
 		transform: translateX(-20px) rotate(-45deg);
 	}
 
-	nav:focus-within .menu-icon::after {
+	.menu-button:focus-within .menu-icon::after,
+	nav:has(.big-ddown:focus-within) .menu-icon::after {
 		transform: translateX(-20px) rotate(45deg);
 	}
 

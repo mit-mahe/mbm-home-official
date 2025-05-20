@@ -17,6 +17,9 @@ function initApp() {
 		}
 		// animation.style.display = "inline-block";
 		animationContainer.classList.add("theDarkCanvas");
+		animationContainer.classList.add("darkTheme");
+		document.documentElement.style.setProperty("--HEADER-BGCOLOR", "#344546");
+		document.documentElement.style.setProperty("--HEADER-COLOR", "#f8f5ee");
 		animationContainer.classList.add("translateDown");
 		animationContent.style.display = "inline-block";
 		// animationContent.classList.add("slideIn");

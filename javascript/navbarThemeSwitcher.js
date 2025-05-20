@@ -1,4 +1,4 @@
-document.addEventListener("readystatechange", () => {
+document.addEventListener("readystatechange", (event) => {
 	if (event.target.readyState === "complete") {
 		initThemeSwitcher();
 	}
@@ -8,34 +8,24 @@ function initThemeSwitcher() {
 	const header = document.querySelector(".header");
 	const headerElements = document.querySelectorAll(".darkNavElements");
 	const dropDownElements = document.querySelectorAll(".ddown");
-	const whiteSwitch = document.querySelectorAll(".whiteSwitch");
 	const windowHeight = window.innerHeight;
 
-	whiteSwitch.forEach((section) => {
-		window.addEventListener("scroll", (event) => {
+	window.addEventListener("scroll", (event) => {
+		const darkSwitch = document.querySelectorAll(".darkTheme");
+		let darkNavbar = false;
+		darkSwitch.forEach((section) => {
 			const rect = section.getBoundingClientRect();
 
-			if (rect.top > windowHeight / 8 || rect.bottom <= windowHeight / 8) {
-				console.log("Dark mode?");
-				header.classList.add("dark-theme");
-				headerElements.forEach((item) =>
-					item.classList.add("brightNavElements")
-				);
-				headerElements.forEach((item) =>
-					item.classList.add("brightNavElements:hover")
-				);
-				dropDownElements.forEach((cell) => cell.classList.add("ddownDark"));
-			} else {
-				console.log("Light mode?");
-				header.classList.remove("dark-theme");
-				headerElements.forEach((item) =>
-					item.classList.remove("brightNavElements")
-				);
-				headerElements.forEach((item) =>
-					item.classList.remove("brightNavElements:hover")
-				);
-				dropDownElements.forEach((cell) => cell.classList.remove("ddownDark"));
+			if (rect.top <= windowHeight / 12 && rect.bottom > windowHeight / 12) {
+				darkNavbar = true;
 			}
 		});
+		if (darkNavbar) {
+			document.documentElement.style.setProperty("--HEADER-BGCOLOR", "#344546");
+			document.documentElement.style.setProperty("--HEADER-COLOR", "#f8f5ee");
+		} else {
+			document.documentElement.style.setProperty("--HEADER-BGCOLOR", "#f8f5ee");
+			document.documentElement.style.setProperty("--HEADER-COLOR", "#344546");
+		}
 	});
 }
