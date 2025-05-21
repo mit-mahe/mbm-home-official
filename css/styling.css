@@ -735,6 +735,8 @@ button:focus {
 	border-radius: 20rem; /* always circular */
 	border: 0.37vh #344546 solid;
 	max-width: fit-content;
+	margin: 3vh auto 10vh;
+	align-content: center;
 }
 
 .whatIsiGEM{
