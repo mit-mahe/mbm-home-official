@@ -75,6 +75,10 @@ nav ul li a:focus::after {
 	width: 100%;
 }
 
+.has-ddown{
+	cursor: pointer;
+}
+
 .has-ddown > a:hover::after,
 .has-ddown > a:focus::after {
 	width: 0;
@@ -151,7 +155,7 @@ li.has-ddown:focus-within .ddown {
 	.menu-icon,
 	.menu-icon::before,
 	.menu-icon::after {
-		background-color: var(--HEADER-COLOR);
+		background-color: #377c56;
 		width: 40px;
 		height: 5px;
 		border-radius: 5px;
