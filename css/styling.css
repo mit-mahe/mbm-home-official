@@ -588,6 +588,12 @@ button:focus {
 	position: absolute;
 }
 
+.homepage-animation {
+	width: 20vw;
+	padding: 2.5vw;
+	margin-left: 15vw;
+}
+
 .BBresized {
 	max-width: 30vw;
 	max-height: 100vh;
@@ -725,12 +731,14 @@ button:focus {
 	font-size: max(1.558vw, 1rem);
 	font-family: Bemirs;
 	font-weight: 580;
-	margin: 3vh auto 10vh;
-	align-content: center;
 	padding: 0.2rem;
 	border-radius: 20rem; /* always circular */
 	border: 0.37vh #344546 solid;
 	max-width: fit-content;
+}
+
+.whatIsiGEM{
+	width: 60vw; 
 }
 
 @media (max-width: 1024px) {
@@ -755,20 +763,27 @@ button:focus {
 
 @media (max-width: 640px) {
 
-	.sdg_img{
-		width: 30vw;
-	}
-
 	#animationContent .animationContentRow:nth-child(n) {
 		flex-direction: column;
 	}
 
 	.dna {
-		display: none;
+		
 	}
 
-	.beakerAnim {
-		display: none;
+	.home_section{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.homeTitle{
+		font-size: 22px;
+	}
+
+	.homepage-animation{
+		width: 40vw;
+		margin: 0;
 	}
 
 	.whiteTitlesBG1 {
@@ -781,12 +796,23 @@ button:focus {
 		font-size: 22px;
 	}
 
-	#aboutUs {
-		font-size: 22px;
+	.whiteBG{
+		width: 100%;
+	}
+
+	.learnMoreButton{
+		margin: 3vh;
+	}
+
+	.sdg_img{
+		width: 60vw;
+		height: auto;
+		padding: 0;
 	}
 
 	.content {
 		font-size: 14px;
+		padding: 10vw;
 	}
 
 	#whiteBGContentPara1 {
@@ -808,10 +834,4 @@ button:focus {
 		padding-top: 5vh;
 		width: 60vw;
 	}
-}
-
-.homepage-animation {
-	width: 20vw;
-	padding: 2.5vw;
-	margin-left: 15vw;
 }
