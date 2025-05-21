@@ -19,7 +19,7 @@
 }
 
 nav {
-	width: 100vw;
+	width: 100%;
 	font-size: 1.2rem;
 	display: flex;
 	justify-content: right;
@@ -31,6 +31,7 @@ nav {
 	background-color: var(--HEADER-BGCOLOR);
 	z-index: 998;
 	padding-right: 2rem;
+	transition: all 0.2s;
 }
 
 nav ul {
@@ -129,6 +130,8 @@ li.has-ddown:focus-within .ddown {
 		text-align: center;
 		background-color: var(--HEADER-BGCOLOR);
 		padding: 0.5rem;
+		max-height: 88vh;
+		overflow-y: scroll;
 	}
 
 	.big-ddown > li {

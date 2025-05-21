@@ -50,9 +50,6 @@
 				</button>
 				<button class="closeMenuButton" tabindex="-1"></button>
 				<ul class="big-ddown">
-					<li>
-						<a href="/index.html#aboutUs">About us</a>
-					</li>
 					<li class="has-ddown" tabindex="0">
 						<a>Team &#x25BE;</a>
 						<ul class="ddown">
@@ -98,18 +95,24 @@
 		</header>
 		<a href="/"><img src="IMAGES dump/LOGO.png" class="logo" /></a>
 
-		<canvas class="dna"></canvas>
+		<!-- <canvas class="dna"></canvas> -->
 		<!--Main title-->
-		<h1 class="Titles whiteTitlesBG1">We are</h1>
-		<h1 class="Titles whiteTitlesBG2">
-			Manipal
-			<br />
-			BioMachines
-		</h1>
+		<div class="h1-container">
+			<video autoplay muted class="dna-animation">
+				<source src="animations/dna_animation.webm" type="video/webm" />
+				Your browser does not support the video tag
+			</video>
+			<h1 class="Titles whiteTitlesBG1">We are</h1>
+			<h1 class="Titles whiteTitlesBG2">
+				Manipal
+				<br />
+				BioMachines
+			</h1>
+		</div>
 
 		<!--Carousel space-->
 
-		<div class="carousel" style="align-items: center; position: relative">
+		<div class="carousel">
 			<!--  normal carousel onli  -->
 			<ul class="image">
 				<li><img src="carousel images/1.jpg" alt="Image 1" /></li>
@@ -142,7 +145,7 @@
 
 		<!--"What we do" stuff-->
 		<div class="whatWeDo darkTheme">
-			<h1 class="Titles darkTitlesBG homeTitle" style="padding-top: 10%">What we Do</h1>
+			<h1 class="Titles darkTitlesBG homeTitle">What we Do</h1>
 			<div class="greenUnderline"></div>
 			<section class="home_section">
 				<p class="content darkBG">
@@ -160,23 +163,22 @@
 
 		<!--"What is iGEM" stuff-->
 
-		<div style="display: flex; padding: 8vw 0">
+		<div>
 			<section class="home_section">
 				<div style="flex: 1">
-					<h1 class="Titles homeTitle" style="padding-top: 10vh;">
+					<h1 class="Titles homeTitle" style="padding-top: 10vh">
 						What is iGEM?
 					</h1>
 					<div class="greenUnderline"></div>
-					
 				</div>
 				<div>
 					<p class="content whiteBG whatIsiGEM">
 						iGEM (International Genetically Engineered Machine) is a global
 						synthetic biology competition where student teams design and build
-						biological systems using standardized parts. Teams work on innovative
-						projects, aiming to address real-world challenges through synthetic
-						biology. Their work includes research, experimentation, and
-						documentation on their project wiki.
+						biological systems using standardized parts. Teams work on
+						innovative projects, aiming to address real-world challenges through
+						synthetic biology. Their work includes research, experimentation,
+						and documentation on their project wiki.
 					</p>
 					<!--IGNORE THIS AND PLEASE DONT BEAT ME UP-->
 					<a class="learnMoreButton" href="https://igem.org" target="_blank">
@@ -184,12 +186,12 @@
 							&nbsp;&nbsp;&nbsp;&nbsp;learn more&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
 					</a>
-				</div>				
+				</div>
 			</section>
 		</div>
 
 		<footer class="darkTheme">
-			<div class="contactUs">
+			<div class="contactUs" id="contactUs">
 				<h1 class="Titles homeTitle">
 					Contact us
 					<div class="greenUnderline"></div>
@@ -201,95 +203,62 @@
 					Nagar, Manipal, Karnataka, PIN code: 576104
 				</p>
 				<div class="socialMedia">
-					<a href="https://www.instagram.com/manipalbiomachines/" target="_blank">
-						<img src="footer icons and logos/social media icons/insta.png" alt="insta icon">
+					<a
+						href="https://www.instagram.com/manipalbiomachines/"
+						target="_blank">
+						<img
+							src="footer icons and logos/social media icons/insta.png"
+							alt="insta icon" />
 					</a>
-					<a href="https://www.linkedin.com/company/manipal-biomachines/posts/?feedView=all" target="_blank">
-						<img src="footer icons and logos/social media icons/linkedin.png" alt="linkedin icon">
+					<a
+						href="https://www.linkedin.com/company/manipal-biomachines/posts/?feedView=all"
+						target="_blank">
+						<img
+							src="footer icons and logos/social media icons/linkedin.png"
+							alt="linkedin icon" />
 					</a>
 					<a href="https://linktr.ee/manipal_biomachines" target="_blank">
-						<img src="footer icons and logos/social media icons/twitter.png" alt="twitter icon">
+						<img
+							src="footer icons and logos/social media icons/twitter.png"
+							alt="twitter icon" />
 					</a>
-			
 				</div>
 			</div>
 			<div class="verticalLine"></div>
 			<div class="sponsors">
-				<h1 class="Titles homeTitle">Sponsors
+				<h1 class="Titles homeTitle">
+					Sponsors
 					<div class="greenUnderline"></div>
 				</h1>
 
 				<div class="gridForSponsors">
-					<img src="footer icons and logos/sponsor logos/Benchling.png" alt="Benchling" />
-					<img src="footer icons and logos/sponsor logos/New England.png" alt="New England BioLabs" />
+					<img
+						src="footer icons and logos/sponsor logos/Benchling.png"
+						alt="Benchling" />
+					<img
+						src="footer icons and logos/sponsor logos/New England.png"
+						alt="New England BioLabs" />
 					<img src="footer icons and logos/sponsor logos/IDT.png" alt="IDT" />
-					<img src="footer icons and logos/sponsor logos/MathWorks.png" alt="MathWorks" />
-					<img src="footer icons and logos/sponsor logos/Somani.png" alt="Somani" />
-					<img src="footer icons and logos/sponsor logos/Beckman Coulter.png" alt="Beckman Coulter" />
-					<img src="footer icons and logos/sponsor logos/TWIST.png" alt="TWIST" />
-					<img src="footer icons and logos/sponsor logos/SnapGene.png" alt="SnapGene" />
-					<img src="footer icons and logos/sponsor logos/ManipalLOGO.png" alt="Manipal Academy of Higher Education" />
+					<img
+						src="footer icons and logos/sponsor logos/MathWorks.png"
+						alt="MathWorks" />
+					<img
+						src="footer icons and logos/sponsor logos/Somani.png"
+						alt="Somani" />
+					<img
+						src="footer icons and logos/sponsor logos/Beckman Coulter.png"
+						alt="Beckman Coulter" />
+					<img
+						src="footer icons and logos/sponsor logos/TWIST.png"
+						alt="TWIST" />
+					<img
+						src="footer icons and logos/sponsor logos/SnapGene.png"
+						alt="SnapGene" />
+					<img
+						src="footer icons and logos/sponsor logos/ManipalLOGO.png"
+						alt="Manipal Academy of Higher Education" />
 				</div>
 			</div>
 		</footer>
-
-		<script>
-			var navLinks = document.getElementById("navLinks");
-
-			function showMenu() {
-				navLinks.style.right = "0";
-			}
-			function hideMenu() {
-				navLinks.style.right = "-200vh";
-			}
-
-			function vwToPx(vw) {
-				const px = (vw / 100) * window.innerWidth;
-				return px;
-			}
-
-			function vhToPx(vh) {
-				const px = (vh / 100) * window.innerHeight;
-				return px;
-			}
-
-			document
-				.querySelector(".aboutUs")
-				.addEventListener("click", function (event) {
-					event.preventDefault(); // Prevent default anchor link behavior
-
-					const targetElement = document.getElementById("aboutUs");
-					const offset = 15.741;
-
-					const elementTop = targetElement.getBoundingClientRect().top;
-					const scrollPosition = window.pageYOffset;
-					const finalPosition = elementTop + scrollPosition - vhToPx(offset);
-
-					window.scrollTo({
-						top: finalPosition,
-						behavior: "smooth",
-					});
-				});
-
-			document
-				.querySelector(".contactUs")
-				.addEventListener("click", function (event) {
-					event.preventDefault(); // Prevent default anchor link behavior
-
-					const targetElement = document.getElementById("contactUs");
-					const offset = 7.5; // Adjust this value for the desired offset (in pixels)
-
-					const elementTop = targetElement.getBoundingClientRect().top;
-					const scrollPosition = window.pageYOffset;
-					const finalPosition = elementTop + scrollPosition - vhToPx(offset);
-
-					window.scrollTo({
-						top: finalPosition,
-						behavior: "smooth",
-					});
-				});
-		</script>
-
-		<script defer src="javascript/strand&beaker.js"></script>
 	</body>
 </html>
