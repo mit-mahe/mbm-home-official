@@ -395,6 +395,7 @@ button:focus {
 	padding-bottom: 13vh;
 	background-color: #344546;
 	height: 100vh;
+	width: 100vw;
 }
 
 .sdg_img {
@@ -444,15 +445,51 @@ button:focus {
 	overflow-x: hidden;
 }
 
-.contact {
-	float: right;
-	padding-right: 15%;
-	padding-top: 10.412vw;
-	font-size: 4.686vw;
+footer{
+	display: flex;
+	height: 100vh;
+	background-color: #344546;
+	width: 100vw;
 }
 
 .sponsors {
-	padding-top: 15.5817vw;
+	background-color: #344546;
+	padding: 5vw;
+	color: #f8f5ee;
+	border-right: 1px #f8f5ee;
+}
+
+.contactUs{
+	background-color: #344546;
+	padding: 5vw;
+	color: #f8f5ee;
+}
+
+.contactUs p{
+	text-align: left; 
+	padding: 10vh 0;
+	opacity: 1;
+	filter: blur(0);
+}
+
+.socialMedia{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.socialMedia img{
+	width: 50px;
+	padding: 10px;
+}
+
+.socialMedia img:hover{
+	filter: drop-shadow(5px 5px 1px #0f2521);
+}
+
+.verticalLine{
+	width: 1px;
+	background-color: #84a98c;
+	margin: 10vh 0;
 }
 
 .gridForSponsors {
@@ -460,19 +497,19 @@ button:focus {
 	grid-template-rows: auto auto auto;
 	grid-template-columns: auto auto auto;
 	padding-bottom: 5vw;
-	grid-row-gap: 2.599vw;
-	grid-column-gap: 2.599vw;
-	margin: 5.209vw auto 5.209vw;
-	margin-left: 12.5%;
-	margin-right: 12.5%;
+	grid-row-gap: 8vw;
+	grid-column-gap: 2vw;
+	margin: 5vw auto 5vw;
 	justify-items: center;
 	align-items: center;
 	overflow-x: hidden;
 }
 
 .gridForSponsors img {
-	max-height: 5.175vw;
+	max-height: 3vw;
 	width: auto;
+	filter: drop-shadow(2px 1px 0 #f8f5ee);
+	/* background-color: #f8f5ee; */
 }
 /*   carousel stuff   */
 
@@ -770,7 +807,29 @@ button:focus {
 	}
 
 	.dna {
-		
+		display: none;
+	}
+
+	footer{
+		flex-direction: column;
+	}
+	
+	.verticalLine{
+		display: none;
+	}
+
+	.contactUs{
+		padding-top: 10vh;
+	}
+
+	.contactUs p{
+		font-size: 12px;
+		padding: 2vh;
+	}
+
+	.sponsors{
+		border-top: 1px solid #84a98c;
+		padding-top: 5vh;
 	}
 
 	.home_section{
