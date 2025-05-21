@@ -15,27 +15,10 @@
 			rel="stylesheet" />
 		<link rel="stylesheet" href="css/styling.css" />
 		<link rel="stylesheet" href="css/navbar.css" />
-		<link rel="icon" href="IMAGES dump/ICON.png" />
+		<link rel="icon" href="images/ICON.png" />
 		<script defer src="javascript/intersectionObserverStuff.js"></script>
 		<script defer src="javascript/carouselStuff.js"></script>
 		<script src="javascript/navbarThemeSwitcher.js"></script>
-		<script>
-			function generatePreloadLinks() {
-				const basePath = "homepage_anims/dna_strand/png_";
-				const numberOfImages = 54;
-				let preloadLinks = "";
-
-				for (let i = 1; i <= numberOfImages; i++) {
-					const formattedNumber = i.toString().padStart(4, "0");
-					const imagePath = `${basePath}${formattedNumber}.png`;
-					preloadLinks += `<link rel="preload" as="image" href="${imagePath}">\n`;
-				}
-
-				document.write(preloadLinks);
-			}
-
-			generatePreloadLinks();
-		</script>
 		<script src="javascript/loadingScreen.js"></script>
 	</head>
 
@@ -93,7 +76,7 @@
 				</ul>
 			</nav>
 		</header>
-		<a href="/"><img src="IMAGES dump/LOGO.png" class="logo" /></a>
+		<a href="/"><img src="images/LOGO.png" class="logo" /></a>
 
 		<!-- <canvas class="dna"></canvas> -->
 		<!--Main title-->
@@ -155,7 +138,7 @@
 					engineer eco-friendly breakthroughs using synthetic biology, shaping a
 					brighter future for our planet.
 				</p>
-				<img src="IMAGES dump/SDGs.png" alt="SDGs" class="sdg_img" />
+				<img src="images/SDGs.png" alt="SDGs" class="sdg_img" />
 			</section>
 			<div class="darkSwitch"></div>
 			<!--THE SWITCH FOR HEADER-->

@@ -5,9 +5,6 @@ document.addEventListener("readystatechange", (event) => {
 });
 
 function initThemeSwitcher() {
-	const header = document.querySelector(".header");
-	const headerElements = document.querySelectorAll(".darkNavElements");
-	const dropDownElements = document.querySelectorAll(".ddown");
 	const windowHeight = window.innerHeight;
 
 	window.addEventListener("scroll", (event) => {
