@@ -273,6 +273,9 @@ footer {
 	justify-items: center;
 	align-items: center;
 	overflow-x: hidden;
+	background-color: whitesmoke;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
 }
 
 .gridForSponsors img {
@@ -632,5 +635,13 @@ footer {
 	.whiteSwitch > img {
 		padding-top: 5vh;
 		width: 60vw;
+	}
+
+	.gridForSponsors {
+		grid-row-gap: 3vh;
+	}
+
+	.gridForSponsors img {
+		max-width: 25vw;
 	}
 }
