@@ -99,7 +99,7 @@
 	padding: 20px 30px 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 580px) {
 	.mainTitle {
 		font-size: 2rem;
 		padding-top: 80px;
@@ -121,7 +121,7 @@
 	}
 
 	.member {
-		width: 45vw;
+		width: 65vw;
 		margin: 8px;
 	}
 
@@ -133,8 +133,9 @@
 		font-size: 3vw;
 	}
 
-	.member-img {
-		max-width: 80vw;
+	.member-img,
+	.member-img img {
+		max-width: 50vw;
 	}
 
 	.board-row {
