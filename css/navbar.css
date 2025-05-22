@@ -120,24 +120,38 @@ li.has-ddown:focus-within .ddown {
 }
 
 @media screen and (max-width: 900px) {
+	@keyframes showMenu {
+		0% {
+			transform: scaleY(0);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+
 	.big-ddown {
-		position: relative;
-		top: 0;
+		position: absolute;
+		top: 100%;
 		left: 0;
 		display: none;
-		padding: 0;
 		z-index: 998;
 		text-align: center;
 		background-color: var(--HEADER-BGCOLOR);
 		padding: 0.5rem;
 		max-height: 88vh;
 		overflow-y: scroll;
+		transform-origin: top center;
+		animation: showMenu 0.3s ease-in-out forwards;
 	}
 
 	.big-ddown > li {
 		width: 100vw;
 		display: flex;
 		justify-content: center;
+	}
+
+	.big-ddown > li > a {
+		margin: auto;
 	}
 
 	nav li:focus-within .big-ddown {
@@ -178,26 +192,6 @@ li.has-ddown:focus-within .ddown {
 
 	.menu-icon::after {
 		transform: translate(-20px, 12px);
-	}
-
-	@keyframes showMenu {
-		0% {
-			transform: scaleY(0);
-		}
-		100% {
-			transform: scale(1);
-		}
-	}
-
-	.big-ddown {
-		top: 100%;
-		position: absolute;
-		transform-origin: top center;
-		animation: showMenu 0.3s ease-in-out forwards;
-	}
-
-	.big-ddown > li > a {
-		margin: auto;
 	}
 
 	.menu-button:focus-within .menu-icon,
