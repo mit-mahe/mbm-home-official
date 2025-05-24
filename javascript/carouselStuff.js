@@ -48,6 +48,11 @@ function initCarousel() {
 		activateImage(currentIndex);
 	}
 
+	function previousImage() {
+		currentIndex = (currentIndex + imageCount - 1) % imageCount; //hehehhee smart ik
+		activateImage(currentIndex);
+	}
+
 	nextImage();
 
 	let autoplay = setInterval(nextImage, 4000); // didn't know auto play was this simple
@@ -60,5 +65,48 @@ function initCarousel() {
 			clearInterval(autoplay); //just to reset timer so it wont abruptly activate next image once general timer runs down
 			autoplay = setInterval(nextImage, 4000);
 		});
+	});
+
+	function onSwipe(element, callback) {
+		var startX, startY, endX, endY;
+		var minDistance = 50; // Minimum distance for swipe detection
+
+		element.addEventListener("touchstart", function (event) {
+			startX = event.touches[0].clientX;
+			startY = event.touches[0].clientY;
+		});
+
+		element.addEventListener("touchend", function (event) {
+			endX = event.changedTouches[0].clientX;
+			endY = event.changedTouches[0].clientY;
+
+			var deltaX = Math.abs(endX - startX);
+			var deltaY = Math.abs(endY - startY);
+
+			if (deltaX > minDistance) {
+				if (deltaX > deltaY) {
+					// Horizontal swipe
+					if (endX > startX) {
+						// Right swipe
+						callback("right");
+					} else {
+						// Left swipe
+						callback("left");
+					}
+				}
+			}
+		});
+	}
+
+	onSwipe(imageContainer, function (direction) {
+		if (direction === "left") {
+			nextImage();
+			clearInterval(autoplay);
+			autoplay = setInterval(nextImage, 4000);
+		} else if (direction === "right") {
+			nextImage();
+			clearInterval(autoplay);
+			autoplay = setInterval(nextImage, 4000);
+		}
 	});
 }
