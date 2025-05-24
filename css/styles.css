@@ -207,10 +207,8 @@
 	max-width: 160px;
 	height: auto;
 	aspect-ratio: 1 / 1;
-	margin: 0 auto;
 	border-radius: 50%;
 	position: relative;
-	margin: 5px 0;
 	overflow: hidden;
 	border: 7px solid #f8f5ee;
 }
@@ -219,7 +217,7 @@
 	width: 160px;
 	max-height: auto;
 	aspect-ratio: 1 / 1;
-	margin: 5px -15px;
+	margin: 0 -15px; /* -ve is what is making it overlap*/
 	text-align: center;
 	color: #344546;
 	z-index: 1;
