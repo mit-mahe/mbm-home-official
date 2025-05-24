@@ -5,18 +5,18 @@ document.addEventListener("readystatechange", (event) => {
 });
 
 function initThemeSwitcher() {
-	const windowHeight = window.innerHeight;
-
 	window.addEventListener("scroll", (event) => {
 		const darkSwitch = document.querySelectorAll(".darkTheme");
+		const navbarRect = top_navbar.getBoundingClientRect();
 		let darkNavbar = false;
+
 		darkSwitch.forEach((section) => {
 			const rect = section.getBoundingClientRect();
-
-			if (rect.top <= windowHeight / 12 && rect.bottom > windowHeight / 12) {
+			if (rect.top <= navbarRect.bottom && rect.bottom > navbarRect.bottom) {
 				darkNavbar = true;
 			}
 		});
+
 		if (darkNavbar) {
 			document.documentElement.style.setProperty("--HEADER-BGCOLOR", "#344546");
 			document.documentElement.style.setProperty("--HEADER-COLOR", "#f8f5ee");
