@@ -120,6 +120,11 @@ li.has-ddown:focus-within .ddown {
 	display: none;
 }
 
+.big-ddown a:active[href],
+.has-ddown:active {
+	-webkit-tap-highlight-color: transparent;
+}
+
 @media screen and (max-width: 900px) {
 	@keyframes showMenu {
 		0% {
@@ -267,5 +272,9 @@ li.has-ddown:focus-within .ddown {
 	nav ul li a:hover::after,
 	nav ul li a:focus::after {
 		display: none;
+	}
+
+	.big-ddown a:active[href] {
+		opacity: 0.5;
 	}
 }
