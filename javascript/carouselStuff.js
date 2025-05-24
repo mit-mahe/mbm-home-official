@@ -21,26 +21,26 @@ function initCarousel() {
 		}
 		image[index].classList.remove("image-inactive");
 		image[index].classList.add("image-active");
-		let imageListStyle = window.getComputedStyle(
+
+		const imageListStyle = window.getComputedStyle(
 			image[(index + 1) % imageCount]
 		);
-		let imageListMarginLeft = parseFloat(imageListStyle.marginLeft);
-		console.log(imageListMarginLeft);
-		let imageStyle = window.getComputedStyle(images[(index + 1) % imageCount]);
-		let imageWidth = parseFloat(imageStyle.width);
-		console.log(imageWidth);
+		const imageListMarginLeft = parseFloat(imageListStyle.marginLeft);
+		const imageStyle = window.getComputedStyle(
+			images[(index + 1) % imageCount]
+		);
+		const imageWidth = parseFloat(imageStyle.width);
+
 		const activeImageWidth = parseFloat(
 			window.getComputedStyle(image[index]).width
 		);
+
 		imageContainer.style.transform =
 			"translateX(calc(50vw - " +
 			(imageListMarginLeft +
 				index * (imageWidth + 2 * imageListMarginLeft) +
 				activeImageWidth / 2) +
 			"px)";
-		console.log(index);
-		let transformPixels = index * imageWidth;
-		console.log(transformPixels);
 	}
 
 	function nextImage() {

@@ -72,61 +72,66 @@
 }
 
 .member-img {
-    max-width: 180px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto;
-    padding: 5px;
-    position: relative; 
-    overflow: hidden;
-    
+	max-width: 180px;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	margin: 0 auto;
+	padding: 5px;
+	position: relative;
+	overflow: hidden;
 }
 
 .member-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	object-fit: cover;
+	display: block;
 }
 
 .member:hover {
-    transform: scale(1.04);
+	transform: scale(1.04);
 }
 
 /* LinkedIn icon*/
 .member-img:hover::after {
-    content: "in";
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    background: #0077b5;
-    color: white;
+	content: "in";
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background: #0077b5;
+	color: white;
 	opacity: 1;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
 }
 
 .member-img::after {
-    transition: opacity 0.2s ease-in-out 0.1s;
+	transition: opacity 0.2s ease-in-out 0.1s;
 }
 
 .member-img:hover::after {
-    animation: pulse 1.5s infinite;
+	animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 .board-row {
@@ -138,36 +143,44 @@
 	padding: 20px 30px 10px;
 }
 
-.board{
+.board {
 	width: 20vw;
 	align-content: center;
 }
 
-.board .heading{
+.board .heading {
 	margin: 0;
 	padding: 0;
 }
 
 .alum-row1 {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .alum-row1 .alumni {
-    transition: margin 0.2s ease; 
+	transition: margin 0.2s ease;
 }
 
 .alum-row1 .alumni:first-child {
-    z-index: 3;
+	z-index: 3;
 }
 
-.alum-row1 .alumni:nth-child(2) { z-index: 2; }
-.alum-row1 .alumni:nth-child(3) { z-index: 1; }
-.alum-row1 .alumni:nth-child(4) { z-index: 0; }
-.alum-row1 .alumni:nth-child(5) { z-index: -1; }
+.alum-row1 .alumni:nth-child(2) {
+	z-index: 2;
+}
+.alum-row1 .alumni:nth-child(3) {
+	z-index: 1;
+}
+.alum-row1 .alumni:nth-child(4) {
+	z-index: 0;
+}
+.alum-row1 .alumni:nth-child(5) {
+	z-index: -1;
+}
 
 .alum-row2 {
 	width: auto;
@@ -177,11 +190,10 @@
 	flex-wrap: wrap;
 }
 
-.alum-board{
+.alum-board {
 	display: flex;
 	padding: 5vw 0;
 	justify-content: space-evenly;
-	background-color: ;
 }
 
 .alumni-img img {
@@ -215,7 +227,7 @@
 }
 
 .alum-row2:last-child .alumni2:last-child {
-    z-index: 2;
+	z-index: 2;
 }
 
 .alumni h3 {
