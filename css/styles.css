@@ -207,8 +207,10 @@
 	max-width: 160px;
 	height: auto;
 	aspect-ratio: 1 / 1;
+	margin: 0 auto;
 	border-radius: 50%;
 	position: relative;
+	margin: 5px 0;
 	overflow: hidden;
 	border: 7px solid #f8f5ee;
 }
@@ -217,7 +219,7 @@
 	width: 160px;
 	max-height: auto;
 	aspect-ratio: 1 / 1;
-	margin: 0 -15px; /* -ve is what is making it overlap*/
+	margin: 5px -15px;
 	text-align: center;
 	color: #344546;
 	z-index: 1;
@@ -333,12 +335,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100%;
+	height: 380px;
 	padding: 20px;
 }
 
 .card-content h3 {
-	margin-bottom: 8px;
+	margin-bottom: 1rem;
 	font-size: 18px;
 	font-family: Alata;
 	font-weight: 600;
@@ -346,7 +348,7 @@
 }
 
 .card-content h5 {
-	margin-bottom: 8px;
+	margin-bottom: 1rem;
 	font-size: 17px;
 	font-family: Alata;
 	font-weight: 200;
@@ -356,7 +358,7 @@
 
 .card-content p {
 	font-size: 15px;
-	margin-top: 1px;
+	margin-bottom: 1rem;
 	font-family: Alata;
 	text-align: center;
 	font-weight: 200;
@@ -366,10 +368,19 @@
 	display: inline-block;
 	padding: 8px 10px;
 	background-color: #f8f5ee;
+	user-select: none;
+	vertical-align: middle;
+	line-height: 1.5;
 	text-decoration: none;
 	text-align: center;
+	border: 1px solid transparent;
 	border-radius: 4px;
 	margin-top: auto;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .card-content a {
@@ -389,7 +400,7 @@
 		height: 5px;
 	}
 
-	.card-container {
+	/* .card-container {
 		flex-direction: column;
 		align-items: center;
 		margin-top: 30px;
@@ -423,7 +434,7 @@
 
 	.card-content a {
 		font-size: 0.8rem;
-	}
+	} */
 }
 
 /*!achievements page styling*/
