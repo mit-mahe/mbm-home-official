@@ -1,10 +1,10 @@
-.darkTheme p, 
+.darkTheme p,
 .darkTheme h3,
-.darkTheme h5{
+.darkTheme h5 {
 	color: #f8f5ee;
 }
 
-.darkTheme .alumni-img{
+.darkTheme .alumni-img {
 	border: 7px solid #334545;
 }
 
@@ -297,38 +297,38 @@
 		padding: 10px 10px 0;
 	}
 
-	.alum-board{
+	.alum-board {
 		flex-direction: column;
 		justify-content: center;
 		padding: 30px;
 	}
 
-	.board{
+	.board {
 		text-align: center;
 		width: 100%;
 		padding: 10px;
 	}
 
-	.heading{
+	.heading {
 		font-size: 18px;
 	}
 
-	.alumni{
+	.alumni {
 		width: 120px;
 	}
 
-	.alumni-img{
+	.alumni-img {
 		width: 120px;
 	}
 
 	.alumni h3,
-	.alumni h5{
+	.alumni h5 {
 		font-size: 11px;
 	}
 
 	.alum-board.reverse {
 		flex-direction: column-reverse;
-	  }
+	}
 }
 
 /*!research page styling*/
@@ -570,6 +570,24 @@
 .achieve-container:hover .achieve-card {
 	cursor: pointer;
 	transform: rotateY(180deg);
+}
+
+@media (hover: none) and (pointer: coarse) {
+	.achieve-container:hover .achieve-card {
+		transform: none;
+	}
+
+	.frame .achieve-container .active-card {
+		transform: rotateY(180deg);
+	}
+
+	.frame .achieve-container .inactive-card {
+		transform: rotateY(0);
+	}
+
+	.achieve-card:active {
+		-webkit-tap-highlight-color: transparent;
+	}
 }
 
 @media (max-width: 600px) {
