@@ -296,6 +296,39 @@
 	.board-row {
 		padding: 10px 10px 0;
 	}
+
+	.alum-board{
+		flex-direction: column;
+		justify-content: center;
+		padding: 30px;
+	}
+
+	.board{
+		text-align: center;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.heading{
+		font-size: 18px;
+	}
+
+	.alumni{
+		width: 120px;
+	}
+
+	.alumni-img{
+		width: 120px;
+	}
+
+	.alumni h3,
+	.alumni h5{
+		font-size: 11px;
+	}
+
+	.alum-board.reverse {
+		flex-direction: column-reverse;
+	  }
 }
 
 /*!research page styling*/
