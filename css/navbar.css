@@ -79,6 +79,7 @@ nav ul li a:focus::after {
 
 .has-ddown {
 	cursor: pointer;
+	color: var(--HEADER-COLOR);
 }
 
 .has-ddown > a:hover::after,
