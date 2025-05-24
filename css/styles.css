@@ -1,3 +1,13 @@
+.darkTheme p, 
+.darkTheme h3,
+.darkTheme h5{
+	color: #f8f5ee;
+}
+
+.darkTheme .alumni-img{
+	border: 7px solid #334545;
+}
+
 /*!team pages styles*/
 
 .mainTitle {
