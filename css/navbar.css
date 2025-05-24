@@ -261,4 +261,10 @@ li.has-ddown:focus-within .ddown {
 			transform: scaleY(0);
 		}
 	}
+
+	nav ul li a::after,
+	nav ul li a:hover::after,
+	nav ul li a:focus::after {
+		display: none;
+	}
 }
