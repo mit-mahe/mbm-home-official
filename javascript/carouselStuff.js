@@ -104,7 +104,7 @@ function initCarousel() {
 			clearInterval(autoplay);
 			autoplay = setInterval(nextImage, 4000);
 		} else if (direction === "right") {
-			nextImage();
+			previousImage();
 			clearInterval(autoplay);
 			autoplay = setInterval(nextImage, 4000);
 		}
