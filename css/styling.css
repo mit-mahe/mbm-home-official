@@ -87,7 +87,7 @@ body {
 .whiteTitlesBG1 {
 	overflow-x: hidden;
 	color: #344546;
-	font-size: 1.558vw;
+	font-size: max(2vw, 2rem);
 	font-family: Bemirs;
 	font-weight: 600;
 	position: relative;
@@ -99,7 +99,7 @@ body {
 .whiteTitlesBG2 {
 	overflow-x: hidden;
 	color: #344546;
-	font-size: 3.5vw;
+	font-size: max(3vw, 3rem);
 	padding: 1vw;
 	padding-top: 1.558vw;
 	position: relative;
@@ -288,13 +288,13 @@ footer {
 /*   carousel stuff   */
 
 .carousel {
-	padding-top: 12vh;
+	padding-top: 10vh;
 	/* width: 100%; */
 	height: fit-content;
 	margin: auto;
 	position: relative;
 	overflow-x: hidden;
-	padding-bottom: 20vw;
+	padding-bottom: 10vh;
 	align-items: center;
 }
 
@@ -313,7 +313,7 @@ footer {
 }
 
 .image img {
-	width: 25vh;
+	width: 28vh;
 	height: auto;
 	border-radius: 3vh;
 }
@@ -325,7 +325,7 @@ footer {
 }
 
 .image-active img {
-	width: 32vh;
+	width: 35vh;
 }
 
 .image-inactive {
@@ -556,6 +556,10 @@ footer {
 	#whiteBGContentPara1 img {
 		max-width: 25vw;
 	}
+
+	.whiteTitlesBG1 {
+		margin-top: 5vh;
+	}
 }
 
 @media (max-width: 640px) {
@@ -609,11 +613,11 @@ footer {
 	}
 
 	.whiteTitlesBG1 {
-		font-size: 12px;
+		font-size: 1.1rem;
 	}
 
 	.whiteTitlesBG2 {
-		font-size: 22px;
+		font-size: 2.2rem;
 	}
 
 	.whiteBG {

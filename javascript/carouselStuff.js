@@ -7,10 +7,10 @@ document.addEventListener("readystatechange", (event) => {
 
 function initCarousel() {
 	let currentIndex = 1;
-	let imageCount = 6;
-	let imageContainer = document.querySelector(".image");
-	let image = document.querySelectorAll(".image li");
-	let images = document.querySelectorAll(".image li img"); //getting all images so they can be used to check for any click on them
+	const imageContainer = document.querySelector(".image");
+	const image = document.querySelectorAll(".image li");
+	const imageCount = image.length;
+	const images = document.querySelectorAll(".image li img"); //getting all images so they can be used to check for any click on them
 	console.log(image);
 	console.log(images);
 
