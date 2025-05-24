@@ -307,9 +307,9 @@ footer {
 }
 
 .image li {
-	width: 100%;
+	/* width: 100%; */
 	height: auto;
-	margin: 0 2vh 0 2vh;
+	margin: 0 2vh;
 }
 
 .image img {
@@ -330,7 +330,7 @@ footer {
 
 .image-inactive {
 	opacity: 0.5; /*  other smol ones on side  */
-	z-index: 0;
+	/* z-index: 0; */
 }
 
 .theCanvas {
