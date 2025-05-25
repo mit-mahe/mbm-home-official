@@ -17,6 +17,11 @@ function initAnimation() {
 	// 	}
 	// 	video.load();
 	// }
+	function isSafari() {
+		return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	}
+	console.log("isSafari = " + isSafari());
+	console.log(navigator.userAgent);
 
 	console.log(animationContainer);
 	console.log(animation);
