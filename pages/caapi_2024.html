@@ -76,6 +76,20 @@
 					<source src="../animations/caapi_animation.mp4" type="video/mp4" />
 					Your browser does not support the video tag
 				</video>
+				<script>
+					const video = document.getElementById("animation");
+
+					const canPlayWebMVP9 = video.canPlayType('video/webm; codecs="vp9"');
+
+					if (!canPlayWebMVP9) {
+						for (const source of video.querySelectorAll("source")) {
+							if (source.type.includes("webm")) {
+								source.remove();
+							}
+						}
+						video.load();
+					}
+				</script>
 				<div id="animationContent">
 					<div class="animationContentRow">
 						<p>

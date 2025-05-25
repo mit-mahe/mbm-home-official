@@ -5,18 +5,18 @@ document.addEventListener("readystatechange", (event) => {
 });
 
 function initAnimation() {
-	const video = document.getElementById("animation");
+	// const video = document.getElementById("animation");
 
-	const canPlayWebMVP9 = video.canPlayType('video/webm; codecs="vp9"');
+	// const canPlayWebMVP9 = video.canPlayType('video/webm; codecs="vp9"');
 
-	if (!canPlayWebMVP9) {
-		for (const source of video.querySelectorAll("source")) {
-			if (source.type.includes("webm")) {
-				source.remove();
-			}
-		}
-		video.load();
-	}
+	// if (!canPlayWebMVP9) {
+	// 	for (const source of video.querySelectorAll("source")) {
+	// 		if (source.type.includes("webm")) {
+	// 			source.remove();
+	// 		}
+	// 	}
+	// 	video.load();
+	// }
 
 	console.log(animationContainer);
 	console.log(animation);
