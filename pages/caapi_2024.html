@@ -80,6 +80,7 @@
 					const video = document.getElementById("animation");
 
 					const canPlayWebMVP9 = video.canPlayType('video/webm; codecs="vp9"');
+					console.log("Can play vp9 = " + canPlayWebMVP9);
 
 					if (!canPlayWebMVP9) {
 						for (const source of video.querySelectorAll("source")) {
