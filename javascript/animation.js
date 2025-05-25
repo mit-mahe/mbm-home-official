@@ -1,8 +1,35 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+	console.log("DOM Content Loaded");
+	initBrowserCheck();
+});
+
 document.addEventListener("readystatechange", (event) => {
 	if (event.target.readyState === "complete") {
 		initAnimation();
 	}
 });
+
+function initBrowserCheck() {
+	function isSafari() {
+		return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	}
+	console.log("isSafari = " + isSafari());
+	const video = document.getElementById("animation");
+
+	const canPlayWebMVP9 = video.canPlayType('video/webm; codecs="vp9"');
+	console.log("Can play vp9 = " + canPlayWebMVP9);
+
+	if (isSafari()) {
+		for (const source of video.querySelectorAll("source")) {
+			if (source.type.includes("webm")) {
+				source.remove();
+			}
+		}
+		video.load();
+	}
+	console.log("isSafari = " + isSafari());
+	console.log(navigator.userAgent);
+}
 
 function initAnimation() {
 	// const video = document.getElementById("animation");
@@ -17,11 +44,6 @@ function initAnimation() {
 	// 	}
 	// 	video.load();
 	// }
-	function isSafari() {
-		return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-	}
-	console.log("isSafari = " + isSafari());
-	console.log(navigator.userAgent);
 
 	console.log(animationContainer);
 	console.log(animation);
