@@ -220,7 +220,7 @@
 	margin: 0 auto;
 	border-radius: 50%;
 	position: relative;
-	margin: 5px 0;
+	margin: 0;
 	overflow: hidden;
 	border: 7px solid #f8f5ee;
 }
@@ -229,7 +229,7 @@
 	width: 160px;
 	max-height: auto;
 	aspect-ratio: 1 / 1;
-	margin: 5px -15px;
+	margin: 0 -15px;
 	text-align: center;
 	color: #344546;
 	z-index: 1;
@@ -252,6 +252,14 @@
 	font-family: Alata;
 	font-weight: 200;
 	padding: 0 20px;
+}
+
+.desktop{
+	display: block;
+}
+
+.mobile{
+	display: none;
 }
 
 @media (max-width: 580px) {
@@ -314,20 +322,30 @@
 	}
 
 	.alumni {
-		width: 120px;
+		width: 110px;
 	}
 
 	.alumni-img {
-		width: 120px;
+		width: 110px;
+		border: 5px solid #f8f5ee;
 	}
 
 	.alumni h3,
 	.alumni h5 {
 		font-size: 11px;
+		padding: 0 20px;
 	}
 
 	.alum-board.reverse {
 		flex-direction: column-reverse;
+	}
+
+	.desktop{
+		display: none;
+	}
+
+	.mobile{
+		display: block;
 	}
 }
 
