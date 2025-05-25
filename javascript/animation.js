@@ -1,10 +1,23 @@
 document.addEventListener("readystatechange", (event) => {
 	if (event.target.readyState === "complete") {
-		initApp();
+		initAnimation();
 	}
 });
 
-function initApp() {
+function initAnimation() {
+	const video = document.getElementById("animation");
+
+	const canPlayWebMVP9 = video.canPlayType('video/webm; codecs="vp9"');
+
+	if (!canPlayWebMVP9) {
+		for (const source of video.querySelectorAll("source")) {
+			if (source.type.includes("webm")) {
+				source.remove();
+			}
+		}
+		video.load();
+	}
+
 	console.log(animationContainer);
 	console.log(animation);
 	const mediaQuery = window.matchMedia("(max-width: 1024px)");
