@@ -22,13 +22,12 @@ function initCarousel() {
 		image[index].classList.remove("image-inactive");
 		image[index].classList.add("image-active");
 
-		const imageListStyle = window.getComputedStyle(
-			image[(index + imageCount - 1) % imageCount]
-		);
+		const referenceIndex =
+			index === 0 ? 1 : (index + imageCount - 1) % imageCount;
+
+		const imageListStyle = window.getComputedStyle(image[referenceIndex]);
 		const imageListMarginLeft = parseFloat(imageListStyle.marginLeft);
-		const imageStyle = window.getComputedStyle(
-			images[(index + imageCount - 1) % imageCount]
-		);
+		const imageStyle = window.getComputedStyle(images[referenceIndex]);
 		const imageWidth = parseFloat(imageStyle.width);
 
 		const activeImageWidth = parseFloat(
