@@ -296,6 +296,7 @@ footer {
 	overflow-x: hidden;
 	padding-bottom: 10vh;
 	align-items: center;
+	touch-action: none;
 }
 
 .image {
