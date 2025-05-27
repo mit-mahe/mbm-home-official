@@ -70,31 +70,39 @@ function initCarousel() {
 		var startX, startY, endX, endY;
 		var minDistance = 50; // Minimum distance for swipe detection
 
-		element.addEventListener("touchstart", function (event) {
-			startX = event.touches[0].clientX;
-			startY = event.touches[0].clientY;
-		});
+		element.addEventListener(
+			"touchstart",
+			function (event) {
+				startX = event.touches[0].clientX;
+				startY = event.touches[0].clientY;
+			},
+			{ passive: false }
+		);
 
-		element.addEventListener("touchend", function (event) {
-			endX = event.changedTouches[0].clientX;
-			endY = event.changedTouches[0].clientY;
+		element.addEventListener(
+			"touchend",
+			function (event) {
+				endX = event.changedTouches[0].clientX;
+				endY = event.changedTouches[0].clientY;
 
-			var deltaX = Math.abs(endX - startX);
-			var deltaY = Math.abs(endY - startY);
+				var deltaX = Math.abs(endX - startX);
+				var deltaY = Math.abs(endY - startY);
 
-			if (deltaX > minDistance) {
-				if (deltaX > deltaY) {
-					// Horizontal swipe
-					if (endX > startX) {
-						// Right swipe
-						callback("right");
-					} else {
-						// Left swipe
-						callback("left");
+				if (deltaX > minDistance) {
+					if (deltaX > deltaY) {
+						// Horizontal swipe
+						if (endX > startX) {
+							// Right swipe
+							callback("right");
+						} else {
+							// Left swipe
+							callback("left");
+						}
 					}
 				}
-			}
-		});
+			},
+			{ passive: false }
+		);
 	}
 
 	onSwipe(imageContainer, function (direction) {
