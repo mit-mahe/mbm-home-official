@@ -23,11 +23,11 @@ function initCarousel() {
 		image[index].classList.add("image-active");
 
 		const imageListStyle = window.getComputedStyle(
-			image[(index + 1) % imageCount]
+			image[(index + imageCount - 1) % imageCount]
 		);
 		const imageListMarginLeft = parseFloat(imageListStyle.marginLeft);
 		const imageStyle = window.getComputedStyle(
-			images[(index + 1) % imageCount]
+			images[(index + imageCount - 1) % imageCount]
 		);
 		const imageWidth = parseFloat(imageStyle.width);
 
