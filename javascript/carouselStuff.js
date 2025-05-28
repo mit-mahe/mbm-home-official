@@ -67,42 +67,34 @@ function initCarousel() {
 	});
 
 	function onSwipe(element, callback) {
-		var startX, startY, endX, endY;
-		var minDistance = 50; // Minimum distance for swipe detection
+		let startX, startY, endX, endY;
+		let minDistance = 50; // Minimum distance for swipe detection
 
-		element.addEventListener(
-			"touchstart",
-			function (event) {
-				startX = event.touches[0].clientX;
-				startY = event.touches[0].clientY;
-			},
-			{ passive: false }
-		);
+		element.addEventListener("touchstart", (event) => {
+			startX = event.touches[0].clientX;
+			startY = event.touches[0].clientY;
+		});
 
-		element.addEventListener(
-			"touchend",
-			function (event) {
-				endX = event.changedTouches[0].clientX;
-				endY = event.changedTouches[0].clientY;
+		element.addEventListener("touchend", (event) => {
+			endX = event.changedTouches[0].clientX;
+			endY = event.changedTouches[0].clientY;
 
-				var deltaX = Math.abs(endX - startX);
-				var deltaY = Math.abs(endY - startY);
+			let deltaX = Math.abs(endX - startX);
+			let deltaY = Math.abs(endY - startY);
 
-				if (deltaX > minDistance) {
-					if (deltaX > deltaY) {
-						// Horizontal swipe
-						if (endX > startX) {
-							// Right swipe
-							callback("right");
-						} else {
-							// Left swipe
-							callback("left");
-						}
+			if (deltaX > minDistance) {
+				if (deltaX > deltaY) {
+					// Horizontal swipe
+					if (endX > startX) {
+						// Right swipe
+						callback("right");
+					} else {
+						// Left swipe
+						callback("left");
 					}
 				}
-			},
-			{ passive: false }
-		);
+			}
+		});
 	}
 
 	onSwipe(imageContainer, function (direction) {
