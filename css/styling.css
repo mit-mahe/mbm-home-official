@@ -532,6 +532,10 @@ footer {
 	color: #344546;
 }
 
+.learnMoreButton > div:hover {
+	transform: scale(1.02);
+}
+
 .learnMoreButton > div {
 	font-size: max(1.558vw, 1rem);
 	font-family: Bemirs;
