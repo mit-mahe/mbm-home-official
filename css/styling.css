@@ -136,7 +136,7 @@ body {
 
 .content a:hover {
 	transition: color ease-in-out 0.5s;
-	color: aquamarine;
+	color: #6cc680;
 }
 
 .whiteBG {
