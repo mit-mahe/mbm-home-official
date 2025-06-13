@@ -228,12 +228,12 @@ footer {
 }
 
 .fine-print {
-	padding: 1.5rem;
+	padding: 1rem;
 	text-align: center;
 	font-family: sans-serif;
 	color: #f8f5ee;
-	font-size: smaller;
-	background-color: #1d322f;
+	font-size: 12px;
+	background-color: #2a3738;
 }
 
 .sponsors {
