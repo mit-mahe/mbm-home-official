@@ -218,11 +218,19 @@ body {
 }
 
 footer {
-	display: flex;
-	/* height: 100vh; */
-	justify-content: center;
 	background-color: #344546;
+}
+
+.info-container {
+	display: flex;
+	justify-content: center;
 	max-width: 100%;
+}
+
+.fine-print {
+	padding: 0 0 2rem;
+	text-align: center;
+	font-family: sans-serif;
 }
 
 .sponsors {
@@ -572,7 +580,7 @@ footer {
 		max-width: 100%;
 	}
 
-	footer {
+	.info-container {
 		flex-direction: column;
 	}
 
