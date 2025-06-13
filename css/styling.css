@@ -127,6 +127,18 @@ body {
 	overflow-x: hidden;
 	padding: 5vw;
 }
+
+.content a {
+	font-family: Alata;
+	color: #f8f5ee;
+	transition: color ease-in-out 0.5s;
+}
+
+.content a:hover {
+	transition: color ease-in-out 0.5s;
+	color: aquamarine;
+}
+
 .whiteBG {
 	right: 0;
 	color: #344546;
