@@ -232,7 +232,7 @@ footer {
 	text-align: center;
 	font-family: sans-serif;
 	color: #f8f5ee;
-	font-size: 12px;
+	font-size: smaller;
 	background-color: #2a3738;
 }
 
@@ -585,6 +585,10 @@ footer {
 
 	.info-container {
 		flex-direction: column;
+	}
+
+	.fine-print {
+		font-size: 12px;
 	}
 
 	.verticalLine {
