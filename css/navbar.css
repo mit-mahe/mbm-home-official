@@ -112,17 +112,13 @@ li.has-ddown:focus-within .ddown {
 	display: block;
 }
 
-.menu-button {
-	display: none;
-}
-
-.closeMenuButton {
-	display: none;
-}
-
 .big-ddown a:active[href],
 .has-ddown:active {
 	-webkit-tap-highlight-color: transparent;
+}
+
+.nav-toggle-icon {
+	display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -159,6 +155,7 @@ li.has-ddown:focus-within .ddown {
 
 	.nav-toggle-icon {
 		appearance: none;
+		display: block;
 	}
 
 	.nav-toggle-icon,
