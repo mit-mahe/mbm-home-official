@@ -228,22 +228,23 @@ footer {
 }
 
 .fine-print {
-	padding: 0 0 2rem;
+	padding: 1.5rem;
 	text-align: center;
 	font-family: sans-serif;
 	color: #f8f5ee;
 	font-size: smaller;
+	background-color: #1d322f;
 }
 
 .sponsors {
 	background-color: #344546;
-	padding: 4vw;
+	padding: 6vh 4vw 3vh;
 	color: #f8f5ee;
 }
 
 .contactUs {
 	background-color: #344546;
-	padding: 4vw;
+	padding: 6vh 4vw 3vh;
 	color: #f8f5ee;
 }
 
@@ -602,6 +603,7 @@ footer {
 	.sponsors {
 		border-top: 1px solid #84a98c;
 		padding-top: 5vh;
+		padding-bottom: 1vh;
 	}
 
 	.home_section {
