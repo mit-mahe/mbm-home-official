@@ -357,6 +357,12 @@ footer {
 	/* z-index: 0; */
 }
 
+.image-inactive:hover {
+	transition: all 0.3s;
+	/* transform: scale(1.02); */
+	opacity: 0.8;
+}
+
 .theCanvas {
 	width: 100%;
 	overflow: hidden;
