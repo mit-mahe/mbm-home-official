@@ -126,15 +126,6 @@ li.has-ddown:focus-within .ddown {
 }
 
 @media screen and (max-width: 900px) {
-	@keyframes showMenu {
-		0% {
-			transform: scaleY(0);
-		}
-		100% {
-			transform: scale(1);
-		}
-	}
-
 	.big-ddown {
 		position: absolute;
 		top: 100%;
@@ -144,10 +135,8 @@ li.has-ddown:focus-within .ddown {
 		text-align: center;
 		background-color: var(--HEADER-BGCOLOR);
 		padding: 0.5rem;
-		max-height: 88vh;
+		height: calc(100vh - 0.3rem - 48px);
 		overflow-y: scroll;
-		transform-origin: top center;
-		animation: showMenu 0.3s ease-in-out forwards;
 	}
 
 	.big-ddown > li {
@@ -156,15 +145,7 @@ li.has-ddown:focus-within .ddown {
 		justify-content: center;
 	}
 
-	.big-ddown > li > a {
-		margin: auto;
-	}
-
-	nav li:focus-within .big-ddown {
-		display: block;
-	}
-
-	.menu-button {
+	.nav-toggle-container {
 		margin-top: 0.3rem;
 		background-color: transparent;
 		border: none;
@@ -176,9 +157,13 @@ li.has-ddown:focus-within .ddown {
 		position: relative;
 	}
 
-	.menu-icon,
-	.menu-icon::before,
-	.menu-icon::after {
+	.nav-toggle-icon {
+		appearance: none;
+	}
+
+	.nav-toggle-icon,
+	.nav-toggle-icon::before,
+	.nav-toggle-icon::after {
 		background-color: var(--HEADER-COLOR);
 		width: 40px;
 		height: 5px;
@@ -187,36 +172,61 @@ li.has-ddown:focus-within .ddown {
 		transition: all 0.3s;
 	}
 
-	.menu-icon::before,
-	.menu-icon::after {
+	.nav-toggle-icon::before,
+	.nav-toggle-icon::after {
 		content: "";
 	}
 
-	.menu-icon::before {
-		transform: translate(-20px, -12px);
+	.nav-toggle-icon::before {
+		transform: translateY(-12px);
 	}
 
-	.menu-icon::after {
-		transform: translate(-20px, 12px);
+	.nav-toggle-icon::after {
+		transform: translateY(12px);
 	}
 
-	.menu-button:focus-within .menu-icon,
-	nav:has(.big-ddown:focus-within) .menu-icon {
+	.nav-toggle-icon:checked {
 		background-color: transparent;
 	}
 
-	.menu-button:focus-within .menu-icon::before,
-	nav:has(.big-ddown:focus-within) .menu-icon::before {
-		transform: translateX(-20px) rotate(-45deg);
+	.nav-toggle-icon:checked::before {
+		transform: rotate(-45deg);
 	}
 
-	.menu-button:focus-within .menu-icon::after,
-	nav:has(.big-ddown:focus-within) .menu-icon::after {
-		transform: translateX(-20px) rotate(45deg);
+	.nav-toggle-icon:checked::after {
+		transform: rotate(45deg);
 	}
 
-	nav:focus-within .big-ddown {
-		display: block;
+	.big-ddown-hidden {
+		display: flex;
+		transform-origin: top center;
+		animation: hideMenu 0.3s ease-in-out forwards;
+	}
+
+	@keyframes hideMenu {
+		0% {
+			transform: scaleY(1);
+		}
+		100% {
+			transform: scaleY(0);
+		}
+	}
+
+	.big-ddown-shown {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		transform-origin: top center;
+		animation: showMenu 0.3s ease-in-out forwards;
+	}
+
+	@keyframes showMenu {
+		0% {
+			transform: scaleY(0);
+		}
+		100% {
+			transform: scale(1);
+		}
 	}
 
 	li.has-ddown:hover .ddown {
@@ -235,37 +245,7 @@ li.has-ddown:focus-within .ddown {
 	.ddown {
 		position: relative;
 		left: 0;
-	}
-
-	.closeMenuButton {
-		background-color: transparent;
-		border: none;
-		position: absolute;
-		margin-top: 0.2rem;
-		height: 48px;
-		width: 48px;
-	}
-
-	nav:focus-within .closeMenuButton {
-		display: block;
-	}
-
-	nav:focus-within .closeMenuButton:focus-within {
-		transform: translateX(-50px);
-	}
-
-	.closeMenuButton:focus + .big-ddown {
-		transform-origin: top center;
-		animation: hideMenu 0.3s ease-in-out forwards;
-	}
-
-	@keyframes hideMenu {
-		0% {
-			transform: scaleY(1);
-		}
-		100% {
-			transform: scaleY(0);
-		}
+		top: 0;
 	}
 
 	nav ul li a::after,

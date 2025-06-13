@@ -31,6 +31,7 @@ html {
 .html,
 body {
 	overflow-x: hidden;
+	background-color: #f8f5ee;
 }
 
 #loading-screen {

@@ -18,18 +18,22 @@
 		<script src="javascript/navbarThemeSwitcher.js"></script>
 		<script src="javascript/loadingScreen.js"></script>
 		<script src="javascript/browserChecker.js"></script>
+		<script src="javascript/navbarMenuToggle.js"></script>
 	</head>
 
-	<body style="background-color: #f8f5ee; overflow-x: hidden !important">
+	<body>
 		<div id="loading-screen">
 			<div id="loader"></div>
 		</div>
 		<header>
 			<nav aria-label="primary-nav" id="top_navbar">
-				<button class="menu-button" title="Open Nav Menu" tabindex="0">
-					<div class="menu-icon"></div>
-				</button>
-				<button class="closeMenuButton"></button>
+				<div class="nav-toggle-container">
+					<input
+						class="nav-toggle-icon"
+						id="nav-menu-toggle"
+						type="checkbox"
+						title="Nav Toggle" />
+				</div>
 				<ul class="big-ddown">
 					<li>
 						<a href="pages/teamCurrent.html">Team</a>
