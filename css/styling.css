@@ -156,6 +156,10 @@ body {
 	text-align: left;
 }
 
+.home_section h1 {
+	padding-top: 10vh;
+}
+
 .darkBG {
 	color: #f8f5ee;
 	position: relative;
@@ -174,13 +178,12 @@ body {
 .WeAreColor {
 	color: #0f2521;
 	font-size: 2.498vw;
-
 	word-wrap: break-word;
 	overflow-x: hidden;
 }
 
 .whatWeDo {
-	padding: 5vh 0;
+	padding: 8vh 0 5vh;
 	background-color: #344546;
 	/* height: 100vh; */
 	width: 100%;
