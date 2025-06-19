@@ -53,7 +53,6 @@
 
 .member {
 	width: 250px;
-	max-height: auto;
 	aspect-ratio: 1 / 1;
 	margin: 5px;
 	text-align: center;
@@ -75,12 +74,13 @@
 
 .member-img {
 	max-width: 180px;
-	height: auto;
+	display: block;
 	aspect-ratio: 1 / 1;
 	margin: 0 auto;
-	padding: 5px;
+	/* padding: 5px; */
 	position: relative;
 	overflow: hidden;
+	border-radius: 50%;
 }
 
 .member-img img {
@@ -91,16 +91,31 @@
 	display: block;
 }
 
-.member:hover {
-	transform: scale(1.04);
+.member-img::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: transform 0.4s;
+}
+
+.member-img:hover::before {
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 0.4s;
 }
 
 /* LinkedIn icon*/
-.member-img:hover::after {
+
+.member-img::after {
 	content: "in";
 	position: absolute;
-	bottom: 15px;
-	right: 15px;
+	top: 50%;
+	left: 50%;
 	background: #0077b5;
 	color: white;
 	opacity: 1;
@@ -109,30 +124,26 @@
 	font-size: 20px;
 	width: 30px;
 	height: 30px;
+	transform: translate(-50%, -50%) scale(0);
 	border-radius: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	z-index: 2;
-}
-
-.member-img::after {
-	transition: opacity 0.2s ease-in-out 0.1s;
+	transition: transform 0.4s;
 }
 
 .member-img:hover::after {
-	animation: pulse 1.5s infinite;
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 0.4s;
 }
 
-@keyframes pulse {
+@keyframes appear {
 	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(1.1);
+		transform: translate(-50%, -50%) scale(0);
 	}
 	100% {
-		transform: scale(1);
+		transform: translate(-50%, -50%) scale(1);
 	}
 }
 
