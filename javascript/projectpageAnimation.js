@@ -11,7 +11,7 @@ function initAnimation() {
 	animation.onended = (event) => {
 		console.log("Animation ended");
 		// animation.style.display = "inline-block";
-		animationContainer.classList.add("theDarkCanvas");
+		// animationContainer.classList.add("animation-dark");
 		animationContainer.classList.add("darkTheme");
 		document.documentElement.style.setProperty("--HEADER-BGCOLOR", "#344546");
 		document.documentElement.style.setProperty("--HEADER-COLOR", "#f8f5ee");

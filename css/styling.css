@@ -108,13 +108,6 @@ body {
 	background-color: #f8f5ee;
 }
 
-.dna {
-	position: absolute;
-	z-index: 1;
-	margin: 0;
-	padding-top: 20vh;
-}
-
 .content {
 	font-size: 1.35vw;
 	font-family: Alata;
@@ -175,13 +168,6 @@ body {
 	overflow-x: hidden;
 }
 
-.WeAreColor {
-	color: #0f2521;
-	font-size: 2.498vw;
-	word-wrap: break-word;
-	overflow-x: hidden;
-}
-
 .whatWeDo {
 	padding: 8vh 0 5vh;
 	background-color: #344546;
@@ -208,11 +194,6 @@ body {
 	margin-top: 65vh;
 }
 
-.mainBack {
-	background: #f8f5ee;
-	overflow-x: hidden;
-}
-
 .greenUnderline {
 	width: 8.488vw;
 	height: 0.517vw;
@@ -220,15 +201,6 @@ body {
 	margin-top: 1.041vw; /* Adjust as needed */
 	margin: auto;
 	position: relative;
-	overflow-x: hidden;
-}
-
-.greenBackground {
-	width: 100%;
-	/* height: 100vh; */
-	background: #344546;
-	position: absolute;
-	z-index: 0;
 	overflow-x: hidden;
 }
 
@@ -367,85 +339,15 @@ footer {
 	opacity: 0.8;
 }
 
-.theCanvas {
-	width: 100%;
-	overflow: hidden;
-	z-index: 1;
-	background-color: #f8f5ee;
-	height: 120vh;
-}
-
-.theDarkCanvas {
+.darkTheme {
 	background-color: #344546;
-}
-
-.anim {
-	max-width: 60vw;
-	max-height: 100vh;
-	padding-left: 26vw;
-	padding-top: 25vh;
-	display: block;
-	transition: all 1s;
-	z-index: 5;
-	position: absolute;
+	color: #f8f5ee;
 }
 
 .homepage-animation {
 	width: 20vw;
 	padding: 2.5vw;
 	margin-left: 15vw;
-}
-
-.BBresized {
-	max-width: 30vw;
-	max-height: 100vh;
-	padding-left: 26vw;
-	padding-top: 25vh;
-	transform: translate(-30vw, 0);
-	display: block;
-	transition: all 1s;
-	position: absolute;
-}
-
-.resized {
-	max-width: 60vw;
-	max-height: 100vh;
-	padding-left: 26vw;
-	padding-top: 25vh;
-	transform: translate(-30vw, 0);
-	display: block;
-	transition: all 1s;
-	position: absolute;
-}
-
-.pin-spacer {
-	background-color: #344546;
-	z-index: 0;
-}
-
-.projectPageDarkBG {
-	font-family: Adoha;
-	font-size: 2vw;
-	font-weight: 400;
-	line-height: 5.533vh;
-	text-align: left;
-	color: #f8f5ee;
-	max-width: 100%;
-	transform: translateX(100%);
-	overflow-x: hidden;
-	position: absolute;
-}
-
-.projectPageWhiteBG {
-	font-family: Adoha;
-	font-size: 2vw;
-	font-weight: 400;
-	text-align: left;
-	color: #344546;
-	max-width: 100%;
-	transform: translateX(-100%);
-	overflow-x: hidden;
-	position: absolute;
 }
 
 #animationContent {
@@ -468,7 +370,7 @@ footer {
 }
 
 #animationContent.increaseFontSize {
-	font-size: min(5vw, 2.2rem);
+	font-size: min(5vw, 2rem);
 	transition: all 0.5s;
 }
 
@@ -502,9 +404,9 @@ footer {
 
 .whiteSwitch #whiteBGContent p {
 	padding: 8vh 4vw 0;
-	font-family: Adoha;
+	font-family: Alata;
 	color: #344546;
-	font-size: min(5vw, 2.2rem);
+	font-size: min(5vw, 2rem);
 }
 
 .whiteSwitch #whiteBGContent #whiteBGContentPara1 {
@@ -529,7 +431,7 @@ footer {
 }
 
 #animationContent .animationContentRow p {
-	font-family: Adoha;
+	font-family: Alata;
 }
 
 .animationContentRow img {
@@ -542,20 +444,27 @@ footer {
 	color: #344546;
 }
 
-.learnMoreButton > div:hover {
-	transform: scale(1.02);
+.learnMoreButton > div {
+	font-size: min(5vw, 2rem);
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0.2rem 2rem;
+	border-radius: 20rem;
+	border: 3px #344546 solid;
+	max-width: fit-content;
+	margin: 0 auto 10vh;
+	align-content: center;
+	transition: transform 0.2s;
 }
 
-.learnMoreButton > div {
-	font-size: max(1.558vw, 1rem);
-	font-family: Bemirs;
-	font-weight: 580;
-	padding: 0.2rem;
-	border-radius: 20rem; /* always circular */
-	border: 0.37vh #344546 solid;
-	max-width: fit-content;
-	margin: 3vh auto 10vh;
-	align-content: center;
+.learnMoreHomepage > div {
+	/* font-family: Alata; */
+	font-size: max(1.35vw, 1rem);
+	margin-bottom: 2vh;
+}
+
+.learnMoreButton > div:hover {
+	transform: scale(1.1);
+	transition: transform 0.2s;
 }
 
 .whatIsiGEM {
