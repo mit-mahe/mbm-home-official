@@ -76,7 +76,7 @@
 	max-width: 180px;
 	display: block;
 	aspect-ratio: 1 / 1;
-	margin: 0 auto;
+	margin: 10px auto;
 	/* padding: 5px; */
 	position: relative;
 	overflow: hidden;
@@ -85,7 +85,6 @@
 
 .member-img img {
 	width: 100%;
-	height: auto;
 	border-radius: 50%;
 	object-fit: cover;
 	display: block;
