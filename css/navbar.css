@@ -104,11 +104,9 @@ nav ul li a:focus::after {
 
 .ddown li a {
 	padding: 0.4rem 1rem;
-	font-size: 1.1rem;
 }
 
-li.has-ddown:hover .ddown,
-li.has-ddown:focus-within .ddown {
+li.has-ddown:hover .ddown {
 	display: block;
 }
 
@@ -243,6 +241,10 @@ li.has-ddown:focus-within .ddown {
 		position: relative;
 		left: 0;
 		top: 0;
+	}
+
+	.ddown li a {
+		font-size: 1.1rem;
 	}
 
 	nav ul li a::after,
