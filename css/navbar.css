@@ -106,7 +106,8 @@ nav ul li a:focus::after {
 	padding: 0.4rem 1rem;
 }
 
-li.has-ddown:hover .ddown {
+li.has-ddown:hover .ddown,
+li.has-ddown:focus-within .ddown {
 	display: block;
 }
 
