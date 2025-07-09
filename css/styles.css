@@ -81,6 +81,7 @@
 	position: relative;
 	overflow: hidden;
 	border-radius: 50%;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .member-img img {
@@ -88,6 +89,7 @@
 	border-radius: 50%;
 	object-fit: cover;
 	display: block;
+
 }
 
 .member-img::before {
@@ -158,6 +160,8 @@
 .board {
 	width: 20vw;
 	align-content: center;
+	width: 100%;
+	padding-bottom: 10vh;
 }
 
 .board .heading {
@@ -203,7 +207,7 @@
 }
 
 .alum-board {
-	display: flex;
+	/* display: flex; */
 	padding: 5vw 0;
 	justify-content: space-evenly;
 }
