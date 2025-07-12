@@ -227,7 +227,7 @@
 	border: 7px solid #f8f5ee;
 }
 
-.alumni {
+/* .alumni {
 	width: 160px;
 	max-height: auto;
 	aspect-ratio: 1 / 1;
@@ -236,7 +236,7 @@
 	color: #344546;
 	z-index: 1;
 	position: relative;
-}
+} */
 
 .alum-row2:last-child .alumni2:last-child {
 	z-index: 2;
@@ -318,9 +318,9 @@
 		font-size: 18px;
 	}
 
-	.alumni {
+	/* .alumni {
 		width: 110px;
-	}
+	} */
 
 	.alumni-img {
 		width: 110px;
@@ -497,6 +497,12 @@
 	flex-wrap: wrap;
 }
 
+.achieve-block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .achieve-container {
 	position: relative;
 	width: 580px;
@@ -556,17 +562,74 @@
 	padding-top: 260px;
 }
 
-.back p {
-	font-size: 25px;
+.back{
 	padding: 20px;
+}
+
+.back .alumni{
+	display: flex;
+    flex-wrap: wrap;
 	text-align: center;
+}
+
+.subsystem{
+	box-sizing: border-box;
+	flex: 0 0 50%;
+}
+
+.back h3{
+	font-size: 20px;
+	padding: 20px 0 10px 0;
 	font-weight: 200;
 	font-family: Alata;
+	color: #f8f5ee;
+	text-decoration: underline;
+}
+
+.back ul{
+	list-style: none;
+	font-size: 18px;
+	font-weight: 200;
+	font-family: Alata;
+	padding: 0 10px;
+}
+
+.back li a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.back li a:hover{
+	color: rgb(68, 188, 106);
+	transition: all 0.2s;
 }
 
 .achieve-container:hover .achieve-card {
 	cursor: pointer;
 	transform: rotateY(180deg);
+}
+
+.achievements{
+	width: 50vw;
+	padding: 5vw;
+	text-align: center;
+	color: #334545;
+}
+
+.achievements h2{
+	font-size: 30px;
+	text-align: center;
+	font-weight: 600;
+	font-family: Adoha;
+	letter-spacing: 3px;
+}
+
+.achievements p{
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+	font-weight: 200;
+	font-family: Alata;
 }
 
 @media (hover: none) and (pointer: coarse) {
