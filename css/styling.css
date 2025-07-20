@@ -237,7 +237,7 @@ footer {
 
 .sponsors {
 	color: #344546;
-	padding: 2vh 4vw 1vh;
+	padding: 2vh;
 	background-color: #f8f5ee;
 	/* border: 2rem solid #344546; */
 	border-radius: 1rem;
@@ -282,28 +282,22 @@ footer {
 }
 
 .gridForSponsors {
-	display: grid;
-	grid-template-rows: auto auto auto;
-	grid-template-columns: auto auto auto;
-	/* padding-bottom: 5vw; */
-	grid-row-gap: 5vh;
-	grid-column-gap: 2vw;
-	margin: 5vh auto;
-	justify-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
+	margin: 5vh auto;
 	overflow-x: hidden;
-	/* background-color: whitesmoke; */
-	/* padding: 2rem; */
 	border-radius: 0.5rem;
+	padding-top: 2vh;
 }
 
 .gridForSponsors img {
-	max-width: 11vw;
-	max-height: 5vh;
-	/* filter: drop-shadow(2px 1px 0 white); */
-	/* background-color: #f8f5ee; */
-	/* padding: 0.3rem; */
+	max-width: 10vw;
+	max-height: 6vh;
+	margin: 3vh 1.5vw; 
 }
+
 /*   carousel stuff   */
 
 .carousel {
@@ -584,7 +578,6 @@ footer {
 	.sponsors {
 		padding-top: 5vh;
 		padding-bottom: 1vh;
-		margin: 5vh 4vw;
 	}
 
 	.home_section {

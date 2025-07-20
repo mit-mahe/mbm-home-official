@@ -255,6 +255,130 @@
 	display: none;
 }
 
+.gallery-container {
+	padding: 3vw;
+	max-width: 90vw;
+	margin: auto;
+}
+
+.gallery-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery-item {
+	background-color: aliceblue;
+	margin: 1rem;
+	width: 15vw;
+	overflow: hidden;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.gallery-item img {
+	width: 100%;
+	aspect-ratio: 2 / 3;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  	transform: scale(1.05);
+}
+
+.gallery-item figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 1rem 0.5rem;
+	font-size: 1rem;
+	font-family: "Alata";
+	color: #f8f5ee;
+	/* background-color: rgba(52, 69, 70, 0.8); */
+	background: linear-gradient(
+		to top,
+		rgba(52, 69, 70, 1) 0%,
+		rgba(52, 69, 70, 0.9) 30%,
+		rgba(52, 69, 70, 0.9) 60%,
+		rgba(52, 69, 70, 0.5) 95%,
+		rgba(52, 69, 70, 0) 100%
+	);
+	opacity: 0; 
+	transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover figcaption {
+  	opacity: 1;
+}
+
+#lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 1000;
+}
+
+#lightbox.hidden {
+	display: none;
+}
+
+#lightbox img {
+	max-width: 90%;
+	max-height: 80vh;
+	border-radius: 10px;
+}
+
+#lightbox-caption {
+	color: white;
+	margin-top: 1rem;
+	font-size: 1.1rem;
+	text-align: center;
+	font-family: "Alata", sans-serif;
+}
+
+#closeBtn, #prevBtn, #nextBtn {
+	position: absolute;
+	color: #6cc680;
+	font-size: 2rem;
+	cursor: pointer;
+	user-select: none;
+}
+
+#closeBtn {
+	color: whitesmoke;
+	top: 20px;
+	right: 50px;
+}
+
+#prevBtn {
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+}
+
+#nextBtn {
+	top: 50%;
+	right: 40px;
+	transform: translateY(-50%);
+}
+
+
 @media (max-width: 580px) {
 	.mainTitle {
 		font-size: 2rem;
@@ -334,6 +458,28 @@
 
 	.mobile {
 		display: block;
+	}
+
+	.gallery-item {
+		width: 22vw;
+		margin: 0.5rem;
+	}
+
+	#lightbox img{
+		width: 80%;
+	}
+
+	#closeBtn{
+		top: 5px;
+		right: 5px;
+	}
+
+	#prevBtn{
+		left: 4px;
+	}
+
+	#nextBtn{
+		right: 4px;
 	}
 }
 
