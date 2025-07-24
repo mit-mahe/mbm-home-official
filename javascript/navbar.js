@@ -1,10 +1,10 @@
 // navbar.js
 
 window.addEventListener("DOMContentLoaded", () => {
-  const isInSubfolder = window.location.pathname.includes("/pages/");
-  const prefix = isInSubfolder ? "../" : "";
+	const isInSubfolder = window.location.pathname.includes("/pages/");
+	const prefix = isInSubfolder ? "../" : "";
 
-  const navbarHTML = `
+	const navbarHTML = `
   <div id="loading-screen">
     <div id="loader"></div>
   </div>
@@ -36,10 +36,10 @@ window.addEventListener("DOMContentLoaded", () => {
   </a>
   `;
 
-  const placeholder = document.getElementById("navbar-placeholder");
-  if (placeholder) {
-    placeholder.innerHTML = navbarHTML;
-  } else {
-    console.warn("Navbar placeholder not found.");
-  }
+	const placeholder = document.getElementById("navbar-placeholder");
+	if (placeholder) {
+		placeholder.innerHTML = navbarHTML;
+	} else {
+		console.warn("Navbar placeholder not found.");
+	}
 });

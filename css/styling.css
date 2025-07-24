@@ -235,28 +235,42 @@ footer {
 	background-color: #2a3738;
 }
 
-.sponsors {
-	color: #344546;
-	padding: 2vh;
-	background-color: #f8f5ee;
-	/* border: 2rem solid #344546; */
-	border-radius: 1rem;
-	margin: 11vh 4vw;
-}
-
 .darkTheme .sponsors h2 {
 	color: #344546;
 }
 
 .contactUs {
 	background-color: #344546;
-	padding: 13vh 4vw 3vh;
+	padding: 10vh 4vw 3vh;
 	color: #f8f5ee;
+}
+
+.footer-content {
+	font-size: 1.35vw;
+	font-family: Alata;
+	font-weight: 400;
+	word-wrap: break-word;
+	max-width: fit-content;
+	opacity: 0;
+	/* filter: blur(5px); */
+	transition: all 1.5s;
+	overflow-x: hidden;
+	padding: 8vh 0;
+}
+
+.footer-content a {
+	font-family: Alata;
+	color: #f8f5ee;
+	transition: color ease-in-out 0.5s;
+}
+
+.footer-content a:hover {
+	transition: color ease-in-out 0.5s;
+	color: #6cc680;
 }
 
 .contactUs p {
 	text-align: left;
-	padding: 10vh 0;
 	opacity: 1;
 }
 
@@ -281,21 +295,36 @@ footer {
 	margin: 10vh 0;
 }
 
+.sponsors {
+	color: #344546;
+	padding: 3vh 1vw 1vh;
+	background-color: #f8f5ee;
+	/* border: 2rem solid #344546; */
+	border-radius: 1rem;
+	margin: 7vh 4vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .gridForSponsors {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	margin: 5vh auto;
+	align-content: center;
+	margin: 1vh auto;
 	overflow-x: hidden;
 	border-radius: 0.5rem;
-	padding-top: 2vh;
+	/* padding-top: 2vh; */
+	flex-grow: 1;
 }
 
 .gridForSponsors img {
-	max-width: 10vw;
+	max-width: 8vw;
 	max-height: 6vh;
-	margin: 3vh 1.5vw; 
+	margin: 2.5vh 1vw;
 }
 
 /*   carousel stuff   */
@@ -646,11 +675,8 @@ footer {
 		width: 60vw;
 	}
 
-	.gridForSponsors {
-		grid-row-gap: 3vh;
-	}
-
 	.gridForSponsors img {
-		max-width: 25vw;
+		max-width: 15vw;
+		margin: 0.8rem;
 	}
 }

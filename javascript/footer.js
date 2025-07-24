@@ -1,14 +1,14 @@
 // footer.js
 window.addEventListener("DOMContentLoaded", () => {
-  const isInPagesFolder = window.location.pathname.includes("/pages/");
-  const prefix = isInPagesFolder ? "../" : "";
+	const isInPagesFolder = window.location.pathname.includes("/pages/");
+	const prefix = isInPagesFolder ? "../" : "";
 
-  const footerHTML = `
+	const footerHTML = `
   <footer class="darkTheme">
     <div class="info-container">
       <div class="contactUs" id="contactUs">
         <h2 class="Titles homeTitle green-underline">Contact us</h2>
-        <p class="content">
+        <p class="footer-content">
           Email:
           <a href="mailto:manipalbiomachines.igem@gmail.com">manipalbiomachines.igem@gmail.com</a>
           <br /><br />
@@ -34,8 +34,8 @@ window.addEventListener("DOMContentLoaded", () => {
           <img src="${prefix}images/footer/sponsor_logos/biorender.png" alt="BioRender" />
           <img src="${prefix}images/footer/sponsor_logos/IDT.png" alt="IDT" />
           <img src="${prefix}images/footer/sponsor_logos/genscript.png" alt="Genscript" />
-          <img src="${prefix}images/footer/sponsor_logos/TWIST.png" alt="TWIST" />
           <img src="${prefix}images/footer/sponsor_logos/SnapGene.png" alt="SnapGene" />
+          <img src="${prefix}images/footer/sponsor_logos/TWIST.png" alt="TWIST" />
           <img src="${prefix}images/footer/sponsor_logos/NewEngland.png" alt="New England BioLabs" />
           <img src="${prefix}images/footer/sponsor_logos/ManipalLOGO.png" alt="Manipal Academy of Higher Education" />
         </div>
@@ -45,10 +45,10 @@ window.addEventListener("DOMContentLoaded", () => {
   </footer>
   `;
 
-  const placeholder = document.getElementById("footer-placeholder");
-  if (placeholder) {
-    placeholder.innerHTML = footerHTML;
-  } else {
-    console.warn("Footer placeholder not found.");
-  }
+	const placeholder = document.getElementById("footer-placeholder");
+	if (placeholder) {
+		placeholder.innerHTML = footerHTML;
+	} else {
+		console.warn("Footer placeholder not found.");
+	}
 });
