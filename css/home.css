@@ -1,0 +1,77 @@
+/* Subsystem Cars */
+
+.card_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.subsystem-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  background: #fbfaf6;
+  border-radius: 0.5rem;
+  padding: 20px;
+  margin: 2rem;
+  box-shadow: 0 4px 8px #84a98cbc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  justify-content: space-between;
+}
+
+.subsystem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #84a98cda;
+}
+
+.subsystem_title {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0 3rem;
+}
+
+.subsystem_title img {
+  width: 25vw;
+  opacity: 0.7;
+}
+
+.subsystem-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #344546;
+  text-align: center;
+  font-family: Adoha;
+}
+
+.subsystem-card p {
+  font-size: 1.35vw;
+  color: #344546;
+  line-height: 1.4;
+  font-family: Alata;
+}
+
+.subsystem-card img {
+  width: 35%;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .subsystem-card {
+    width: 70%;
+  }
+
+  .subsystem-card p {
+    font-size: 0.8rem;
+  }
+
+  .subsystem_title img {
+    width: auto;
+    height: 4vw;
+  }
+
+  .subsystem-card img {
+    width: 20%;
+  }
+}
