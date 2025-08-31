@@ -2,20 +2,21 @@
 
 .card_section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
+  flex-wrap: wrap;
+  margin: 5vh 0 4vh;
+  /* padding: 20px; */
 }
 
 .subsystem-card {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 23%;
+  width: 350px;
   background: #fbfaf6;
   border-radius: 0.5rem;
   padding: 20px;
-  margin: 2rem;
+  margin: 30px;
   box-shadow: 0 4px 8px #84a98cbc;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   justify-content: space-between;
@@ -50,6 +51,8 @@
   color: #344546;
   line-height: 1.4;
   font-family: Alata;
+  /* text-indent: 2rem; */
+  padding: 0 2rem;
 }
 
 .subsystem-card img {
@@ -58,10 +61,6 @@
 }
 
 @media (max-width: 800px) {
-  .subsystem-card {
-    width: 70%;
-  }
-
   .subsystem-card p {
     font-size: 0.8rem;
   }
