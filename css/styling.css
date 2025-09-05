@@ -327,6 +327,12 @@ footer {
 	margin: 2.5vh 1vw;
 }
 
+#inera {
+	max-width: 16vw;
+	max-height: 12vh;
+	margin: 2.5vh 12vw;
+}
+
 /*   carousel stuff   */
 
 .carousel {
@@ -678,5 +684,10 @@ footer {
 	.gridForSponsors img {
 		max-width: 15vw;
 		margin: 0.8rem;
+	}
+
+	#inera {
+		max-width: 30vw;
+		margin: 2.5vh 25vw;
 	}
 }
