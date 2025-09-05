@@ -1,76 +1,76 @@
 /* Subsystem Cars */
 
 .card_section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 5vh 0 4vh;
-  /* padding: 20px; */
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 5vh 0 4vh;
+	/* padding: 20px; */
 }
 
 .subsystem-card {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  background: #fbfaf6;
-  border-radius: 0.5rem;
-  padding: 20px;
-  margin: 30px;
-  box-shadow: 0 4px 8px #84a98cbc;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  justify-content: space-between;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: min(350px, 80vw);
+	background: #fbfaf6;
+	border-radius: 0.5rem;
+	padding: 20px;
+	margin: 2vh 2vw;
+	box-shadow: 0 4px 8px #84a98cbc;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	justify-content: space-between;
 }
 
 .subsystem-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px #84a98cda;
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px #84a98cda;
 }
 
 .subsystem_title {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 1rem 0 3rem;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 1rem 0 3rem;
 }
 
 .subsystem_title img {
-  width: 25vw;
-  opacity: 0.7;
+	width: 25vw;
+	opacity: 0.7;
 }
 
 .subsystem-card h3 {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  color: #344546;
-  text-align: center;
-  font-family: Adoha;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	color: #344546;
+	text-align: center;
+	font-family: Adoha;
 }
 
 .subsystem-card p {
-  font-size: 1.35vw;
-  color: #344546;
-  line-height: 1.4;
-  font-family: Alata;
-  /* text-indent: 2rem; */
-  padding: 0 2rem;
+	font-size: 1.35vw;
+	color: #344546;
+	line-height: 1.4;
+	font-family: Alata;
+	/* text-indent: 2rem; */
+	padding: 0 2rem;
 }
 
 .subsystem-card img {
-  width: 35%;
-  margin-bottom: 1rem;
+	width: 35%;
+	margin-bottom: 1rem;
 }
 
 @media (max-width: 800px) {
-  .subsystem-card p {
-    font-size: 0.8rem;
-  }
+	.subsystem-card p {
+		font-size: 0.8rem;
+	}
 
-  .subsystem_title img {
-    width: auto;
-    height: 4vw;
-  }
+	.subsystem_title img {
+		width: auto;
+		height: 4vw;
+	}
 
-  .subsystem-card img {
-    width: 20%;
-  }
+	.subsystem-card img {
+		width: 20%;
+	}
 }
