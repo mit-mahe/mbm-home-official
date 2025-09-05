@@ -31,6 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
       <div class="sponsors">
         <h2 class="Titles homeTitle green-underline">Sponsors</h2>
         <div class="gridForSponsors">
+          <img src="${prefix}images/footer/sponsor_logos/IneraBB.png" alt="Inera BB" />
           <img src="${prefix}images/footer/sponsor_logos/biorender.png" alt="BioRender" />
           <img src="${prefix}images/footer/sponsor_logos/IDT.png" alt="IDT" />
           <img src="${prefix}images/footer/sponsor_logos/genscript.png" alt="Genscript" />
