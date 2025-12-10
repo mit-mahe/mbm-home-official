@@ -433,6 +433,28 @@ footer {
 	min-height: auto;
 }
 
+#animationContainer figure video {
+	max-width: 40vw;
+}
+
+#animationContainer figcaption {
+	color: whitesmoke;
+	font-family: Alata;
+	/* padding-left: 2rem; */
+	text-align: center;
+	font-size: min(4vw, 1.2rem);
+}
+
+#animationContainer figcaption a {
+	color: whitesmoke;
+	font-family: Alata;
+	text-decoration: none;
+}
+
+#animationContainer figcaption a:hover {
+	color: #6cc680;
+}
+
 #animationContainer video {
 	padding-top: 5vh;
 	max-width: 50vw;
@@ -545,6 +567,10 @@ footer {
 	}
 
 	#animationContainer video {
+		max-width: 100%;
+	}
+
+	#animationContainer figure video {
 		max-width: 100%;
 	}
 
