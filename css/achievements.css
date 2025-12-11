@@ -1,0 +1,51 @@
+.achievements-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5vh 0;
+}
+
+.achieve-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2vh 0;
+}
+
+.achieve-img {
+	max-height: 20vh;
+	max-width: 40vw;
+	margin: 0 3vw;
+}
+
+.achievements {
+	width: 44vw;
+	padding: 3vh 2vw;
+	color: #334545;
+}
+
+.achievements p {
+	font-size: min(1.4rem, 4vw);
+	padding: 10px;
+	text-align: left;
+	font-weight: 200;
+	font-family: Alata;
+}
+
+.achieve-block:nth-child(2n) {
+	flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1200px) {
+	.achieve-block:nth-child(n) {
+		flex-direction: column;
+	}
+
+	.achievements {
+		width: 85vw;
+	}
+
+	.subsystem {
+		flex: 0 0 100%;
+	}
+}

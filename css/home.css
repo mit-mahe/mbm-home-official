@@ -1,11 +1,125 @@
-/* Subsystem Cars */
+.home_section {
+	overflow-x: hidden;
+	position: relative;
+	padding: 5vw;
+	display: flex;
+	text-align: left;
+}
+
+.home_section h1 {
+	padding-top: 10vh;
+}
+
+.homepage-animation {
+	width: 20vw;
+	padding: 2.5vw;
+	margin-left: 15vw;
+}
+
+.learnMoreHomepage > div {
+	font-family: Alata;
+	font-size: min(2.5vw, 1.3rem);
+	margin-bottom: 2vh;
+}
+
+.whatIsiGEM {
+	display: flex;
+	align-items: center;
+}
+
+.whatIsiGEM p {
+	width: 60vw;
+}
+
+.dna-animation {
+	position: absolute;
+	max-width: 100%;
+	top: 50%;
+	transform: translateY(-45%);
+}
+
+.show {
+	opacity: 1;
+	/* filter: blur(0); */
+	transform: translateX(0);
+	overflow-x: hidden;
+}
+
+.whatWeDo {
+	padding: 8vh 0 5vh;
+	background-color: #344546;
+	/* height: 100vh; */
+	width: 100%;
+}
+
+.sdg_img {
+	float: right;
+	position: relative;
+	padding-right: 5vh;
+	max-height: 50vh;
+	max-width: 50vw;
+	width: auto;
+	z-index: 0;
+	padding-top: 0vh;
+}
+
+/*   carousel stuff   */
+
+.carousel {
+	padding-top: 10vh;
+	height: fit-content;
+	margin: auto;
+	position: relative;
+	overflow-x: hidden;
+	padding-bottom: 10vh;
+	align-items: center;
+}
+
+.image {
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	transition: transform 0.5s ease;
+	margin: auto;
+}
+
+.image li {
+	height: auto;
+	margin: 0 2vh;
+}
+
+.image img {
+	width: 28vh;
+	height: auto;
+	border-radius: 3vh;
+}
+
+.image-active {
+	opacity: 1;
+	padding: 0;
+}
+
+.image-active img {
+	width: 35vh;
+}
+
+.image-inactive {
+	opacity: 0.5;
+}
+
+.image-inactive:hover {
+	transition: all 0.3s;
+	transform: scale(1.05);
+	opacity: 0.8;
+}
+
+/* Subsystem Cards */
 
 .card_section {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 5vh 0 4vh;
-	/* padding: 20px; */
 }
 
 .subsystem-card {
@@ -51,7 +165,6 @@
 	color: #344546;
 	line-height: 1.4;
 	font-family: Alata;
-	/* text-indent: 2rem; */
 	padding: 0 2rem;
 }
 
@@ -72,5 +185,33 @@
 
 	.subsystem-card img {
 		width: 20%;
+	}
+}
+
+@media (max-width: 640px) {
+	.sdg_img {
+		max-width: 100%;
+		width: 60vw;
+		height: auto;
+		padding: 0;
+	}
+
+	.whatIsiGEM p {
+		width: 100%;
+	}
+
+	.home_section {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.homeTitle {
+		font-size: 22px;
+	}
+
+	.homepage-animation {
+		width: 40vw;
+		margin: 0;
 	}
 }

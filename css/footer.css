@@ -1,0 +1,167 @@
+footer {
+	background-color: #344546;
+}
+
+.info-container {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+}
+
+.fine-print {
+	padding: 1rem;
+	text-align: center;
+	font-family: sans-serif;
+	color: #f8f5ee;
+	font-size: smaller;
+	background-color: #2a3738;
+}
+
+.darkTheme .sponsors h2 {
+	color: #344546;
+}
+
+.contactUs {
+	background-color: #344546;
+	padding: 10vh 4vw 3vh;
+	color: #f8f5ee;
+}
+
+.footer-content {
+	font-size: 1.35vw;
+	font-family: Alata;
+	font-weight: 400;
+	word-wrap: break-word;
+	max-width: fit-content;
+	opacity: 0;
+	/* filter: blur(5px); */
+	transition: all 1.5s;
+	overflow-x: hidden;
+	padding: 8vh 0;
+}
+
+.footer-content a {
+	font-family: Alata;
+	color: #f8f5ee;
+	transition: color ease-in-out 0.5s;
+}
+
+.footer-content a:hover {
+	transition: color ease-in-out 0.5s;
+	color: #6cc680;
+}
+
+.contactUs p {
+	text-align: left;
+	opacity: 1;
+}
+
+.socialMedia {
+	display: flex;
+	justify-content: space-around;
+}
+
+.socialMedia img {
+	width: 50px;
+	max-height: 50px;
+	padding: 10px;
+}
+
+.socialMedia img:hover {
+	filter: drop-shadow(5px 5px 1px #0f2521);
+}
+
+.verticalLine {
+	width: 1px;
+	background-color: #84a98c;
+	margin: 10vh 0;
+}
+
+.sponsors {
+	color: #344546;
+	padding: 3vh 1vw 1vh;
+	background-color: #f8f5ee;
+	/* border: 2rem solid #344546; */
+	border-radius: 1rem;
+	margin: 7vh 4vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gridForSponsors {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin: 1vh auto;
+	overflow-x: hidden;
+	border-radius: 0.5rem;
+	/* padding-top: 2vh; */
+	flex-grow: 1;
+}
+
+.gridForSponsors img {
+	max-width: 8vw;
+	max-height: 6vh;
+	margin: 2.5vh 1vw;
+}
+
+#inera {
+	max-width: 16vw;
+	max-height: 12vh;
+	margin: 2.5vh 12vw;
+}
+
+@media (max-width: 640px) {
+	.info-container {
+		flex-direction: column;
+	}
+
+	.fine-print {
+		font-size: 12px;
+	}
+
+	.verticalLine {
+		display: none;
+	}
+
+	.contactUs {
+		padding-top: 8vh;
+	}
+
+	.contactUs::after {
+		display: block;
+		position: absolute;
+		height: 1px;
+		width: 88%;
+		content: "";
+		background-color: #84a98c;
+		/* bottom: 0; */
+		margin: auto;
+		left: 50%;
+		transform: translate(-50%, 3vh);
+	}
+
+	.contactUs p {
+		font-size: 12px;
+		padding: 2vh 3vw;
+	}
+
+	.sponsors {
+		padding-top: 5vh;
+		padding-bottom: 1vh;
+	}
+
+	.gridForSponsors img {
+		max-width: 15vw;
+		margin: 0.8rem;
+	}
+
+	#inera {
+		max-width: 30vw;
+		margin: 2.5vh 25vw;
+	}
+}

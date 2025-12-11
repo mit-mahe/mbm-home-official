@@ -1,0 +1,145 @@
+.grp_picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: min(90vw, 750px);
+	height: auto;
+	margin: 5vh auto;
+	border-radius: 20px;
+	padding: 4vh 0;
+}
+
+.grp_picture img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+
+.member {
+	width: 250px;
+	aspect-ratio: 1 / 1;
+	margin: 25px 5px 15px;
+	text-align: center;
+	color: #344546;
+	transition: all 0.3s ease-in-out;
+}
+
+.member h3 {
+	font-size: 1rem;
+	font-family: Alata;
+	font-weight: 600;
+}
+
+.member h5 {
+	font-size: 0.8rem;
+	font-family: Alata;
+	font-weight: 200;
+}
+
+.member-img {
+	max-width: 180px;
+	display: block;
+	aspect-ratio: 1 / 1;
+	margin: 10px auto;
+	/* padding: 5px; */
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.member-img img {
+	width: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	display: block;
+}
+
+.member-img::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: transform 0.4s;
+}
+
+.member-img:hover::before {
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 0.4s;
+}
+
+/* LinkedIn icon*/
+
+.member-img::after {
+	content: "in";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #0077b5;
+	color: white;
+	opacity: 1;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	transform: translate(-50%, -50%) scale(0);
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	transition: transform 0.4s;
+}
+
+.member-img:hover::after {
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 0.4s;
+}
+
+@keyframes appear {
+	0% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+.member-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px 0 10px;
+	margin: 0 auto;
+	width: min(830px, 95vw);
+}
+
+@media (max-width: 580px) {
+	.grp_picture {
+		margin: 3vh auto;
+	}
+
+	.member {
+		width: 65vw;
+		margin: 8px;
+	}
+
+	.member h3 {
+		font-size: 4vw;
+	}
+
+	.member h5 {
+		font-size: 3vw;
+	}
+
+	.member-img,
+	.member-img img {
+		max-width: 50vw;
+	}
+}
