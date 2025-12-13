@@ -114,6 +114,13 @@
   max-height: 100px;
 }
 
+.video-container {
+  min-width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 1024px) {
   #animationContent {
     width: 90vw;
