@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Official website of MBM Manipal, Student Team at Manipal Institute of Technology"
+    />
+    <meta
+      name="keywords"
+      content="MBM, Manipal, Biomachines Club, Biomachines team"
+    />
+    <link rel="icon" href="../images/ICON_min.png" />
+    <title>PhytClub | Manipal BioMachines</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/project-page.css" />
+    <script src="../javascript/loadingScreen.js"></script>
+    <script src="../javascript/browserChecker.js"></script>
+    <script src="../javascript/projectpageAnimation.js"></script>
+    <script src="../javascript/navbarThemeSwitcher.js"></script>
+    <script src="../javascript/navbarMenuToggle.js"></script>
+    <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/footer.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <main>
+      <div id="animationContainer">
+        <video id="animation" autoplay muted playsinline>
+          <source
+            src="../animations/phytclub_animation.webm"
+            type="video/webm; codecs=vp9"
+          />
+          <source src="../animations/phytclub_animation.mp4" type="video/mp4" />
+          Your browser does not support the video tag
+        </video>
+        <div id="animationContent">
+          <div class="animationContentRow">
+            <p>India is the world’s second-largest producer of pepper.</p>
+            <img
+              src="../images/projects/phytclub_emj1.png"
+              alt="pepper shaker"
+            />
+          </div>
+          <div class="animationContentRow">
+            <p>
+              Despite having over half of the global pepper cultivation area, it
+              contributes only 11–17% of total production.
+            </p>
+            <img src="../images/projects/phytclub_emj2.png" alt="Water" />
+          </div>
+          <div class="animationContentRow">
+            <p>
+              A major cause of this low yield is pepper foot rot, responsible
+              for up to $716.9 million in annual global losses.
+            </p>
+            <img src="../images/projects/phytclub_emj3.png" alt="Bacterium" />
+          </div>
+        </div>
+      </div>
+      <div class="whiteSwitch">
+        <div id="whiteBGContent">
+          <div id="whiteBGContentPara1">
+            <img
+              src="../images/projects/phytclub_img1.png"
+              alt="phytclub logo"
+            />
+            <p>
+              PhytClub's proposed solution to combat pepper foot rot is by
+              targeting <i>Phytophthora capsici</i> at its zoospore stage. It
+              utilizes an siRNA-chitosan nanoformulation for silencing the bZIP1
+              gene, essential for its infection processes.
+            </p>
+          </div>
+          <p>
+            Complementing this, its software solution aids in the development of
+            siRNA-nanoparticle delivery systems for other projects, broadening
+            the scope of the project.
+          </p>
+        </div>
+        <img src="../images/projects/phytclub_img2.png" alt="TCC" />
+      </div>
+      <a
+        class="learnMoreButton"
+        href="https://2025.igem.wiki/mit-mahe/index.html"
+        target="_blank"
+        ><div class="borderLine">Learn More</div></a
+      >
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      const video = document.getElementById("animation");
+      video.playbackRate = 2;
+    </script>
+  </body>
+</html>

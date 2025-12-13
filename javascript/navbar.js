@@ -1,10 +1,10 @@
 // navbar.js
 
 window.addEventListener("DOMContentLoaded", () => {
-	const isInSubfolder = window.location.pathname.includes("/pages/");
-	const prefix = isInSubfolder ? "../" : "";
+  const isInSubfolder = window.location.pathname.includes("/pages/");
+  const prefix = isInSubfolder ? "../" : "";
 
-	const navbarHTML = `
+  const navbarHTML = `
   <div id="loading-screen">
     <div id="loader"></div>
   </div>
@@ -18,6 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
         <li class="has-ddown" tabindex="0">
           <a>Projects &#x25BE;</a>
           <ul class="ddown">
+            <li><a href="${prefix}pages/phytclub_2025.html">2025</a></li>
             <li><a href="${prefix}pages/caapi_2024.html">2024</a></li>
             <li><a href="${prefix}pages/carbanel_2023.html">2023</a></li>
             <li><a href="${prefix}pages/ampifin_2022.html">2022</a></li>
@@ -36,10 +37,10 @@ window.addEventListener("DOMContentLoaded", () => {
   </a>
   `;
 
-	const placeholder = document.getElementById("navbar-placeholder");
-	if (placeholder) {
-		placeholder.innerHTML = navbarHTML;
-	} else {
-		console.warn("Navbar placeholder not found.");
-	}
+  const placeholder = document.getElementById("navbar-placeholder");
+  if (placeholder) {
+    placeholder.innerHTML = navbarHTML;
+  } else {
+    console.warn("Navbar placeholder not found.");
+  }
 });

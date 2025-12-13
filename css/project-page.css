@@ -1,152 +1,159 @@
 #animationContent {
-	width: 0;
-	height: 0;
-	font-weight: 400;
-	color: #f8f5ee;
-	padding: 12vh 0;
-	transform: scale(0);
-	font-size: 0px;
+  width: 0;
+  height: 0;
+  font-weight: 400;
+  color: #f8f5ee;
+  padding: 12vh 0;
+  transform: scale(0);
+  font-size: 0px;
 }
 
 #animationContent.scaleUp {
-	height: auto;
-	width: 45vw;
-	transform: scale(1);
-	transform-origin: top center;
-	transition: all 0.5s;
-	align-self: center;
+  height: auto;
+  width: 45vw;
+  transform: scale(1);
+  transform-origin: top center;
+  transition: all 0.5s;
+  align-self: center;
 }
 
 #animationContent.increaseFontSize {
-	font-size: min(5vw, 2rem);
-	transition: all 0.5s;
+  font-size: min(5vw, 2rem);
+  transition: all 0.5s;
 }
 
 #animationContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 #animationContainer.animationEnded {
-	min-height: auto;
+  min-height: auto;
 }
 
 #animationContainer figure video {
-	max-width: 40vw;
+  max-width: 40vw;
 }
 
 #animationContainer figcaption {
-	color: whitesmoke;
-	font-family: Alata;
-	text-align: center;
-	font-size: min(4vw, 1.2rem);
+  color: whitesmoke;
+  font-family: Alata;
+  text-align: center;
+  font-size: min(4vw, 1.2rem);
 }
 
 #animationContainer figcaption a {
-	color: whitesmoke;
-	font-family: Alata;
-	text-decoration: none;
-	transition: color 0.3s;
+  color: whitesmoke;
+  font-family: Alata;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 #animationContainer figcaption a:hover {
-	color: #6cc680;
+  color: #6cc680;
 }
 
 #animationContainer video {
-	padding-top: 5vh;
-	max-width: 50vw;
-	align-self: flex-start;
+  padding-top: 10vh;
+  max-height: 50vw;
+  max-width: 50vw;
+  align-self: flex-start;
 }
 
 .whiteSwitch {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10vh 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh 2vw;
 }
 
 .whiteSwitch > img {
-	width: 30vw;
+  width: 30vw;
 }
 
 .whiteSwitch #whiteBGContent p {
-	padding: 8vh 4vw 0;
-	font-family: Alata;
-	color: #344546;
-	font-size: min(5vw, 2rem);
+  padding: 8vh 4vw 0;
+  font-family: Alata;
+  color: #344546;
+  font-size: min(5vw, 2rem);
+}
+
+.whiteSwitch #whiteBGContent p i {
+  font-weight: 600;
 }
 
 .whiteSwitch #whiteBGContent #whiteBGContentPara1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #whiteBGContentPara1 img {
-	max-width: 20vw;
+  max-width: 20vw;
 }
 
 #animationContent .animationContentRow {
-	padding: 2rem;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #animationContent .animationContentRow:nth-child(2n + 1) {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 #animationContent .animationContentRow p {
-	font-family: Alata;
+  font-family: Alata;
 }
 
 .animationContentRow img {
-	padding: 1rem 2rem;
-	max-height: 100px;
+  padding: 1rem 2rem;
+  max-height: 100px;
 }
 
 @media (max-width: 1024px) {
-	#animationContent {
-		width: 90vw;
-		padding: 0;
-		height: auto;
-		transform: scale(1);
-	}
+  #animationContent {
+    width: 90vw;
+    padding: 0;
+    height: auto;
+    transform: scale(1);
+  }
 
-	#animationContainer video {
-		max-width: 100%;
-	}
+  #animationContainer video {
+    max-width: 100%;
 
-	#animationContainer figure video {
-		max-width: 100%;
-	}
+    max-height: 60vh;
+  }
 
-	.whiteSwitch {
-		flex-direction: column;
-		padding: 2vh 2vw;
-	}
+  #animationContainer figure video {
+    max-width: 100%;
+  }
 
-	#whiteBGContentPara1 img {
-		max-width: 25vw;
-	}
+  .whiteSwitch {
+    flex-direction: column;
+    padding: 2vh 2vw;
+  }
+
+  #whiteBGContentPara1 img {
+    max-width: 25vw;
+  }
 }
 
 @media (max-width: 640px) {
-	#animationContent .animationContentRow:nth-child(n) {
-		flex-direction: column;
-	}
+  #animationContent .animationContentRow:nth-child(n) {
+    flex-direction: column;
+  }
 
-	#whiteBGContentPara1 {
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-items: center;
-	}
+  #whiteBGContentPara1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 
-	#whiteBGContentPara1 img {
-		max-width: 45vw;
-	}
+  #whiteBGContentPara1 img {
+    max-width: 45vw;
+  }
 }
