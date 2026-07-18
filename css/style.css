@@ -337,6 +337,11 @@ nav .biobattle-card {
     font-size: 1.5rem;
     padding-top: 80px;
   }
+
+  .biobattle-card {
+    width: 1.7rem;
+    top: -8px;
+  }
 }
 
 @media screen and (max-width: 900px) {
