@@ -29,6 +29,26 @@ window.addEventListener("DOMContentLoaded", () => {
         <li><a href="${prefix}pages/research.html">Research</a></li>
         <li><a href="${prefix}pages/achievements.html">Achievements</a></li>
         <li><a href="${prefix}pages/alumni.html">Alumni</a></li>
+        <li style="width: fit-content; justify-content: center; align-items: center; margin: 0 auto;">
+          <div style="position: relative">
+              <img
+                src="../images/card-game-images/green-tortoise.png"
+                alt="card"width: fit-content; 
+                class="biobattle-card biobattle-card1"
+              /><img
+                src="../images/card-game-images/red-tiger.png"
+                alt="card"
+                class="biobattle-card biobattle-card2"
+              />
+          </div>
+            <a
+          href="https://biobattle.manipalbiomachinesmahe.com/"
+          target="_blank"
+          ><div>
+           
+            <p style="margin-left: 1.5rem; font-family: Alata;">BioBattle</p>
+          </div></a
+        ></li>
       </ul>
     </nav>
   </header>
