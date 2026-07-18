@@ -252,6 +252,10 @@ nav .learnMoreButton > div {
   margin: 0 2rem;
 }
 
+.biobattle-in-project-page {
+  font-family: Alata;
+}
+
 .biobattle-button > div:hover {
   background-color: #334545;
   color: #f8f5ee;
