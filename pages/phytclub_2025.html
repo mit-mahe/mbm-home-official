@@ -24,6 +24,12 @@
     <script src="../javascript/navbarMenuToggle.js"></script>
     <script src="../javascript/navbar.js"></script>
     <script src="../javascript/footer.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const video = document.getElementById("animation");
+        video.playbackRate = 2.4;
+      });
+    </script>
   </head>
 
   <body>
@@ -123,9 +129,5 @@
     </main>
 
     <div id="footer-placeholder"></div>
-    <script>
-      const video = document.getElementById("animation");
-      video.playbackRate = 3.5;
-    </script>
   </body>
 </html>
